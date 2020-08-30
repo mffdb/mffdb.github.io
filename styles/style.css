@@ -1,0 +1,166 @@
+img {
+  max-width: 32px;
+  height: auto;
+}
+
+#Adam Warlock {
+  left: 0px;
+  width: 46px;
+  background: url('./portraits/	hero_adamwarlock01	.png') 0 0;
+}
+
+[title~="Combat"] {
+  border: 1px solid #e00;
+}
+
+[title~="Speed"] {
+  border: 1px solid #0e0;
+}
+
+[title~="Blast"] {
+  border: 1px solid #00e;
+}
+
+[title~="Universal"] {
+  border: 1px solid #e0e;
+}
+
+[title~="NPC"] {
+  border: 1px solid #ee0;
+}
+
+
+.mcu {
+  width: 100%;
+  padding: 1px;
+  color: black;
+  font-family: "Arial", "Gulimche", "Times New Roman", Serif;
+}
+
+.th {
+  border: 1px solid black;
+  font-size: 20px;
+  font-weight: bold;
+
+  text-align: center;
+  color: black;
+  flex-grow: 1;
+  padding: 5px;
+}
+
+.td {
+  border: 1px solid black;
+  font-size: 14px;
+  color: black;
+  margin-top:-1px;
+  box-sizing: border-box;
+
+}
+
+.th:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.td:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.th.sort {
+
+}
+
+.th.movie, .th.tvshow, .th.ep {
+  margin-top:-1px;
+}
+
+.td.st, .td.season {
+  padding: 3px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.td.movie, .td.tvshow, .td.cast {
+  padding: 3px;
+}
+
+
+.td.poster {
+  padding: 0px;
+}
+
+.th:nth-of-type(n+2) {
+  margin-left:-1px; 
+
+}
+
+.td.movie:nth-of-type(1),
+.td.tvshow:nth-of-type(1),
+.td.ep:nth-of-type(1) {
+  flex-grow: 4;
+  width: 30%;
+
+}
+
+.td.movie:nth-of-type(2),
+.td.tvshow:nth-of-type(2),
+.td.ep:nth-of-type(2) {
+  flex-grow: 4;
+  width: 30%;
+  margin-left:-1px;
+}
+
+.td.movie:nth-of-type(3),
+.td.tvshow:nth-of-type(3),
+.td.ep:nth-of-type(3) {
+  flex-grow: 1;
+  width: 15%;
+  margin-left:-1px;
+}
+
+.td.movie:nth-of-type(4),
+.td.tvshow:nth-of-type(4),
+.td.ep:nth-of-type(4) {
+  flex-grow: 1;
+  width: 15%;
+  margin-left:-1px;
+}
+
+.td.season:nth-of-type(1),
+.td.cast:nth-of-type(1) {
+  flex-grow: 1;
+
+}
+
+.td.season:nth-of-type(n+2),
+.td.cast:nth-of-type(n+2){
+  flex-grow: 1;
+  margin-left:-1px;
+}
+
+[class^=content].selected {
+  display: block;
+}
+
+[class^=tr] {
+  display: flex;
+}
+
+[class^="tr-"], [class^=content] {
+  display: none;
+}
+
+[class^="tr"].selected {
+  display: flex;
+}
+
+[id^=btn].selected,
+[id^=toggle].selected,
+[id^=btn]:hover,
+[id^=toggle]:hover {
+  color: white;
+  background: gray;
+}
