@@ -1,6 +1,6 @@
-img {
-  max-width: 32px;
-  height: auto;
+.main {
+ max-width: 1280px;
+ min-width: 680px;
 }
 
 [title~="Combat"] {
