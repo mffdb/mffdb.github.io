@@ -1,6 +1,6 @@
 .rollbox {
-display: grid;
-grid-template-columns: auto auto auto auto auto auto auto auto;
+/*display: grid;
+grid-template-columns: auto auto auto auto auto auto auto auto;*/
 }
 [class^="roll-"] { 
 border-left: 1px solid rgba(0, 0, 0, 0.8);
