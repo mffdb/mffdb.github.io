@@ -49,25 +49,25 @@ padding: 20px;
 }
 
 .type, .species, .genter, .side, .ability, .allies, .utilities {
- width: 400px;
+ width: 320px;
  height: 40px;
  border: 1px solid #000;
 }
 
 .portrait {
- width: 256px;
+ width: 320px;
  height: 256px;
  border: 1px solid #f00;
 }
 
 .character {
- width: 256px;
+ width: 320px;
  height: 40px;
  border: 1px solid #0f0;
 }
 
 .uniform {
- width: 256px;
+ width: 320px;
  height: 40px;
  border: 1px solid #00f;
 }
