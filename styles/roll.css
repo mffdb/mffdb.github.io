@@ -1,3 +1,7 @@
+[class^=box-] {
+ float: left;
+}
+
 .box-info {
  display: inline-block;
  width: 100%;
