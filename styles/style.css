@@ -176,8 +176,13 @@
 grid-template-columns: auto auto auto auto auto auto auto auto;*/
  display: inline-block;
  width: auto;
- height: auto;
-/* position: relative;*/
+ height: 800px;
+
+ min-width: 340px;
+ overflow-x: hidden; /* Hide horizontal scrollbar */
+ overflow-y: auto; /* Add vertical scrollbar */
+
+ 
 }
 [class^="roll-"] { 
 /*
