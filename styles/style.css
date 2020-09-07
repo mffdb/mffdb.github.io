@@ -180,12 +180,8 @@ grid-template-columns: auto auto auto auto auto auto auto auto;*/
 /* position: relative;*/
 }
 [class^="roll-"] { 
-/*border-left: 1px solid rgba(0, 0, 0, 0.8);
-border-bottom: 1px solid rgba(0, 0, 0, 0.8);
-background-size: 32px, 32px; 
-background-repeat: no-repeat;
-background-position: center;
-padding: 20px;
+/*
+
   
  */
  border: 1px solid #ccc;
@@ -200,7 +196,6 @@ padding: 20px;
 [class^=info-] {
  border: 1px solid #000;
  float: left;
-/* position: absolute;*/
 }
 
 .info-image {
@@ -209,7 +204,6 @@ padding: 20px;
 }
 .info-text {
  border: 1px solid #000;
-
 /* right: 0px; */
 }
 
@@ -223,6 +217,9 @@ padding: 20px;
  width: 340px;
  height: 256px;
  border: 1px solid #f00;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
 }
 
 .character {
@@ -238,25 +235,8 @@ padding: 20px;
  border: 1px solid #00f;
 }
 
-/*
-[class^="roll-"]:nth-of-type(8n) {
-border-right: 1px solid rgba(0, 0, 0, 0.8);
-}
-[class^="roll-"]:nth-of-type(1),
-[class^="roll-"]:nth-of-type(2),
-[class^="roll-"]:nth-of-type(3),
-[class^="roll-"]:nth-of-type(4),
-[class^="roll-"]:nth-of-type(5),
-[class^="roll-"]:nth-of-type(6), 
-[class^="roll-"]:nth-of-type(7),
-[class^="roll-"]:nth-of-type(8) {
-border-top: 1px solid rgba(0, 0, 0, 0.8);
-}
-[class^="roll-"]:last-child {
-border-bottom : 0px solid rgba(0, 0, 0, 0.8);
-}
-*/
-.stanlee {background-image: url(../portraits/stanlee.png)}
+
+.stanlee {background-image: url(../portraits/stanlee.png); background-size: 256px; 256px; }
 .roll-adamwarlock01 {background-image: url(../portraits/hero_adamwarlock01.png)}
 .roll-aero01 {background-image: url(../portraits/hero_aero01.png)}
 .roll-agentvenom01 {background-image: url(../portraits/hero_agentvenom01.png)}
