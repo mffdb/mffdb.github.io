@@ -12,7 +12,7 @@ $(document).ready(function(event){
   $( "[id^=btn]" ).click(function() {
    
     var name = $(this).attr("name");
-    $( ".portrait" ).css({"background-image": "url(./"+name+".png)"});
+    $( ".portrait" ).css({"background-image": "url("+name+".png)"});
 
   });
   
