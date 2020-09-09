@@ -1,3 +1,567 @@
+<!DOCTYPE html>
+<html>
+<title>Future Fight</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://code.jquery.com/mobile/jquery.mobile-latest.min.js"></script>
+<link rel="stylesheet" href="style/style.css" type="text/css" media="all">
+<script>
+$(document).ready(function(event){
+
+  $( "[id^=btn]" ).click(function() {
+   
+    var name = $(this).attr("name");
+    $( ".portrait" ).css({"background-image": "url(./"+name+".png)"});
+
+  });
+  
+  
+ event.preventDefault();
+})
+
+</script>
+<style>
+.roll {
+  border: 1px solid #ccc;
+  float: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+}
+   
+.roll:hover {
+  border: 1px solid #777;
+  cursor: pointer;
+}
+   
+.portrait {
+  width: 340px;
+  height: 256px;
+  border: 1px solid #ccc;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+</style>
+</head>
+<body>
+<div class="portrait"> </div>
+
+<div class="roll adamwarlock01" name="adamwarlock01"></div>
+<div class="roll aero01" name="aero01"></div>
+<div class="roll agentvenom01" name="agentvenom01"></div>
+<div class="roll agentvenom01_S01" name="agentvenom01_S01"></div>
+<div class="roll amadeuscho01" name="amadeuscho01"></div>
+<div class="roll amadeuscho01_S01" name="amadeuscho01_S01"></div>
+<div class="roll amadeuscho01_S02" name="amadeuscho01_S02"></div>
+<div class="roll americachavez01" name="americachavez01"></div>
+<div class="roll ancientone01" name="ancientone01"></div>
+<div class="roll ancientone01_S01" name="ancientone01_S01"></div>
+<div class="roll angel01" name="angel01"></div>
+<div class="roll angel01_S01" name="angel01_S01"></div>
+<div class="roll angela01" name="angela01"></div>
+<div class="roll angela01_S01" name="angela01_S01"></div>
+<div class="roll angela01_S02" name="angela01_S02"></div>
+<div class="roll antman01" name="antman01"></div>
+<div class="roll antman01_S01" name="antman01_S01"></div>
+<div class="roll antman01_S02" name="antman01_S02"></div>
+<div class="roll antman01_S03" name="antman01_S03"></div>
+<div class="roll antman01_S04" name="antman01_S04"></div>
+<div class="roll antman01_S05" name="antman01_S05"></div>
+<div class="roll arachknight01" name="arachknight01"></div>
+<div class="roll beast01" name="beast01"></div>
+<div class="roll beast01_S01" name="beast01_S01"></div>
+<div class="roll beast01_S02" name="beast01_S02"></div>
+<div class="roll betaraybill01" name="betaraybill01"></div>
+<div class="roll bishop01" name="bishop01"></div>
+<div class="roll blackbolt01" name="blackbolt01"></div>
+<div class="roll blackbolt01_S01" name="blackbolt01_S01"></div>
+<div class="roll blackbolt01_S02" name="blackbolt01_S02"></div>
+<div class="roll blackbolt01_S03" name="blackbolt01_S03"></div>
+<div class="roll blackcat01" name="blackcat01"></div>
+<div class="roll blackcat01_S01" name="blackcat01_S01"></div>
+<div class="roll blackcat01_S02" name="blackcat01_S02"></div>
+<div class="roll blackpanther01" name="blackpanther01"></div>
+<div class="roll blackpanther01_S01" name="blackpanther01_S01"></div>
+<div class="roll blackpanther01_S02" name="blackpanther01_S02"></div>
+<div class="roll blackwidow01" name="blackwidow01"></div>
+<div class="roll blackwidow01_S01" name="blackwidow01_S01"></div>
+<div class="roll blackwidow01_S02" name="blackwidow01_S02"></div>
+<div class="roll blackwidow01_S03" name="blackwidow01_S03"></div>
+<div class="roll blackwidow01_S04" name="blackwidow01_S04"></div>
+<div class="roll blackwidow01_S05" name="blackwidow01_S05"></div>
+<div class="roll blackwidow01_S06" name="blackwidow01_S06"></div>
+<div class="roll blackwidow01_S07" name="blackwidow01_S07"></div>
+<div class="roll blackwidow01_S08" name="blackwidow01_S08"></div>
+<div class="roll blackwidow01_S09" name="blackwidow01_S09"></div>
+<div class="roll blade01" name="blade01"></div>
+<div class="roll blade01_S01" name="blade01_S01"></div>
+<div class="roll bluedragon01" name="bluedragon01"></div>
+<div class="roll bluemarvel01" name="bluemarvel01"></div>
+<div class="roll cable01" name="cable01"></div>
+<div class="roll cable01_S01" name="cable01_S01"></div>
+<div class="roll cable01_S02" name="cable01_S02"></div>
+<div class="roll cable01_S03" name="cable01_S03"></div>
+<div class="roll captainamerica01" name="captainamerica01"></div>
+<div class="roll captainamerica01_S01" name="captainamerica01_S01"></div>
+<div class="roll captainamerica01_S02" name="captainamerica01_S02"></div>
+<div class="roll captainamerica01_S03" name="captainamerica01_S03"></div>
+<div class="roll captainamerica01_S04" name="captainamerica01_S04"></div>
+<div class="roll captainamerica01_S05" name="captainamerica01_S05"></div>
+<div class="roll captainamerica01_S06" name="captainamerica01_S06"></div>
+<div class="roll captainamerica01_S07" name="captainamerica01_S07"></div>
+<div class="roll captainamerica01_S08" name="captainamerica01_S08"></div>
+<div class="roll captainamerica01_S09" name="captainamerica01_S09"></div>
+<div class="roll captainamerica01_S10" name="captainamerica01_S10"></div>
+<div class="roll captainmarvel01" name="captainmarvel01"></div>
+<div class="roll captainmarvel01_S01" name="captainmarvel01_S01"></div>
+<div class="roll captainmarvel01_S02" name="captainmarvel01_S02"></div>
+<div class="roll captainmarvel01_S03" name="captainmarvel01_S03"></div>
+<div class="roll captainmarvel01_S04" name="captainmarvel01_S04"></div>
+<div class="roll clea01" name="clea01"></div>
+<div class="roll colossus01" name="colossus01"></div>
+<div class="roll colossus01_S01" name="colossus01_S01"></div>
+<div class="roll colossus01_S02" name="colossus01_S02"></div>
+<div class="roll crescent01" name="crescent01"></div>
+<div class="roll crescent01_S01" name="crescent01_S01"></div>
+<div class="roll crystal01" name="crystal01"></div>
+<div class="roll crystal01_S01" name="crystal01_S01"></div>
+<div class="roll crystal01_S02" name="crystal01_S02"></div>
+<div class="roll cyclops01" name="cyclops01"></div>
+<div class="roll cyclops01_S01" name="cyclops01_S01"></div>
+<div class="roll cyclops01_S02" name="cyclops01_S02"></div>
+<div class="roll cyclops01_S03" name="cyclops01_S03"></div>
+<div class="roll daisyjohnson01" name="daisyjohnson01"></div>
+<div class="roll daisyjohnson01_S01" name="daisyjohnson01_S01"></div>
+<div class="roll daisyjohnson01_S02" name="daisyjohnson01_S02"></div>
+<div class="roll daredevil01" name="daredevil01"></div>
+<div class="roll daredevil01_S01" name="daredevil01_S01"></div>
+<div class="roll daredevil01_S02" name="daredevil01_S02"></div>
+<div class="roll darkhawk01" name="darkhawk01"></div>
+<div class="roll dazzler01" name="dazzler01"></div>
+<div class="roll deadpool01" name="deadpool01"></div>
+<div class="roll deadpool01_S01" name="deadpool01_S01"></div>
+<div class="roll deadpool01_S02" name="deadpool01_S02"></div>
+<div class="roll deadpool01_S03" name="deadpool01_S03"></div>
+<div class="roll deathlok01" name="deathlok01"></div>
+<div class="roll deathlok01_S01" name="deathlok01_S01"></div>
+<div class="roll doctorstrange01" name="doctorstrange01"></div>
+<div class="roll doctorstrange01_S01" name="doctorstrange01_S01"></div>
+<div class="roll doctorstrange01_S02" name="doctorstrange01_S02"></div>
+<div class="roll doctorvoodoo01" name="doctorvoodoo01"></div>
+<div class="roll domino01" name="domino01"></div>
+<div class="roll domino01_S01" name="domino01_S01"></div>
+<div class="roll drax01" name="drax01"></div>
+<div class="roll drax01_S01" name="drax01_S01"></div>
+<div class="roll elektra01" name="elektra01"></div>
+<div class="roll elektra01_S01" name="elektra01_S01"></div>
+<div class="roll elsabloodstone01" name="elsabloodstone01"></div>
+<div class="roll elsabloodstone01_S01" name="elsabloodstone01_S01"></div>
+<div class="roll elsabloodstone01_S02" name="elsabloodstone01_S02"></div>
+<div class="roll emmafrost01" name="emmafrost01"></div>
+<div class="roll emmafrost01_S01" name="emmafrost01_S01"></div>
+<div class="roll emmafrost01_S02" name="emmafrost01_S02"></div>
+<div class="roll falcon01" name="falcon01"></div>
+<div class="roll falcon01_S01" name="falcon01_S01"></div>
+<div class="roll falcon01_S02" name="falcon01_S02"></div>
+<div class="roll falcon01_S03" name="falcon01_S03"></div>
+<div class="roll fandral01" name="fandral01"></div>
+<div class="roll fantomex01" name="fantomex01"></div>
+<div class="roll gambit01" name="gambit01"></div>
+<div class="roll gamora01" name="gamora01"></div>
+<div class="roll gamora01_S01" name="gamora01_S01"></div>
+<div class="roll gamora01_S02" name="gamora01_S02"></div>
+<div class="roll ghostpanther01" name="ghostpanther01"></div>
+<div class="roll ghostrider01" name="ghostrider01"></div>
+<div class="roll ghostrider01_S01" name="ghostrider01_S01"></div>
+<div class="roll ghostrider01_S02" name="ghostrider01_S02"></div>
+<div class="roll giantman01" name="giantman01"></div>
+<div class="roll giantman01_S01" name="giantman01_S01"></div>
+<div class="roll giantman01_S02" name="giantman01_S02"></div>
+<div class="roll gladiator01" name="gladiator01"></div>
+<div class="roll goliath01" name="goliath01"></div>
+<div class="roll gorgon01" name="gorgon01"></div>
+<div class="roll gorillaman01" name="gorillaman01"></div>
+<div class="roll groot01" name="groot01"></div>
+<div class="roll groot01_S01" name="groot01_S01"></div>
+<div class="roll groot01_S02" name="groot01_S02"></div>
+<div class="roll groot01_S03" name="groot01_S03"></div>
+<div class="roll gwenpool01" name="gwenpool01"></div>
+<div class="roll gwenpool01_S01" name="gwenpool01_S01"></div>
+<div class="roll gwenpool01_S02" name="gwenpool01_S02"></div>
+<div class="roll hawkeye01" name="hawkeye01"></div>
+<div class="roll hawkeye01_S01" name="hawkeye01_S01"></div>
+<div class="roll hawkeye01_S02" name="hawkeye01_S02"></div>
+<div class="roll hawkeye01_S03" name="hawkeye01_S03"></div>
+<div class="roll hawkeye01_S04" name="hawkeye01_S04"></div>
+<div class="roll heimdall01" name="heimdall01"></div>
+<div class="roll hellcat01" name="hellcat01"></div>
+<div class="roll hellstorm01" name="hellstorm01"></div>
+<div class="roll hogun01" name="hogun01"></div>
+<div class="roll hulk01" name="hulk01"></div>
+<div class="roll hulk01_S01" name="hulk01_S01"></div>
+<div class="roll hulk01_S02" name="hulk01_S02"></div>
+<div class="roll hulk01_S03" name="hulk01_S03"></div>
+<div class="roll hulk01_S04" name="hulk01_S04"></div>
+<div class="roll hulk01_S05" name="hulk01_S05"></div>
+<div class="roll hulk01_S06" name="hulk01_S06"></div>
+<div class="roll hulkbuster01" name="hulkbuster01"></div>
+<div class="roll hulkbuster01_S01" name="hulkbuster01_S01"></div>
+<div class="roll hulkbuster01_S02" name="hulkbuster01_S02"></div>
+<div class="roll hulkling01" name="hulkling01"></div>
+<div class="roll humantorch01" name="humantorch01"></div>
+<div class="roll humantorch01_S01" name="humantorch01_S01"></div>
+<div class="roll hyperion01" name="hyperion01"></div>
+<div class="roll hyperion01_S01" name="hyperion01_S01"></div>
+<div class="roll iceman01" name="iceman01"></div>
+<div class="roll iceman01_S01" name="iceman01_S01"></div>
+<div class="roll inferno01" name="inferno01"></div>
+<div class="roll inferno01_S01" name="inferno01_S01"></div>
+<div class="roll invisiblewoman01" name="invisiblewoman01"></div>
+<div class="roll invisiblewoman01_S01" name="invisiblewoman01_S01"></div>
+<div class="roll ironfist01" name="ironfist01"></div>
+<div class="roll ironfist01_S01" name="ironfist01_S01"></div>
+<div class="roll ironfist01_S02" name="ironfist01_S02"></div>
+<div class="roll ironfist01_S03" name="ironfist01_S03"></div>
+<div class="roll ironhammer01" name="ironhammer01"></div>
+<div class="roll ironheart01" name="ironheart01"></div>
+<div class="roll ironman01" name="ironman01"></div>
+<div class="roll ironman01_S01" name="ironman01_S01"></div>
+<div class="roll ironman01_S02" name="ironman01_S02"></div>
+<div class="roll ironman01_S03" name="ironman01_S03"></div>
+<div class="roll ironman01_S04" name="ironman01_S04"></div>
+<div class="roll ironman01_S05" name="ironman01_S05"></div>
+<div class="roll ironman01_S06" name="ironman01_S06"></div>
+<div class="roll ironman01_S07" name="ironman01_S07"></div>
+<div class="roll janefoster01" name="janefoster01"></div>
+<div class="roll jeangrey01" name="jeangrey01"></div>
+<div class="roll jeangrey01_S01" name="jeangrey01_S01"></div>
+<div class="roll jeangrey01_S02" name="jeangrey01_S02"></div>
+<div class="roll jessicajones01" name="jessicajones01"></div>
+<div class="roll jubilee01" name="jubilee01"></div>
+<div class="roll kamalakhan01" name="kamalakhan01"></div>
+<div class="roll kamalakhan01_S01" name="kamalakhan01_S01"></div>
+<div class="roll kamalakhan01_S02" name="kamalakhan01_S02"></div>
+<div class="roll karnak01" name="karnak01"></div>
+<div class="roll karnak01_S01" name="karnak01_S01"></div>
+<div class="roll katebishop01" name="katebishop01"></div>
+<div class="roll kidkaiju01" name="kidkaiju01"></div>
+<div class="roll kidkaiju01_S01" name="kidkaiju01_S01"></div>
+<div class="roll kidomega01" name="kidomega01"></div>
+<div class="roll kittypryde01" name="kittypryde01"></div>
+<div class="roll lincoln01" name="lincoln01"></div>
+<div class="roll lukecage01" name="lukecage01"></div>
+<div class="roll lukecage01_S01" name="lukecage01_S01"></div>
+<div class="roll lukecage01_S02" name="lukecage01_S02"></div>
+<div class="roll lunasnow01" name="lunasnow01"></div>
+<div class="roll lunasnow01_S01" name="lunasnow01_S01"></div>
+<div class="roll lunasnow01_S02" name="lunasnow01_S02"></div>
+<div class="roll magik01" name="magik01"></div>
+<div class="roll magik01_S01" name="magik01_S01"></div>
+<div class="roll mantis01" name="mantis01"></div>
+<div class="roll medusa01" name="medusa01"></div>
+<div class="roll medusa01_S01" name="medusa01_S01"></div>
+<div class="roll medusa01_S02" name="medusa01_S02"></div>
+<div class="roll milesmorales01" name="milesmorales01"></div>
+<div class="roll milesmorales01_S01" name="milesmorales01_S01"></div>
+<div class="roll misterfantastic01" name="misterfantastic01"></div>
+<div class="roll misterfantastic01_S01" name="misterfantastic01_S01"></div>
+<div class="roll mistyknight01" name="mistyknight01"></div>
+<div class="roll mockingbird01" name="mockingbird01"></div>
+<div class="roll mockingbird01_S01" name="mockingbird01_S01"></div>
+<div class="roll mockingbird01_S02" name="mockingbird01_S02"></div>
+<div class="roll moongirl01" name="moongirl01"></div>
+<div class="roll moongirl01_S01" name="moongirl01_S01"></div>
+<div class="roll moonknight01" name="moonknight01"></div>
+<div class="roll moonknight01_S01" name="moonknight01_S01"></div>
+<div class="roll nadiapym01" name="nadiapym01"></div>
+<div class="roll namor01" name="namor01"></div>
+<div class="roll namor01_S01" name="namor01_S01"></div>
+<div class="roll negasonic01" name="negasonic01"></div>
+<div class="roll nickfury01" name="nickfury01"></div>
+<div class="roll nickfury01_S01" name="nickfury01_S01"></div>
+<div class="roll nicominoru01" name="nicominoru01"></div>
+<div class="roll nicominoru01_S01" name="nicominoru01_S01"></div>
+<div class="roll nightcrawler01" name="nightcrawler01"></div>
+<div class="roll nightcrawler01_S01" name="nightcrawler01_S01"></div>
+<div class="roll nova01" name="nova01"></div>
+<div class="roll odin01" name="odin01"></div>
+<div class="roll odin01_S01" name="odin01_S01"></div>
+<div class="roll philcoulson01" name="philcoulson01"></div>
+<div class="roll philcoulson01_S01" name="philcoulson01_S01"></div>
+<div class="roll phylavell01" name="phylavell01"></div>
+<div class="roll professorx01" name="professorx01"></div>
+<div class="roll psylocke01" name="psylocke01"></div>
+<div class="roll psylocke01_S01" name="psylocke01_S01"></div>
+<div class="roll punisher01" name="punisher01"></div>
+<div class="roll punisher01_S01" name="punisher01_S01"></div>
+<div class="roll punisher01_S02" name="punisher01_S02"></div>
+<div class="roll punisher01_S03" name="punisher01_S03"></div>
+<div class="roll punisher01_S04" name="punisher01_S04"></div>
+<div class="roll punisher01_S05" name="punisher01_S05"></div>
+<div class="roll quasar01" name="quasar01"></div>
+<div class="roll quicksilver01" name="quicksilver01"></div>
+<div class="roll quicksilver01_S01" name="quicksilver01_S01"></div>
+<div class="roll quicksilver01_S02" name="quicksilver01_S02"></div>
+<div class="roll rachelsummers01" name="rachelsummers01"></div>
+<div class="roll redshehulk01" name="redshehulk01"></div>
+<div class="roll rescue01" name="rescue01"></div>
+<div class="roll richardrider01" name="richardrider01"></div>
+<div class="roll robbiereyes01" name="robbiereyes01"></div>
+<div class="roll rocketraccoon01" name="rocketraccoon01"></div>
+<div class="roll rocketraccoon01_S01" name="rocketraccoon01_S01"></div>
+<div class="roll rocketraccoon01_S02" name="rocketraccoon01_S02"></div>
+<div class="roll rocketraccoon01_S03" name="rocketraccoon01_S03"></div>
+<div class="roll rocketraccoon01_S04" name="rocketraccoon01_S04"></div>
+<div class="roll rocketraccoon01_S05" name="rocketraccoon01_S05"></div>
+<div class="roll rogue01" name="rogue01"></div>
+<div class="roll rogue01_S01" name="rogue01_S01"></div>
+<div class="roll rogue01_S02" name="rogue01_S02"></div>
+<div class="roll satana01" name="satana01"></div>
+<div class="roll satana01_S01" name="satana01_S01"></div>
+<div class="roll scarletwitch01" name="scarletwitch01"></div>
+<div class="roll scarletwitch01_S01" name="scarletwitch01_S01"></div>
+<div class="roll scarletwitch01_S02" name="scarletwitch01_S02"></div>
+<div class="roll scarletwitch01_S03" name="scarletwitch01_S03"></div>
+<div class="roll shadowshell01" name="shadowshell01"></div>
+<div class="roll shangchi01" name="shangchi01"></div>
+<div class="roll sharoncarter01" name="sharoncarter01"></div>
+<div class="roll sharoncarter01_S01" name="sharoncarter01_S01"></div>
+<div class="roll sharonrogers01" name="sharonrogers01"></div>
+<div class="roll sharonrogers01_S01" name="sharonrogers01_S01"></div>
+<div class="roll sharonrogers01_S02" name="sharonrogers01_S02"></div>
+<div class="roll sharonrogers01_S03" name="sharonrogers01_S03"></div>
+<div class="roll shehulk01" name="shehulk01"></div>
+<div class="roll shehulk01_S01" name="shehulk01_S01"></div>
+<div class="roll shehulk01_S02" name="shehulk01_S02"></div>
+<div class="roll shehulk01_S03" name="shehulk01_S03"></div>
+<div class="roll shuri01" name="shuri01"></div>
+<div class="roll shuri01_S01" name="shuri01_S01"></div>
+<div class="roll sif01" name="sif01"></div>
+<div class="roll sif01_S01" name="sif01_S01"></div>
+<div class="roll silk01" name="silk01"></div>
+<div class="roll silk01_S01" name="silk01_S01"></div>
+<div class="roll silversurfer01" name="silversurfer01"></div>
+<div class="roll silversurfer01_S01" name="silversurfer01_S01"></div>
+<div class="roll singularity01" name="singularity01"></div>
+<div class="roll slapstick01" name="slapstick01"></div>
+<div class="roll songbird01" name="songbird01"></div>
+<div class="roll spidergwen01" name="spidergwen01"></div>
+<div class="roll spidergwen01_S01" name="spidergwen01_S01"></div>
+<div class="roll spiderman01" name="spiderman01"></div>
+<div class="roll spiderman01_S01" name="spiderman01_S01"></div>
+<div class="roll spiderman01_S02" name="spiderman01_S02"></div>
+<div class="roll spiderman01_S03" name="spiderman01_S03"></div>
+<div class="roll spiderman01_S04" name="spiderman01_S04"></div>
+<div class="roll spiderman01_S05" name="spiderman01_S05"></div>
+<div class="roll spiderman01_S06" name="spiderman01_S06"></div>
+<div class="roll spiderman01_S07" name="spiderman01_S07"></div>
+<div class="roll spiderman209901" name="spiderman209901"></div>
+<div class="roll spiderman209901_S01" name="spiderman209901_S01"></div>
+<div class="roll squirrelgirl01" name="squirrelgirl01"></div>
+<div class="roll squirrelgirl01_S01" name="squirrelgirl01_S01"></div>
+<div class="roll starlord01" name="starlord01"></div>
+<div class="roll starlord01_S01" name="starlord01_S01"></div>
+<div class="roll starlord01_S02" name="starlord01_S02"></div>
+<div class="roll starlord01_S03" name="starlord01_S03"></div>
+<div class="roll starlord01_S04" name="starlord01_S04"></div>
+<div class="roll storm01" name="storm01"></div>
+<div class="roll storm01_S01" name="storm01_S01"></div>
+<div class="roll storm01_S02" name="storm01_S02"></div>
+<div class="roll sunbird01" name="sunbird01"></div>
+<div class="roll swordmaster01" name="swordmaster01"></div>
+<div class="roll thing01" name="thing01"></div>
+<div class="roll thing01_S01" name="thing01_S01"></div>
+<div class="roll thor01" name="thor01"></div>
+<div class="roll thor01_S01" name="thor01_S01"></div>
+<div class="roll thor01_S02" name="thor01_S02"></div>
+<div class="roll thor01_S03" name="thor01_S03"></div>
+<div class="roll thor01_S04" name="thor01_S04"></div>
+<div class="roll thor01_S05" name="thor01_S05"></div>
+<div class="roll thor01_S06" name="thor01_S06"></div>
+<div class="roll valkyrie01" name="valkyrie01"></div>
+<div class="roll vision01" name="vision01"></div>
+<div class="roll vision01_S01" name="vision01_S01"></div>
+<div class="roll vision01_S02" name="vision01_S02"></div>
+<div class="roll volstagg01" name="volstagg01"></div>
+<div class="roll warmachine01" name="warmachine01"></div>
+<div class="roll warmachine01_S01" name="warmachine01_S01"></div>
+<div class="roll warmachine01_S02" name="warmachine01_S02"></div>
+<div class="roll warmachine01_S03" name="warmachine01_S03"></div>
+<div class="roll warmachine01_S04" name="warmachine01_S04"></div>
+<div class="roll warmachine01_S05" name="warmachine01_S05"></div>
+<div class="roll warmachine01_S06" name="warmachine01_S06"></div>
+<div class="roll warpath01" name="warpath01"></div>
+<div class="roll wartiger01" name="wartiger01"></div>
+<div class="roll warwolf01" name="warwolf01"></div>
+<div class="roll wasp01" name="wasp01"></div>
+<div class="roll wasp01_S01" name="wasp01_S01"></div>
+<div class="roll wasp01_S02" name="wasp01_S02"></div>
+<div class="roll wave01" name="wave01"></div>
+<div class="roll weaponhex01" name="weaponhex01"></div>
+<div class="roll whitefox01" name="whitefox01"></div>
+<div class="roll whitefox01_S01" name="whitefox01_S01"></div>
+<div class="roll whitetiger01" name="whitetiger01"></div>
+<div class="roll wiccan01" name="wiccan01"></div>
+<div class="roll wintersoldier01" name="wintersoldier01"></div>
+<div class="roll wintersoldier01_S01" name="wintersoldier01_S01"></div>
+<div class="roll wintersoldier01_S02" name="wintersoldier01_S02"></div>
+<div class="roll wintersoldier01_S03" name="wintersoldier01_S03"></div>
+<div class="roll wolverine01" name="wolverine01"></div>
+<div class="roll wolverine01_S01" name="wolverine01_S01"></div>
+<div class="roll wolverine01_S02" name="wolverine01_S02"></div>
+<div class="roll wolverine01_S03" name="wolverine01_S03"></div>
+<div class="roll wolverine01_S04" name="wolverine01_S04"></div>
+<div class="roll wong01" name="wong01"></div>
+<div class="roll wong01_S01" name="wong01_S01"></div>
+<div class="roll x-2301" name="x-2301"></div>
+<div class="roll x-2301_S01" name="x-2301_S01"></div>
+<div class="roll abomination01" name="abomination01"></div>
+<div class="roll absorbingman01" name="absorbingman01"></div>
+<div class="roll antiman01" name="antiman01"></div>
+<div class="roll apocalypse01" name="apocalypse01"></div>
+<div class="roll apocalypse01_S01" name="apocalypse01_S01"></div>
+<div class="roll baronmordo01" name="baronmordo01"></div>
+<div class="roll baronmordo01_S01" name="baronmordo01_S01"></div>
+<div class="roll baronzemo01" name="baronzemo01"></div>
+<div class="roll blackdwarf01" name="blackdwarf01"></div>
+<div class="roll blackdwarf01_S01" name="blackdwarf01_S01"></div>
+<div class="roll bullseye01" name="bullseye01"></div>
+<div class="roll bullseye01_S01" name="bullseye01_S01"></div>
+<div class="roll carnage01" name="carnage01"></div>
+<div class="roll corvusglaive01" name="corvusglaive01"></div>
+<div class="roll corvusglaive01_S01" name="corvusglaive01_S01"></div>
+<div class="roll crossbones01" name="crossbones01"></div>
+<div class="roll crossbones01_S01" name="crossbones01_S01"></div>
+<div class="roll crossbones01_S02" name="crossbones01_S02"></div>
+<div class="roll destroyer01" name="destroyer01"></div>
+<div class="roll destroyer01_S01" name="destroyer01_S01"></div>
+<div class="roll doctordoom01" name="doctordoom01"></div>
+<div class="roll doctorminerva01" name="doctorminerva01"></div>
+<div class="roll doctorminerva01_S01" name="doctorminerva01_S01"></div>
+<div class="roll doctoroctopus01" name="doctoroctopus01"></div>
+<div class="roll doctoroctopus01_S01" name="doctoroctopus01_S01"></div>
+<div class="roll doctoroctopus01_S02" name="doctoroctopus01_S02"></div>
+<div class="roll dormmamu01" name="dormmamu01"></div>
+<div class="roll ebonymaw01" name="ebonymaw01"></div>
+<div class="roll ebonymaw01_S01" name="ebonymaw01_S01"></div>
+<div class="roll electro01" name="electro01"></div>
+<div class="roll enchantress01" name="enchantress01"></div>
+<div class="roll enchantress01_S01" name="enchantress01_S01"></div>
+<div class="roll ghost01" name="ghost01"></div>
+<div class="roll ghost01_S01" name="ghost01_S01"></div>
+<div class="roll greengoblin01" name="greengoblin01"></div>
+<div class="roll greengoblin01_S01" name="greengoblin01_S01"></div>
+<div class="roll hela01" name="hela01"></div>
+<div class="roll hela01_S01" name="hela01_S01"></div>
+<div class="roll hydroman01" name="hydroman01"></div>
+<div class="roll juggernaut01" name="juggernaut01"></div>
+<div class="roll kaecilius01" name="kaecilius01"></div>
+<div class="roll killmonger01" name="killmonger01"></div>
+<div class="roll killmonger01_S01" name="killmonger01_S01"></div>
+<div class="roll kingpin01" name="kingpin01"></div>
+<div class="roll kingpin01_S01" name="kingpin01_S01"></div>
+<div class="roll korath01" name="korath01"></div>
+<div class="roll kraventhehunter01" name="kraventhehunter01"></div>
+<div class="roll lash01" name="lash01"></div>
+<div class="roll lash01_S01" name="lash01_S01"></div>
+<div class="roll lizard01" name="lizard01"></div>
+<div class="roll loki01" name="loki01"></div>
+<div class="roll loki01_S01" name="loki01_S01"></div>
+<div class="roll loki01_S02" name="loki01_S02"></div>
+<div class="roll loki01_S03" name="loki01_S03"></div>
+<div class="roll magneto01" name="magneto01"></div>
+<div class="roll magneto01_S01" name="magneto01_S01"></div>
+<div class="roll magneto01_S02" name="magneto01_S02"></div>
+<div class="roll malekith01" name="malekith01"></div>
+<div class="roll malekith01_S01" name="malekith01_S01"></div>
+<div class="roll maximus01" name="maximus01"></div>
+<div class="roll mistersinister01" name="mistersinister01"></div>
+<div class="roll modok01" name="modok01"></div>
+<div class="roll modok01_S01" name="modok01_S01"></div>
+<div class="roll modok01_S02" name="modok01_S02"></div>
+<div class="roll moltenman01" name="moltenman01"></div>
+<div class="roll morganlefay01" name="morganlefay01"></div>
+<div class="roll mysterio01" name="mysterio01"></div>
+<div class="roll mysterio01_S01" name="mysterio01_S01"></div>
+<div class="roll mystique01" name="mystique01"></div>
+<div class="roll nebula01" name="nebula01"></div>
+<div class="roll nebula01_S01" name="nebula01_S01"></div>
+<div class="roll nebula01_S02" name="nebula01_S02"></div>
+<div class="roll nebula01_S03" name="nebula01_S03"></div>
+<div class="roll proximamidnight01" name="proximamidnight01"></div>
+<div class="roll proximamidnight01_S01" name="proximamidnight01_S01"></div>
+<div class="roll redguardian01" name="redguardian01"></div>
+<div class="roll redguardian01_S01" name="redguardian01_S01"></div>
+<div class="roll redhulk01" name="redhulk01"></div>
+<div class="roll redhulk01_S01" name="redhulk01_S01"></div>
+<div class="roll redhulk01_S02" name="redhulk01_S02"></div>
+<div class="roll redskull01" name="redskull01"></div>
+<div class="roll redskull01_S01" name="redskull01_S01"></div>
+<div class="roll redskull01_S02" name="redskull01_S02"></div>
+<div class="roll rhino01" name="rhino01"></div>
+<div class="roll ronan01" name="ronan01"></div>
+<div class="roll ronan01_S01" name="ronan01_S01"></div>
+<div class="roll ronan01_S02" name="ronan01_S02"></div>
+<div class="roll sabretooth01" name="sabretooth01"></div>
+<div class="roll sabretooth01_S01" name="sabretooth01_S01"></div>
+<div class="roll sandman01" name="sandman01"></div>
+<div class="roll sentinel01" name="sentinel01"></div>
+<div class="roll sentinel01_S01" name="sentinel01_S01"></div>
+<div class="roll sin01" name="sin01"></div>
+<div class="roll skurge01" name="skurge01"></div>
+<div class="roll stryfe01" name="stryfe01"></div>
+<div class="roll supergiant01" name="supergiant01"></div>
+<div class="roll taskmaster01" name="taskmaster01"></div>
+<div class="roll taskmaster01_S01" name="taskmaster01_S01"></div>
+<div class="roll thane01" name="thane01"></div>
+<div class="roll thanos01" name="thanos01"></div>
+<div class="roll thanos01_S01" name="thanos01_S01"></div>
+<div class="roll thanos01_S02" name="thanos01_S02"></div>
+<div class="roll thanos01_S03" name="thanos01_S03"></div>
+<div class="roll titania01" name="titania01"></div>
+<div class="roll ulik01" name="ulik01"></div>
+<div class="roll ultron_boss01" name="ultron_boss01"></div>
+<div class="roll ultron_boss01_S01" name="ultron_boss01_S01"></div>
+<div class="roll ultron_boss01_S02" name="ultron_boss01_S02"></div>
+<div class="roll ultron_boss01_S03" name="ultron_boss01_S03"></div>
+<div class="roll ulyssesklaue01" name="ulyssesklaue01"></div>
+<div class="roll venom01" name="venom01"></div>
+<div class="roll venom01_S01" name="venom01_S01"></div>
+<div class="roll venom01_S02" name="venom01_S02"></div>
+<div class="roll victorious01" name="victorious01"></div>
+<div class="roll viper01" name="viper01"></div>
+<div class="roll vulture01" name="vulture01"></div>
+<div class="roll vulture01_S01" name="vulture01_S01"></div>
+<div class="roll whiplash01" name="whiplash01"></div>
+<div class="roll yelenabelova01" name="yelenabelova01"></div>
+<div class="roll yelenabelova01_S01" name="yelenabelova01_S01"></div>
+<div class="roll yelenabelova01_S02" name="yelenabelova01_S02"></div>
+<div class="roll yellowjacket01" name="yellowjacket01"></div>
+<div class="roll yellowjacket01_S01" name="yellowjacket01_S01"></div>
+<div class="roll yondu01" name="yondu01"></div>
+<div class="roll yondu01_S01" name="yondu01_S01"></div>
+<div class="roll yondu01_S02" name="yondu01_S02"></div>
+<div class="roll fenriswolf01" name="fenriswolf01"></div>
+<div class="roll fenriswolf01_S01" name="fenriswolf01_S01"></div>
+<div class="roll frostbeast01" name="frostbeast01"></div>
+<div class="roll mbaku01" name="mbaku01"></div>
+<div class="roll mdigardserpent01" name="mdigardserpent01"></div>
+<div class="roll surtur01" name="surtur01"></div>
+<div class="roll talos01" name="talos01"></div>
+<div class="roll ymir01" name="ymir01"></div>
+<div class="roll GM" name="GM"></div>
+<div class="roll melindamay01" name="melindamay01"></div>
+<div class="roll devildinosaur01" name="devildinosaur01"></div>
+
+</body>
+</html>
+
+<!--
 <html>
 <title>Future Fight</title>
 <head>
@@ -577,3 +1141,4 @@ $(document).ready(function(event){
 </div>
 </body>
 </html>
+-->
