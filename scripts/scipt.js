@@ -26,13 +26,13 @@ $(document).ready(function(event){
       $.each( styleProps, function( prop, value ) {
         html.push( prop + ": " + value );
       });
-      */
+      
     var name = $(this).attr("name");
     $('[id^="btn"]').removeClass('selected');
     $( ".portrait" ).css({"background-image": "url(../portraits/"+name+".png)"}).removeClass('selected');
     $(this).addClass('selected');
     $(".portrait").css({"background-image": "url(../portraits/"+name+".png)"}).addClass('selected')
-  /*  $( ".result" ).html( html.join( "<br>" ) );*/
+    $( ".result" ).html( html.join( "<br>" ) );*/
     });
 
  event.preventDefault();
