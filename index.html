@@ -6,10 +6,10 @@
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script src="https://code.jquery.com/mobile/jquery.mobile-latest.min.js"></script>
 <link rel="stylesheet" href="styles/style.css" type="text/css" media="all">
-<script>
+<script>/*
 $(document).ready(function(event){
 
-  $( "[id^=btn]" ).click(function() {
+  $( "[id^=btn]" ).css({"cursor", "pointer"}).click(function() {
    
     var name = $(this).attr("name");
     $( ".portrait" ).css({"background-image": "url(../portraits/"+name+".png)"});
@@ -19,7 +19,7 @@ $(document).ready(function(event){
   
  event.preventDefault();
 })
-
+*/
 </script>
 <style>
 .roll {
@@ -54,7 +54,7 @@ $(document).ready(function(event){
 </style>
 </head>
 <body>
-<div class="portrait"> </div>
+<div class="portrait stanlee"></div>
 
 <div class="roll adamwarlock01" id="btn" name="hero_adamwarlock01"></div>
 <div class="roll aero01" id="btn" name="hero_aero01"></div>
