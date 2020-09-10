@@ -19,7 +19,7 @@ $(document).ready(function(event){
     $(this).toggleClass("selected");
   })
 */
- $( "[id^=btn]" ).click(function() {
+ $( "[id^=btn]" ).css({"cursor", "pointer"}).click(function() {
  /*  var html = [ "The clicked div has the following styles:" ];
 
      var styleProps = $( this ).css(["width", "height", "color", "background-color", "background-image"]);
@@ -28,9 +28,11 @@ $(document).ready(function(event){
       });
       */
      var name = $(this).attr("name");
-      $( ".result1" ).css({"background-image": "url("+name+".jpg)"});
-  /*  $( ".result2" ).html( html.join( "<br>" ) );*/
+      $( ".portrait" ).css({"background-image": "url(../portraits/"+name+".png)"});
+  /*  $( ".result" ).html( html.join( "<br>" ) );*/
     });
 
  event.preventDefault();
 })
+
+  
