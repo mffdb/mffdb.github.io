@@ -27,8 +27,11 @@ $(document).ready(function(event){
         html.push( prop + ": " + value );
       });
       */
-     var name = $(this).attr("name");
-      $( ".portrait" ).css({"background-image": "url(../portraits/"+name+".png)"});
+    var name = $(this).attr("name");
+    $('[id^="btn"]').removeClass('selected');
+    $( ".portrait" ).css({"background-image": "url(../portraits/"+name+".png)"}).removeClass('selected');
+    $(this).addClass('selected');
+    $(".portrait").css({"background-image": "url(../portraits/"+name+".png)"}).addClass('selected')
   /*  $( ".result" ).html( html.join( "<br>" ) );*/
     });
 
