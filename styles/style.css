@@ -31,6 +31,7 @@
  background-size: contain;
  background-repeat: no-repeat;
  background-position: center;
+ display: inline-block;
 }
 
 [class^=info-] {
@@ -38,18 +39,11 @@
  float: left;
 }
 
-.info-image {
- border: 1px solid #000;
-}
-
-.info-text {
- border: 1px solid #000;
-}
-
 .type, .species, .genter, .side, .ability, .allies, .utilities {
  width: 340px;
  height: 40px;
  border: 1px solid #000;
+ display: inline-block;
 }
 
 .portrait {
@@ -58,25 +52,28 @@
  border: 1px solid #f00;
  background-position: center;
  background-repeat: no-repeat;
- background-size: contain
+ background-size: contain;
+ display: inline-block;
 }
 
 .portrait:after {
-  content: "";
-  clear: both;
+ content: "";
+ clear: both;
+ display: inline-block;
 }
 
 .character {
  width: 340px;
  height: 40px;
  border: 1px solid #0f0;
+ display: inline-block;
 }
 
 .uniform {
-
  width: 340px;
  height: 40px;
  border: 1px solid #00f;
+ display: inline-block;
 }
 
 .stanlee { background-image: url(../portraits/stanlee.png); background-size: 256px; 256px; }
