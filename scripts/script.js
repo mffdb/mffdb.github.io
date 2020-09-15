@@ -8,10 +8,10 @@ $(document).ready(function(){
     ]);
     
     $('[id^="btn"]').removeClass('selected');
-    $( ".portrait" ).css({"background-image": "url(./"+name+".jpg)"}).removeClass('selected');
+    $( ".portrait" ).css({"background-image": "url(../"+name+".jpg)"}).removeClass('selected');
     
     $(this).addClass('selected');
-    $(".portrait").css({"background-image": "url(./"+name+".jpg)"}).addClass('selected');
+    $(".portrait").css({"background-image": "url(../"+name+".jpg)"}).addClass('selected');
     
         
     $.each( styleProps, function( prop, value ) {
