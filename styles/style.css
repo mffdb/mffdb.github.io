@@ -11,8 +11,9 @@
 .box-info {
  max-width: 720px;
  min-width: 340px;
- height: 344px;
+ height: auto;
  border: 1px solid #000;
+ overflow: hidden;
 }
 
 .box-roll {
@@ -31,7 +32,7 @@
  background-size: contain;
  background-repeat: no-repeat;
  background-position: center;
- display: inline-block;
+ 
 }
 
 [class^=info-] {
