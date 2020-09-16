@@ -1,65 +1,25 @@
+<!DOCTYPE html>
 <html>
-<title>Future Fight</title>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script src="https://code.jquery.com/mobile/jquery.mobile-latest.min.js"></script>
-<!--<script type="text/javascript" src="scripts/script.js"></script>-->
+<script type="text/javascript" src="scripts/script.js"></script>
 <script type="text/javascript" src="scripts/jquery-3.5.1.js"></script>
 <link rel="stylesheet" href="styles/style.css" type="text/css" media="all">
-
 <script>
-$(document).ready(function(event){
 
- $( "[id^=btn]" ).css({"cursor": "pointer"}).click(function() {
-  
-  var name = $(this).attr("name");
-  $('[id^="btn"]').removeClass('selected');
-  $(".portrait").css({"background-image": "url(./portraits/"+name+".png)"}).removeClass('selected');
-    
-  $(this).addClass('selected');
-  $(".portrait").css({"background-image": "url(./portraits/"+name+".png)"}).addClass('selected');
 
-   var idcode = []; 
-   var idtype = [];
-   var idgender = [];
-   var idside = [];
-
-   var figure = [
-     { id: "hero_adamwarlock01", char: "아담 워록", type: "컴뱃", gender: "남", side: "악당", allies: "인간", ability: "타임 프리징, 마법", team: "어벤져스", utilities: "잠재력, T3" }, 
-     { id: "hero_aero01", char: "에어로", type: "스피드", gender: "여", side: "영웅", allies: "인간", ability: "타임 프리징, 마법", team: "어벤져스", utilities: "잠재력, T3" }, 
-
-   ];
-
-   $.each(figure, function(idx, obj) {    
-     if (name == obj.id) {
-       idtype.push( "유형: " + obj.type );
-       idgender.push( "성별: " + obj.type );
-       idside.push( "진영: " + obj.side );
-
-     }
-   }); 
-
-   $(".type").text( idtype.join( "" ) );
-   $(".genter").text( idgender.join( "" ) );
-   $(".side").text( idside.join( "" ) );
- 
- });
-   
- event.preventDefault();
-})
 </script>
 
 <style>
 
 
-
-
 </style>
-
 </head>
 <body>
+
 <div class="main">
   <div class="box-info">
     <div class="info-image">
@@ -593,5 +553,6 @@ $(document).ready(function(event){
 <div class="roll io01" id="btn" name="hero_io01"></div>
 </div>
 </div>
+
 </body>
 </html>
