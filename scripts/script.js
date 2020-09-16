@@ -1,29 +1,23 @@
-$(document).ready(function(){
+$(document).ready(function(event){
+ 
   $( "[id^=btn]" ).css({"cursor": "pointer"}).click(function() {
   
-    var name = $(this).attr("name");
-    var print = [ ];
-    var styleProps = $( this ).css([
-      "width", "height", "color", "background-color", "background-image"
-    ]);
+ $( "[id^=btn]" ).css({"cursor": "pointer"}).click(function() {
+  
+  var name = $(this).attr("name");
+  $('[id^="btn"]').removeClass('selected');
+  $(".portrait").css({"background-image": "url(./portraits/"+name+".png)"}).removeClass('selected');
     
-    $('[id^="btn"]').removeClass('selected');
-    $( ".portrait" ).css({"background-image": "url(../"+name+".jpg)"}).removeClass('selected');
-    
-    $(this).addClass('selected');
-    $(".portrait").css({"background-image": "url(../"+name+".jpg)"}).addClass('selected');
-    
-        
-    $.each( styleProps, function( prop, value ) {
-      print.push( prop + ": " + value );
-    });
-    $( ".result1" ).html( print.join( "<br>" ) );
-    
-    
-    var code = []; 
-    var did = [];
-    var figure = [
-        
+  $(this).addClass('selected');
+  $(".portrait").css({"background-image": "url(./portraits/"+name+".png)"}).addClass('selected');
+
+   var idcode = []; 
+   var idtype = [];
+   var idgender = [];
+   var idside = [];
+
+   var figure = [
+
   { id: "hero_adamwarlock01", char: "Adam Warlock", suit: "Modern", side: "Hero", type: "Blast", gender: "Male", allies: "Creature", team: "###", ability: "Time Freezing ImmunityMagic", utilities: "##" }, 
   { id: "hero_aero01", char: "Aero", suit: "Modern", side: "Hero", type: "Speed", gender: "Female", allies: "Human", team: "###", ability: "Agents of AtlasLeadershipFast Movement", utilities: "Potential#" }, 
   { id: "hero_agentvenom01", char: "Agent Venom", suit: "All#New All#Different", side: "Hero", type: "Combat", gender: "Male", allies: "Human", team: "###", ability: "SymbioteLeadershipAgent", utilities: "Potential#" }, 
@@ -531,22 +525,26 @@ $(document).ready(function(){
   { id: "sv_devildinosaur01", char: "Devil Dinosaur", suit: "Devil Dinosaur", side: "Villain", type: "NPC", gender: "Neutral", allies: "Creature", team: "###", ability: "###", utilities: "##" }, 
   { id: "hero_io01", char: "Io", suit: "Io", side: "Hero", type: "NPC", gender: "Neutral", allies: "Creature", team: "Original##", ability: "###", utilities: "##" }, 
 
+ 
 
-    ];
+   ];
 
+   $.each(figure, function(idx, obj) {    
+     if (name == obj.id) {
+       idtype.push( "유형: " + obj.type );
+       idgender.push( "성별: " + obj.type );
+       idside.push( "진영: " + obj.side );
 
-    $.each(figure, function(idx, obj) {    
-      if (name == obj.id) {
-        code.push( obj.type );
-        did.push( obj.gender );
-        
-      }
-    }); 
+     }
+   }); 
 
-    $(".result2").html( did.join( "<br>" ) );
-    $(".result3").html( code.join( "<br>" ) );
+   $(".type").text( idtype.join( "" ) );
+   $(".genter").text( idgender.join( "" ) );
+   $(".side").text( idside.join( "" ) );
+ 
+ });
      
   });
-  
+
   event.preventDefault();
 })
