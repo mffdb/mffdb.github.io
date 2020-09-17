@@ -2,21 +2,57 @@ $(document).ready(function(event){
  
   $( "[id^=btn]" ).css({"cursor": "pointer"}).click(function() {
   
- $( "[id^=btn]" ).css({"cursor": "pointer"}).click(function() {
-  
-  var name = $(this).attr("name");
-  $('[id^="btn"]').removeClass('selected');
-  $(".portrait").css({"background-image": "url(./portraits/"+name+".png)"}).removeClass('selected');
-    
-  $(this).addClass('selected');
-  $(".portrait").css({"background-image": "url(./portraits/"+name+".png)"}).addClass('selected');
+    const name = $(this).attr("name");
+    const type = $(this).attr("type");
+    const sex = $(this).attr("sex");
+    const side = $(this).attr("side");
 
-   var idcode = []; 
-   var idtype = [];
-   var idgender = [];
-   var idside = [];
+    const print = [ ];
+    const styleProps = $( this ).css([
+      "width", "height", "color", "background-color", "background-image"
+    ]);
 
-   var figure = [
+    $('[id^="btn"]').removeClass('selected');
+    $( ".gra-port" ).css({"background-image": "url(./"+name+".png)"}).removeClass('selected');
+    $( ".ico-type" ).css({"background-image": "url(./"+type+".png)"}).removeClass('selected');
+    $( ".ico-sex" ).css({"background-image": "url(./"+sex+".png)"}).removeClass('selected');
+    $( ".ico-side" ).css({"background-image": "url(./"+side+".png)"}).removeClass('selected');
+
+    $(this).addClass('selected');
+    $(".gra-port").css({"background-image": "url(./"+name+".png)"}).addClass('selected');
+    $( ".ico-type" ).css({"background-image": "url(./"+type+".png)"}).addClass('selected');
+    $( ".ico-sex" ).css({"background-image": "url(./"+sex+".png)"}).addClass('selected');
+    $( ".ico-side" ).css({"background-image": "url(./"+side+".png)"}).addClass('selected');
+
+    const fchar = [], fsuit = [], ftier= [], fname= [], fhei = [], fwei = [], fpot = [], fabil = [];
+
+    $.each(figure, function(idx, obj) {    
+      if (name == obj.id) {
+
+        fchar.push( "캐릭터: " + obj.char);
+        fsuit.push( "유니폼: " + obj.suit );
+        ftier.push( "등급: " + obj.tier);
+        fname.push( "이름: " + obj.name);
+        fhei.push( "키: " + obj.hei );
+        fwei.push( "몸무게: " + obj.wei);
+        fpot.push( "잠재력: " + obj.pot);
+        fabil.push( "능력: " + obj.abil);
+
+      }
+    }); 
+
+    $(".gra-char").text( fchar );
+    $(".info-suit").text( fsuit );
+    $(".info-tier").text( ftier );
+    $(".info-part-name").text( fname );
+    $(".info-part-hei").text( fhei );
+    $(".info-part-wei").text( fwei );
+    $(".info-part-pot").text( fpot );
+    $(".info-part-abil").text( fabil );
+
+  });
+ 
+    var figure = [
 
   { id: "hero_adamwarlock01", char: "Adam Warlock", suit: "Modern", side: "Hero", type: "Blast", gender: "Male", allies: "Creature", team: "###", ability: "Time Freezing ImmunityMagic", utilities: "##" }, 
   { id: "hero_aero01", char: "Aero", suit: "Modern", side: "Hero", type: "Speed", gender: "Female", allies: "Human", team: "###", ability: "Agents of AtlasLeadershipFast Movement", utilities: "Potential#" }, 
@@ -528,23 +564,6 @@ $(document).ready(function(event){
  
 
    ];
-
-   $.each(figure, function(idx, obj) {    
-     if (name == obj.id) {
-       idtype.push( "유형: " + obj.type );
-       idgender.push( "성별: " + obj.type );
-       idside.push( "진영: " + obj.side );
-
-     }
-   }); 
-
-   $(".type").text( idtype.join( "" ) );
-   $(".genter").text( idgender.join( "" ) );
-   $(".side").text( idside.join( "" ) );
- 
- });
-     
-  });
 
   event.preventDefault();
 })
