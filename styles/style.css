@@ -1,66 +1,101 @@
-[id^=btn].selected, .roll.selected  {
-  border: 1px solid #fff;
-}
-
 .main {
- max-width: 1280px;
- min-width: 340px;
+  max-width: 1280px;
+  min-width: 340px;
+  height: 600xp;
+  border: 1px solid #ccc;
+  float: left;
 }
 
-.box-info {
- max-width: 700px;
- min-width: 340px;
- height: auto;
- border: 1px solid #000;
- overflow: hidden;
-  
+[class^=box-] {
+  width: 340px;
+  height: auto;
+  display: inline-block;
+  border: 1px solid #ccc;
+
 }
 
-.box-roll {
- max-width: 700px;
- min-width: 310px;
- height: 344px;
- overflow-x: hidden; /* Hide horizontal scrollbar */
- overflow-y: auto; /* Add vertical scrollbar */
+[class^=gra-] {
+  float: left;
+  display: inline-block;
+  border: 1px solid #ccc;
 }
 
-[class^=roll] { 
- border: 1px solid #ccc;
- width: 32px;
- height: 32px;
- float: left;
- background-size: contain;
- background-repeat: no-repeat;
- background-position: center;
+.gra-port {
+  width: 280px;
+  height: 128px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gra-photo {
+  width: 50px;
+  height: 128px;
+  display: inline-block;
+}
+
+.gra-char {
+  width: 340px;
+  height: 20px;
+  display: inline-block;
+}
+
+[class^=ico-] {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 
 }
 
 [class^=info-] {
- border: 1px solid #000;
- float: left;
+  width: 320px;
+  height: 20xp;
+  display: inline-block;
+  border: 1px solid #ccc;
 }
 
-.character, .uniform, .name, .stature, .weight, .type, .species, .genter, .side, .ability, .allies, .utilities {
- width: 340px;
- height: auto;
- border-top: 1px solid #000;
- 
+[class^=gra-]::after, [class^=info-]::after, [class^=ico-]::after {
+  content: " ";
+  clear: both;
+  display: inline-block;
 }
 
-.portrait {
- width: 340px;
- height: 256px;
- border: 1px solid #f00;
- background-position: center;
- background-repeat: no-repeat;
- background-size: contain;
- 
+.roll {
+  border: 1px solid #ccc;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 32px;
 }
 
-[class^=info-]::after, [class^=roll]::after {
- content: "";
- clear: both;
+.roll.selected {
+  border: 1px solid #000;
+}
 
+.gra-char.selected {
+  display: inline-block;
+}
+
+
+.roll:hover {
+  border: 1px solid #777;
+}
+
+.roll-box {
+  border: 1px solid #ccc;
+  display: inline-block;
+
+  min-width: 340px;
+  height: auto;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: auto; /* Add vertical scrollbar */
 }
 
 .stanlee { background-image: url(../portraits/stanlee.png); background-size: 256px; 256px; }	
