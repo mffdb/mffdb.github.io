@@ -98,7 +98,7 @@
   overflow-y: auto; /* Add vertical scrollbar */
 }
 
-.stanlee { background-image: url(../portraits/stanlee.png); }	
+.stanlee { background-image: url(../portraits/stanlee.png); background-size: 128px; 128px; }	
 .adamwarlock01 { background-image: url(../portraits/hero_adamwarlock01.png) }	
 .aero01 { background-image: url(../portraits/hero_aero01.png) }	
 .agentvenom01 { background-image: url(../portraits/hero_agentvenom01.png) }	
