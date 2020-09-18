@@ -13,16 +13,16 @@ $(document).ready(function(event){
     ]);
 
     $('[id^="btn"]').removeClass('selected');
-    $( ".gra-port" ).css({"background-image": "url(./"+name+".png)"}).removeClass('selected');
-    $( ".ico-type" ).css({"background-image": "url(./"+type+".png)"}).removeClass('selected');
-    $( ".ico-sex" ).css({"background-image": "url(./"+sex+".png)"}).removeClass('selected');
-    $( ".ico-side" ).css({"background-image": "url(./"+side+".png)"}).removeClass('selected');
+    $( ".gra-port" ).css({"background-image": "url(./portraits/"+name+".png)"}).removeClass('selected');
+    $( ".ico-type" ).css({"background-image": "url(./portraits/"+type+".png)"}).removeClass('selected');
+    $( ".ico-sex" ).css({"background-image": "url(./portraits/"+sex+".png)"}).removeClass('selected');
+    $( ".ico-side" ).css({"background-image": "url(./portraits/"+side+".png)"}).removeClass('selected');
 
     $(this).addClass('selected');
-    $(".gra-port").css({"background-image": "url(./"+name+".png)"}).addClass('selected');
-    $( ".ico-type" ).css({"background-image": "url(./"+type+".png)"}).addClass('selected');
-    $( ".ico-sex" ).css({"background-image": "url(./"+sex+".png)"}).addClass('selected');
-    $( ".ico-side" ).css({"background-image": "url(./"+side+".png)"}).addClass('selected');
+    $(".gra-port").css({"background-image": "url(./portraits/"+name+".png)"}).addClass('selected');
+    $( ".ico-type" ).css({"background-image": "url(./portraits/"+type+".png)"}).addClass('selected');
+    $( ".ico-sex" ).css({"background-image": "url(./portraits/"+sex+".png)"}).addClass('selected');
+    $( ".ico-side" ).css({"background-image": "url(./portraits/"+side+".png)"}).addClass('selected');
 
     const fchar = [], fsuit = [], ftier= [], fname= [], fhei = [], fwei = [], fpot = [], fabil = [];
 
