@@ -1,17 +1,18 @@
 .main {
-  max-width: 1280px;
+  max-width: 690px;
   min-width: 340px;
-  height: 600xp;
+  height: auto;
   border: 1px solid #ccc;
-  float: left;
+  font-family: "Arial", "Gulimche", "Times New Roman", Serif;
+  margin: 0 auto;
 }
 
 [class^=box-] {
   width: 340px;
-  height: auto;
+  height: 220px;
   display: inline-block;
   border: 1px solid #ccc;
-
+  float: left;
 }
 
 [class^=gra-] {
@@ -22,7 +23,7 @@
 
 .gra-port {
   width: 280px;
-  height: 128px;
+  height: 190px;
   display: inline-block;
   background-size: contain;
   background-repeat: no-repeat;
@@ -31,14 +32,18 @@
 
 .gra-photo {
   width: 50px;
-  height: 128px;
+  height: 190px;
   display: inline-block;
+  border: 1px solid #ccc;
 }
 
 .gra-char {
   width: 340px;
-  height: 20px;
+  height: 30px;
   display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  line-height: 30px;
 }
 
 [class^=ico-] {
@@ -53,10 +58,19 @@
 }
 
 [class^=info-] {
-  width: 320px;
-  height: 20xp;
   display: inline-block;
   border: 1px solid #ccc;
+  float: left;
+  height: 20xp;
+}
+
+[class^=info-bite-] {
+  width: 56px;
+}
+
+[class^=info-part-] {
+  width: 280px;
+  text-align: right;
 }
 
 [class^=gra-]::after, [class^=info-]::after, [class^=ico-]::after {
@@ -79,7 +93,7 @@
   border: 1px solid #000;
 }
 
-.gra-char.selected {
+.gra-port.selected {
   display: inline-block;
 }
 
@@ -91,14 +105,13 @@
 .roll-box {
   border: 1px solid #ccc;
   display: inline-block;
-
   min-width: 340px;
-  height: auto;
+  height: 550px;
   overflow-x: hidden; /* Hide horizontal scrollbar */
   overflow-y: auto; /* Add vertical scrollbar */
 }
 
-.stanlee { background-image: url(../portraits/stanlee.png); background-size: 128px; 128px; }	
+.stanlee { background-image: url(../portraits/GM_stanlee01.png); }	
 .adamwarlock01 { background-image: url(../portraits/hero_adamwarlock01.png) }
 .aero01 { background-image: url(../portraits/hero_aero01.png) }
 .agentvenom01 { background-image: url(../portraits/hero_agentvenom01.png) }
