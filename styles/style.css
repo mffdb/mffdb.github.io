@@ -111,7 +111,7 @@
   overflow-y: auto; /* Add vertical scrollbar */
 }
 
-.stanlee01 { background-image: url(../portraits/GM_stanlee01.png); }	
+.stanlee { background-image: url(../portraits/GM_stanlee01.png); }	
 .adamwarlock01 { background-image: url(../portraits/hero_adamwarlock01.png) }
 .aero01 { background-image: url(../portraits/hero_aero01.png) }
 .agentvenom01 { background-image: url(../portraits/hero_agentvenom01.png) }
@@ -161,6 +161,7 @@
 .blackwidow01_S09 { background-image: url(../portraits/hero_blackwidow01_S09.png) }
 .blade01 { background-image: url(../portraits/hero_blade01.png) }
 .blade01_S01 { background-image: url(../portraits/hero_blade01_S01.png) }
+.blade01_S02 { background-image: url(../portraits/hero_blade01_S02.png) }
 .bluedragon01 { background-image: url(../portraits/hero_bluedragon01.png) }
 .bluemarvel01 { background-image: url(../portraits/hero_bluemarvel01.png) }
 .cable01 { background-image: url(../portraits/hero_cable01.png) }
@@ -241,6 +242,7 @@
 .ghostrider01 { background-image: url(../portraits/hero_ghostrider01.png) }
 .ghostrider01_S01 { background-image: url(../portraits/hero_ghostrider01_S01.png) }
 .ghostrider01_S02 { background-image: url(../portraits/hero_ghostrider01_S02.png) }
+.ghostrider01_S03 { background-image: url(../portraits/hero_ghostrider01_S03.png) }
 .giantman01 { background-image: url(../portraits/hero_giantman01.png) }
 .giantman01_S01 { background-image: url(../portraits/hero_giantman01_S01.png) }
 .giantman01_S02 { background-image: url(../portraits/hero_giantman01_S02.png) }
@@ -340,6 +342,7 @@
 .moongirl01_S01 { background-image: url(../portraits/hero_moongirl01_S01.png) }
 .moonknight01 { background-image: url(../portraits/hero_moonknight01.png) }
 .moonknight01_S01 { background-image: url(../portraits/hero_moonknight01_S01.png) }
+.moonknight01_S02 { background-image: url(../portraits/hero_moonknight01_S02.png) }
 .nadiapym01 { background-image: url(../portraits/hero_nadiapym01.png) }
 .namor01 { background-image: url(../portraits/hero_namor01.png) }
 .namor01_S01 { background-image: url(../portraits/hero_namor01_S01.png) }
