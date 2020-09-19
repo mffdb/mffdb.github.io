@@ -14,15 +14,15 @@ $(document).ready(function(event){
 
     $( '[id^="btn"]' ).removeClass('selected');
     $( ".gra-port" ).css({"background-image": "url(./portraits/"+name+".png)"}).removeClass('selected');
-    $( ".ico-type" ).css({"background-image": "url(./portraits/"+type+".png)"}).removeClass('selected');
-    $( ".ico-sex" ).css({"background-image": "url(./portraits/"+sex+".png)"}).removeClass('selected');
-    $( ".ico-side" ).css({"background-image": "url(./portraits/"+side+".png)"}).removeClass('selected');
+    $( ".ico-type" ).css({"background-image": "url(./icons/"+type+".png)"}).removeClass('selected');
+    $( ".ico-sex" ).css({"background-image": "url(./icons/"+sex+".png)"}).removeClass('selected');
+    $( ".ico-side" ).css({"background-image": "url(./icons/"+side+".png)"}).removeClass('selected');
 
     $(this).addClass('selected');
     $( ".gra-port" ).css({"background-image": "url(./portraits/"+name+".png)"}).addClass('selected');
-    $( ".ico-type" ).css({"background-image": "url(./portraits/"+type+".png)"}).addClass('selected');
-    $( ".ico-sex" ).css({"background-image": "url(./portraits/"+sex+".png)"}).addClass('selected');
-    $( ".ico-side" ).css({"background-image": "url(./portraits/"+side+".png)"}).addClass('selected');
+    $( ".ico-type" ).css({"background-image": "url(./icons/"+type+".png)"}).addClass('selected');
+    $( ".ico-sex" ).css({"background-image": "url(./icons/"+sex+".png)"}).addClass('selected');
+    $( ".ico-side" ).css({"background-image": "url(./icons/"+side+".png)"}).addClass('selected');
 
     const fchar = [], fsuit = [], ftier= [], fname= [], fhei = [], fwei = [], fpot = [], fabil = [];
 
