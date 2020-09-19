@@ -627,3 +627,12 @@
 .melindamay01 { background-image: url(../portraits/hero_melindamay01.png) }
 .devildinosaur01 { background-image: url(../portraits/sv_devildinosaur01.png) }
 .io01 { background-image: url(../portraits/hero_io01.png) }
+
+
+.Combat { background-image: url(../icons/Combat.png) }
+.Speed { background-image: url(../icons/Speed.png) }
+.Blast { background-image: url(../icons/Blast.png) }
+.Universal { background-image: url(../icons/Universal.png) }
+
+.Male { background-image: url(../icons/Male.png) }
+.Female { background-image: url(../icons/Female.png) }
