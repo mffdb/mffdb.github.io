@@ -103,7 +103,7 @@ $(document).ready(function(event){
 { id: "hero_groot01_S03", char: "그루트", suit: "영화 - 어벤져스: 인피니티 워", tier: "1", name: "그루트", hei: "?cm", wei: "?kg", pot: "Potential", ability: "Healing" },
 { id: "hero_hogun01", char: "호군", suit: "모던", tier: "1", name: "호군", hei: "190cm", wei: "304kg", pot: "<>", ability: "Strong" },
 { id: "hero_hulk01", char: "헐크", suit: "영화 - 어벤져스", tier: "3", name: "로버트 브루스 배너", hei: "변신전 177cm, 변신후229cm", wei: "변신전 58kg, 변신후 522kg", pot: "Potential", ability: "Gamma Radiation, Durability" },
-{ id: "hero_hulk01_S01", char: "헐크", suit: "시크릿 워즈: 퓨처 임퍼펙트", tier: "3", name: "로버트 브루스 배너", hei: "변신전 177cm, 변신후229cm", wei: "변신전 58kg, 변신후 522kg", pot: "Potential", ability: "Gamma Radiation, Durability" },
+{ id: "hero_hulk01_S01", char: "헐크", suit: "시크릿 워즈: 퓨처 임퍼펙트 (마에스트로)", tier: "3", name: "로버트 브루스 배너", hei: "변신전 177cm, 변신후229cm", wei: "변신전 58kg, 변신후 522kg", pot: "Potential", ability: "Gamma Radiation, Durability" },
 { id: "hero_hulk01_S02", char: "헐크", suit: "월드 워 헐크", tier: "3", name: "로버트 브루스 배너", hei: "변신전 177cm, 변신후229cm", wei: "변신전 58kg, 변신후 522kg", pot: "Potential", ability: "Gamma Radiation, Durability" },
 { id: "hero_hulk01_S03", char: "헐크", suit: "영화 - 토르: 라그나로크", tier: "3", name: "로버트 브루스 배너", hei: "변신전 177cm, 변신후229cm", wei: "변신전 58kg, 변신후 522kg", pot: "Potential", ability: "Gamma Radiation, Durability" },
 { id: "hero_hulk01_S04", char: "헐크", suit: "영화 - 어벤져스: 엔드게임", tier: "3", name: "로버트 브루스 배너", hei: "변신전 177cm, 변신후229cm", wei: "변신전 58kg, 변신후 522kg", pot: "Potential", ability: "Gamma Radiation, Durability" },
