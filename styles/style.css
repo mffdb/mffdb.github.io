@@ -44,6 +44,7 @@
   text-align: center;
   font-weight: bold;
   line-height: 30px;
+  font-size: 16px;
 }
 
 [class^=ico-] {
@@ -62,6 +63,7 @@
   border: 1px solid #ccc;
   float: left;
   height: 20xp;
+  font-size: 14px;
 }
 
 [class^=info-bite-] {
