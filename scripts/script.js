@@ -55,8 +55,8 @@ $(document).ready(function(event){
     var figure = [
 
 // 컴뱃 영웅
-{ id: "hero_agentvenom01", char: "에이전트 베놈", suit: "올뉴, 올디퍼런트", tier: "1", name: "유진 \"톰슨\" 톰슨", hei: "188cm", wei: "84kg", pot: "Potential", ability: "Symbiote, Leadership, Agent" },
-{ id: "hero_agentvenom01_S01", char: "에이전트 베놈", suit: "에이전트 안티베놈", tier: "1", name: "", hei: "188cm", wei: "84kg", pot: "Potential", ability: "Symbiote, Leadership, Agent" },
+{ id: "hero_agentvenom01", char: "에이전트 베놈", suit: "올뉴, 올디퍼런트", tier: "1", name: "유진 \"플래시\" 톰슨", hei: "188cm", wei: "84kg", pot: "Potential", ability: "Symbiote, Leadership, Agent" },
+{ id: "hero_agentvenom01_S01", char: "에이전트 베놈", suit: "에이전트 안티베놈", tier: "1", name: "유진 \"플래시\" 톰슨", hei: "188cm", wei: "84kg", pot: "Potential", ability: "Symbiote, Leadership, Agent" },
 { id: "hero_amadeuscho01", char: "헐크 (아마데우스 조)", suit: "토탈리 어썸 헐크", tier: "1", name: "아마데우스 조", hei: "변신전 168cm, 변신후 ?cm", wei: "변신전 53kg, 변신후 ?kg", pot: "Potential", ability: "Gamma Radiation, Durability" },
 { id: "hero_amadeuscho01_S01", char: "헐크 (아마데우스 조)", suit: "몬스터 언리쉬드! (MFF 배리언트)", tier: "1", name: "아마데우스 조", hei: "변신전 168cm, 변신후 ?cm", wei: "변신전 53kg, 변신후 ?kg", pot: "Potential", ability: "Gamma Radiation, Durability" },
 { id: "hero_amadeuscho01_S02", char: "헐크 (아마데우스 조)", suit: "브론", tier: "1", name: "아마데우스 조", hei: "변신전 168cm, 변신후 ?cm", wei: "변신전 53kg, 변신후 ?kg", pot: "Potential", ability: "Gamma Radiation, Durability" },
