@@ -55,8 +55,6 @@ $(document).ready(function(event){
     var figure = [
 
 // 컴뱃 영웅
-{ id: "hero_adamwarlock01", char: "센트리", suit: "모던", tier: "2", name: "아담 워록", hei: "188cm", wei: "110kg", pot: "-", ability: "Magic, Time Freezing Immunity" },
-{ id: "hero_aero01", char: "에어로", suit: "모던", tier: "1", name: "레이 링", hei: "170cm", wei: "54kg", pot: "Potential", ability: "Fast Movement, Leadership" },
 { id: "hero_agentvenom01", char: "에이전트 베놈", suit: "올뉴, 올디퍼런트", tier: "1", name: "유진 \"톰슨\" 톰슨", hei: "188cm", wei: "84kg", pot: "Potential", ability: "Symbiote, Leadership, Agent" },
 { id: "hero_agentvenom01_S01", char: "에이전트 베놈", suit: "에이전트 안티베놈", tier: "1", name: "", hei: "188cm", wei: "84kg", pot: "Potential", ability: "Symbiote, Leadership, Agent" },
 { id: "hero_amadeuscho01", char: "헐크 (아마데우스 조)", suit: "토탈리 어썸 헐크", tier: "1", name: "아마데우스 조", hei: "변신전 168cm, 변신후 ?cm", wei: "변신전 53kg, 변신후 ?kg", pot: "Potential", ability: "Gamma Radiation, Durability" },
@@ -128,7 +126,6 @@ $(document).ready(function(event){
 { id: "hero_lukecage01_S02", char: "루크 케이지", suit: "드라마 - 루크 케이지", tier: "1", name: "칼 루카스", hei: "198cm", wei: "191kg", pot: "-", ability: "Strong, Durability" },
 { id: "hero_misterfantastic01", char: "미스터 판타스틱", suit: "모던", tier: "3", name: "리드 리처즈", hei: "186cm", wei: "82kg", pot: "Potential", ability: "Leadership, Durability" },
 { id: "hero_misterfantastic01_S01", char: "미스터 판타스틱", suit: "퓨처 파운데이션", tier: "3", name: "리드 리처즈", hei: "186cm", wei: "82kg", pot: "Potential", ability: "Leadership, Durability" },
-{ id: "hero_mistyknight01", char: "미스티 나이트", suit: "올뉴, 올디퍼런트", tier: "1", name: "머세이디스 켈리 \"미스티\" 나이트", hei: "175cm", wei: "62kg", pot: "-", ability: "Weapon Master, Agent" },
 { id: "hero_moonknight01", char: "문 나이트", suit: "모던", tier: "1", name: "마크 스펙터", hei: "188cm", wei: "102kg", pot: "-", ability: "Weapon Master, Leadership" },
 { id: "hero_moonknight01_S01", char: "문 나이트", suit: "아머드", tier: "1", name: "마크 스펙터", hei: "188cm", wei: "102kg", pot: "-", ability: "Weapon Master, Leadership" },
 { id: "hero_moonknight01_S02", char: "문 나이트", suit: "미스터 나이트", tier: "1", name: "마크 스펙터", hei: "188cm", wei: "102kg", pot: "-", ability: "Weapon Master, Leadership" },
@@ -207,22 +204,159 @@ $(document).ready(function(event){
 { id: "sv_venom01_S02", char: "베놈", suit: "안티 베놈", tier: "1", name: "에드워드 \"에디\" 찰스 앨런 브록", hei: "190cm", wei: "117kg", pot: "-", ability: "Symbiote, Healing" },
 
 
+// 스피드 영웅
+{ id: "hero_aero01", char: "에어로", suit: "모던", tier: "1", name: "레이 링", hei: "170cm", wei: "54kg", pot: "Potential", ability: "Fast Movement, Leadership" },
+{ id: "hero_angel01", char: "엔젤", suit: "클래식", tier: "1", name: "워렌 케네스 워싱턴 3세", hei: "183cm", wei: "68kg", pot: "Potential", ability: "Leadership, Fast Movement" },
+{ id: "hero_angel01_S01", char: "엔젤", suit: "엑스포스 (아크엔젤)", tier: "1", name: "워렌 케네스 워싱턴 3세", hei: "183cm", wei: "68kg", pot: "Potential", ability: "Leadership, Fast Movement" },
+{ id: "hero_antman01", char: "앤트맨", suit: "모던", tier: "3", name: "스캇 에드워드 해리스 랭", hei: "183cm", wei: "83kg", pot: "Potential", ability: "Agility--" },
+{ id: "hero_antman01_S01", char: "앤트맨", suit: "영화 - 앤트맨", tier: "3", name: "스캇 에드워드 해리스 랭", hei: "183cm", wei: "83kg", pot: "Potential", ability: "Agility" },
+{ id: "hero_antman01_S02", char: "앤트맨", suit: "영화 - 캡틴 아메리카: 시빌 워", tier: "3", name: "스캇 에드워드 해리스 랭", hei: "183cm", wei: "83kg", pot: "Potential", ability: "Agility" },
+{ id: "hero_antman01_S03", char: "앤트맨", suit: "영화 - 앤트맨과 와스프", tier: "3", name: "스캇 에드워드 해리스 랭", hei: "183cm", wei: "83kg", pot: "Potential", ability: "Agility" },
+{ id: "hero_antman01_S04", char: "앤트맨", suit: "영화 - 어벤져스: 엔드게임", tier: "3", name: "스캇 에드워드 해리스 랭", hei: "183cm", wei: "83kg", pot: "Potential", ability: "Agility" },
+{ id: "hero_antman01_S05", char: "앤트맨", suit: "영화 - 어벤져스: 엔드게임 (팀 슈트)", tier: "3", name: "스캇 에드워드 해리스 랭", hei: "183cm", wei: "83kg", pot: "Potential", ability: "Agility" },
+{ id: "hero_arachknight01", char: "아라크나이트", suit: "인피니피 워프", tier: "1", name: "피터 벤자민 파커", hei: "178cm", wei: "76kg", pot: "Potential", ability: "Leadership, Weapon Master, Spider-Sense" },
+{ id: "hero_blackcat01", char: "블랙 캣", suit: "모던", tier: "1", name: "펠리시아 사라 하디", hei: "178cm", wei: "54kg", pot: "-", ability: "Agility" },
+{ id: "hero_blackcat01_S01", char: "블랙 캣", suit: "클로스", tier: "1", name: "펠리시아 사라 하디", hei: "178cm", wei: "54kg", pot: "-", ability: "Agility" },
+{ id: "hero_blackcat01_S02", char: "블랙 캣", suit: "올뉴, 올디퍼런트", tier: "1", name: "펠리시아 사라 하디", hei: "178cm", wei: "54kg", pot: "-", ability: "Agility" },
+{ id: "hero_blackwidow01", char: "블랙 위도우", suit: "영화 - 어벤져스", tier: "3", name: "나탈리야 \"나타샤\" 알리야노브나 로마노바", hei: "170cm", wei: "59kg", pot: "Potential", ability: "Agent, Agility" },
+{ id: "hero_blackwidow01_S01", char: "블랙 위도우", suit: "영화 - 어벤져스: 에이지 오브 울트론", tier: "3", name: "나탈리야 \"나타샤\" 알리야노브나 로마노바", hei: "170cm", wei: "59kg", pot: "Potential", ability: "Agent, Agility" },
+{ id: "hero_blackwidow01_S02", char: "블랙 위도우", suit: "시크릿 워즈: 2099", tier: "3", name: "나탈리야 \"나타샤\" 알리야노브나 로마노바", hei: "170cm", wei: "59kg", pot: "Potential", ability: "Agent, Agility" },
+{ id: "hero_blackwidow01_S03", char: "블랙 위도우", suit: "영화 - 캡틴 아메리카: 시빌 워", tier: "3", name: "나탈리야 \"나타샤\" 알리야노브나 로마노바", hei: "170cm", wei: "59kg", pot: "Potential", ability: "Agent, Agility" },
+{ id: "hero_blackwidow01_S04", char: "블랙 위도우", suit: "영화 - 어벤져스: 인피니티 워", tier: "3", name: "나탈리야 \"나타샤\" 알리야노브나 로마노바", hei: "170cm", wei: "59kg", pot: "Potential", ability: "Agent, Agility" },
+{ id: "hero_blackwidow01_S05", char: "블랙 위도우", suit: "영화 - 어벤져스: 엔드게임", tier: "3", name: "나탈리야 \"나타샤\" 알리야노브나 로마노바", hei: "170cm", wei: "59kg", pot: "Potential", ability: "Agent, Agility" },
+{ id: "hero_blackwidow01_S06", char: "블랙 위도우", suit: "영화 - 어벤져스: 엔드게임 (팀 슈트)", tier: "3", name: "나탈리야 \"나타샤\" 알리야노브나 로마노바", hei: "170cm", wei: "59kg", pot: "Potential", ability: "Agent, Agility" },
+{ id: "hero_blackwidow01_S07", char: "블랙 위도우", suit: "어벤져스 3099", tier: "3", name: "나탈리야 \"나타샤\" 알리야노브나 로마노바", hei: "170cm", wei: "59kg", pot: "Potential", ability: "Agent, Agility" },
+{ id: "hero_blackwidow01_S08", char: "블랙 위도우", suit: "영화 - 블랙 위도우", tier: "3", name: "나탈리야 \"나타샤\" 알리야노브나 로마노바", hei: "170cm", wei: "59kg", pot: "Potential", ability: "Agent, Agility" },
+{ id: "hero_blackwidow01_S09", char: "블랙 위도우", suit: "영화 - 블랙 위도우 (스노우 슈트)", tier: "3", name: "나탈리야 \"나타샤\" 알리야노브나 로마노바", hei: "170cm", wei: "59kg", pot: "Potential", ability: "Agent, Agility" },
+{ id: "hero_daredevil01", char: "데어데블", suit: "모던", tier: "1", name: "매튜 \"맷\" 마이클 머독", hei: "183cm", wei: "90kg", pot: "Potential", ability: "Heightened Senses, Agility, Leadership" },
+{ id: "hero_daredevil01_S01", char: "데어데블", suit: "드라마: 데빌 오브 헬스 키친", tier: "1", name: "매튜 \"맷\" 마이클 머독", hei: "183cm", wei: "90kg", pot: "Potential", ability: "Heightened Senses, Agility, Leadership" },
+{ id: "hero_daredevil01_S02", char: "데어데블", suit: "올뉴, 올디퍼런트", tier: "1", name: "매튜 \"맷\" 마이클 머독", hei: "183cm", wei: "90kg", pot: "Potential", ability: "Heightened Senses, Agility, Leadership" },
+{ id: "hero_darkhawk01", char: "다크호크", suit: "모던", tier: "1", name: "크리스토퍼 \"크리스\" 파웰", hei: "175cm", wei: "68kg", pot: "Potential", ability: "Leadership, Fast Movement" },
+{ id: "hero_deadpool01", char: "데드풀", suit: "모던", tier: "3", name: "웨이드 윌슨", hei: "188cm", wei: "95kg", pot: "Potential", ability: "Weapon Master, Healing" },
+{ id: "hero_deadpool01_S01", char: "데드풀", suit: "엑스포스", tier: "3", name: "웨이드 윌슨", hei: "188cm", wei: "95kg", pot: "Potential", ability: "Weapon Master, Healing" },
+{ id: "hero_deadpool01_S02", char: "데드풀", suit: "레이디 데드풀", tier: "3", name: "웨이드 윌슨", hei: "188cm", wei: "95kg", pot: "Potential", ability: "Weapon Master, Healing" },
+{ id: "hero_deadpool01_S03", char: "데드풀", suit: "레이디 데드풀 홀리데이 파티", tier: "3", name: "웨이드 윌슨", hei: "188cm", wei: "95kg", pot: "Potential", ability: "Weapon Master, Healing" },
+{ id: "hero_domino01", char: "도미노", suit: "엑스포스", tier: "1", name: "니나 서먼", hei: "173cm", wei: "54kg", pot: "Potential", ability: "Weapon Maste, rAgility" },
+{ id: "hero_domino01_S01", char: "도미노", suit: "마블 나우!", tier: "1", name: "니나 서먼", hei: "173cm", wei: "54kg", pot: "Potential", ability: "Weapon Master, Agility" },
+{ id: "hero_elektra01", char: "엘렉트라", suit: "클래식", tier: "1", name: "엘렉트라 나치오스", hei: "175cm", wei: "59kg", pot: "-", ability: "Weapon Master" },
+{ id: "hero_elektra01_S01", char: "엘렉트라", suit: "드라마 - 데어데블", tier: "1", name: "엘렉트라 나치오스", hei: "175cm", wei: "59kg", pot: "-", ability: "Weapon Master" },
+{ id: "hero_elsabloodstone01", char: "엘사 블러드스톤", suit: "모던", tier: "1", name: "엘사 블러드스톤", hei: "175cm", wei: "54kg", pot: "-", ability: "Weapon Master" },
+{ id: "hero_elsabloodstone01_S01", char: "엘사 블러드스톤", suit: "시크릿 워즈: 마블 좀비스", tier: "1", name: "엘사 블러드스톤", hei: "175cm", wei: "54kg", pot: "-", ability: "Weapon Master" },
+{ id: "hero_elsabloodstone01_S02", char: "엘사 블러드스톤", suit: "몬스터 언리쉬드! (MFF 배리언트)", tier: "1", name: "엘사 블러드스톤", hei: "175cm", wei: "54kg", pot: "-", ability: "Weapon Master" },
+{ id: "hero_falcon01", char: "팔콘", suit: "영화 - 캡틴 아메리카: 윈터 솔져", tier: "1", name: "사무엘 \"샘\" 토마스 윌슨", hei: "188cm", wei: "109kg", pot: "Potential", ability: "Fast Movement, Leadership" },
+{ id: "hero_falcon01_S01", char: "팔콘", suit: "올뉴 캡틴 아메리카", tier: "1", name: "사무엘 \"샘\" 토마스 윌슨", hei: "188cm", wei: "109kg", pot: "Potential", ability: "Fast Movement, Leadership" },
+{ id: "hero_falcon01_S02", char: "팔콘", suit: "영화 - 캡틴 아메리카: 시빌 워", tier: "1", name: "사무엘 \"샘\" 토마스 윌슨", hei: "188cm", wei: "109kg", pot: "Potential", ability: "Fast Movement, Leadership" },
+{ id: "hero_falcon01_S03", char: "팔콘", suit: "마블 레거시", tier: "1", name: "사무엘 \"샘\" 토마스 윌슨", hei: "188cm", wei: "109kg", pot: "Potential", ability: "Fast Movement, Leadership" },
+{ id: "hero_fandral01", char: "판드랄", suit: "모던", tier: "1", name: "판드랄", hei: "193cm", wei: "265kg", pot: "-", ability: "Agility" },
+{ id: "hero_fantomex01", char: "판토멕스", suit: "엑스포스", tier: "1", name: "찰리 클러스터-7", hei: "175cm", wei: "79kg", pot: "Potential", ability: "Weapon Master, Agility" },
+{ id: "hero_gamora01", char: "가모라", suit: "영화 - 가디언즈 오브 갤럭시", tier: "1", name: "가모라", hei: "183cm", wei: "77kg", pot: "Potential", ability: "Agility, Weapon Master" },
+{ id: "hero_gamora01_S01", char: "가모라", suit: "올뉴, 올디퍼런트", tier: "1", name: "가모라", hei: "183cm", wei: "77kg", pot: "Potential", ability: "Agility, Weapon Master" },
+{ id: "hero_gamora01_S02", char: "가모라", suit: "영화 - 가디언즈 오브 갤럭시 Vol. 2", tier: "1", name: "가모라", hei: "183cm", wei: "77kg", pot: "Potential", ability: "Agility, Weapon Master" },
+{ id: "hero_gwenpool01", char: "그웬풀", suit: "올뉴, 올디퍼런트", tier: "1", name: "그웬 풀", hei: "170cm", wei: "59kg", pot: "-", ability: "Agility" },
+{ id: "hero_gwenpool01_S01", char: "그웬풀", suit: "그웬 풀", tier: "1", name: "그웬 풀", hei: "170cm", wei: "59kg", pot: "-", ability: "Agility" },
+{ id: "hero_gwenpool01_S02", char: "그웬풀", suit: "홀리데이 파티", tier: "1", name: "그웬 풀", hei: "170cm", wei: "59kg", pot: "-", ability: "Agility" },
+{ id: "hero_hawkeye01", char: "호크아이", suit: "영화 - 어벤져스", tier: "1", name: "클린턴 \"클린트\" 프랜시스 바턴", hei: "190cm", wei: "104kg", pot: "Potential", ability: "Agent, Weapon Master" },
+{ id: "hero_hawkeye01_S01", char: "호크아이", suit: "영화 - 어벤져스: 에이지 오브 울트론", tier: "1", name: "클린턴 \"클린트\" 프랜시스 바턴", hei: "190cm", wei: "104kg", pot: "Potential", ability: "Agent, Weapon Master" },
+{ id: "hero_hawkeye01_S02", char: "호크아이", suit: "영화 - 캡틴 아메리카: 시빌 워", tier: "1", name: "클린턴 \"클린트\" 프랜시스 바턴", hei: "190cm", wei: "104kg", pot: "Potential", ability: "Agent, Weapon Master" },
+{ id: "hero_hawkeye01_S03", char: "호크아이", suit: "클래식", tier: "1", name: "클린턴 \"클린트\" 프랜시스 바턴", hei: "190cm", wei: "104kg", pot: "Potential", ability: "Agent, Weapon Master" },
+{ id: "hero_hawkeye01_S04", char: "호크아이", suit: "영화 - 어벤져스: 엔드게임 (로닌)", tier: "1", name: "클린턴 \"클린트\" 프랜시스 바턴", hei: "190cm", wei: "104kg", pot: "Potential", ability: "Agent, Weapon Master" },
+{ id: "hero_hellcat01", char: "헬캣", suit: "올뉴, 올디퍼런트", tier: "1", name: "패트리샤 \"팻시\" 트리시 워커", hei: "173cm", wei: "61kg", pot: "-", ability: "Agility" },
+{ id: "hero_katebishop01", char: "호크아이 (케이트 비숍)", suit: "마블 나우!", tier: "1", name: "캐서린 \"케이트\" 엘리자베스 비숍", hei: "165cm", wei: "54kg", pot: "-", ability: "Agent, Agility" },
+{ id: "hero_karnak01", char: "카르낙", suit: "워 오브 킹즈", tier: "1", name: "카르낙 만데르-아주르", hei: "170cm", wei: "68kg", pot: "Potential", ability: "Heightened Senses" },
+{ id: "hero_karnak01_S01", char: "카르낙", suit: "올뉴, 올디퍼런트", tier: "1", name: "카르낙 만데르-아주르", hei: "170cm", wei: "68kg", pot: "Potential", ability: "Heightened Senses" },
+{ id: "hero_kidkaiju01", char: "키드 카이쥬", suit: "몬스터 언리쉬드!", tier: "1", name: "케이 카와데", hei: "132cm", wei: "36kg", pot: "-", ability: "Command" },
+{ id: "hero_kidkaiju01_S01", char: "키드 카이쥬", suit: "몬스터 언리쉬드! (MFF 배리언트)", tier: "1", name: "케이 카와데", hei: "132cm", wei: "36kg", pot: "-", ability: "Command" },
+{ id: "hero_kittypryde01", char: "키티 프라이드", suit: "모던", tier: "1", name: "캐서린 \"키티\" 앤 프라이드", hei: "167cm", wei: "50kg", pot: "Potential", ability: "Command, Weapon Master" },
+{ id: "hero_lunasnow01", char: "루나 스노우", suit: "모던", tier: "3", name: "설희", hei: "170cm", wei: "54kg", pot: "Potential", ability: "Cold Blooded, Leadership" },
+{ id: "hero_lunasnow01_S01", char: "루나 스노우", suit: "안드로메다 슈트", tier: "3", name: "설희", hei: "170cm", wei: "54kg", pot: "Potential", ability: "Cold Blooded, Leadership" },
+{ id: "hero_lunasnow01_S02", char: "루나 스노우", suit: "라이프스타일 시리즈 1", tier: "3", name: "설희", hei: "170cm", wei: "54kg", pot: "Potential", ability: "Cold Blooded, Leadership" },
+{ id: "hero_mistyknight01", char: "미스티 나이트", suit: "올뉴, 올디퍼런트", tier: "1", name: "머세이디스 켈리 \"미스티\" 나이트", hei: "175cm", wei: "62kg", pot: "-", ability: "Weapon Master, Agent" },
+{ id: "hero_mockingbird01", char: "모킹버드", suit: "영웅 시대", tier: "1", name: "바바라 \"바비\" 모스", hei: "175cm", wei: "61kg", pot: "Potential", ability: "Agent, Agility" },
+{ id: "hero_mockingbird01_S01", char: "모킹버드", suit: "영화 - 에이전트 오브 쉴.드. (바비 모스)", tier: "1", name: "바바라 \"바비\" 모스", hei: "175cm", wei: "61kg", pot: "Potential", ability: "Agent, Agility" },
+{ id: "hero_mockingbird01_S02", char: "모킹버드", suit: "모던", tier: "1", name: "바바라 \"바비\" 모스", hei: "175cm", wei: "61kg", pot: "Potential", ability: "Agent, Agility" },
+{ id: "hero_nickfury01", char: "닉 퓨리", suit: "모던", tier: "1", name: "니콜라스 \"닉\" 조셉 퓨리", hei: "190cm", wei: "95kg", pot: "Potential", ability: "Agent, Leadership, Weapon Master" },
+{ id: "hero_nickfury01_S01", char: "닉 퓨리", suit: "영화 - 캡틴 마블", tier: "1", name: "니콜라스 \"닉\" 조셉 퓨리", hei: "190cm", wei: "95kg", pot: "Potential", ability: "Agent, Leadership, Weapon Master" },
+{ id: "hero_nightcrawler01", char: "나이트크롤러", suit: "모던", tier: "1", name: "커트 와그너", hei: "180cm", wei: "73kg", pot: "Potential", ability: "Agility, Leadership" },
+{ id: "hero_nightcrawler01_S01", char: "나이트크롤러", suit: "엑스포스", tier: "1", name: "커트 와그너", hei: "180cm", wei: "73kg", pot: "Potential", ability: "Agility, Leadership" },
+{ id: "hero_quicksilver01", char: "퀵실버", suit: "클래식", tier: "3", name: "피에트로 장고 막시모프", hei: "183cm", wei: "79kg", pot: "Potential", ability: "Agility, Fast Movement" },
+{ id: "hero_quicksilver01_S01", char: "퀵실버", suit: "마블 레거시", tier: "3", name: "피에트로 장고 막시모프", hei: "183cm", wei: "79kg", pot: "Potential", ability: "Agility, Fast Movement" },
+{ id: "hero_quicksilver01_S02", char: "퀵실버", suit: "언캐니 어벤져스", tier: "3", name: "피에트로 장고 막시모프", hei: "183cm", wei: "79kg", pot: "Potential", ability: "Agility, Fast Movement" },
+{ id: "hero_rogue01", char: "로그", suit: "클래식", tier: "1", name: "앤 마리 단칸토", hei: "173cm", wei: "54kg", pot: "Potential", ability: "Healing, Fast Movement" },
+{ id: "hero_rogue01_S01", char: "로그", suit: "에이지 오브 아포칼립스", tier: "1", name: "앤 마리 단칸토", hei: "173cm", wei: "54kg", pot: "Potential", ability: "Healing, Fast Movement" },
+{ id: "hero_rogue01_S02", char: "로그", suit: "언캐니 어벤져스", tier: "1", name: "앤 마리 단칸토", hei: "173cm", wei: "54kg", pot: "Potential", ability: "Healing, Fast Movement" },
+{ id: "hero_scarletspider01", char: "스칼렛 스파이더", suit: "모던", tier: "1", name: "벤자민 \"벤\" 라일리", hei: "178cm", wei: "75kg", pot: "1", ability: "New" },
+{ id: "hero_sharoncarter01", char: "에이전트 13", suit: "모던", tier: "1", name: "샤론 카터", hei: "173cm", wei: "61kg", pot: "Potential", ability: "Agent" },
+{ id: "hero_sharoncarter01_S01", char: "에이전트 13", suit: "영화 - 캡틴 아메리카: 시빌 워", tier: "1", name: "샤론 카터", hei: "173cm", wei: "61kg", pot: "Potential", ability: "Agent" },
+{ id: "hero_shuri01", char: "슈리", suit: "마블 레거시", tier: "1", name: "슈리", hei: "170cm", wei: "57kg", pot: "Potential", ability: "Heightened Senses--" },
+{ id: "hero_shuri01_S01", char: "슈리", suit: "영화 - 블랙 팬서", tier: "1", name: "슈리", hei: "170cm", wei: "57kg", pot: "Potential", ability: "LeadershipHeightened Senses-" },
+{ id: "hero_silk01", char: "실크", suit: "올뉴, 올디퍼런트", tier: "1", name: "신디 문", hei: "170cm", wei: "59kg", pot: "Potential", ability: "Spider-Sense, Agility" },
+{ id: "hero_silk01_S01", char: "실크", suit: "웹 슈트", tier: "1", name: "신디 문", hei: "170cm", wei: "59kg", pot: "Potential", ability: "Spider-Sense, Agility" },
+{ id: "hero_spidergwen01", char: "스파이더 그웬", suit: "올뉴, 올디퍼런트", tier: "1", name: "그웬돌린 \"그웬\" 맥신 스테이시", hei: "165cm", wei: "57kg", pot: "-", ability: "Spider-Sense, Agility, Leadership" },
+{ id: "hero_spidergwen01_S01", char: "스파이더 그웬", suit: "그웬돌린 스테이시", tier: "1", name: "그웬돌린 \"그웬\" 맥신 스테이시", hei: "165cm", wei: "57kg", pot: "-", ability: "Spider-Sense, Agility, Leadership" },
+{ id: "hero_spiderman01", char: "스파이더맨", suit: "클래식", tier: "3", name: "피터 벤자민 파커", hei: "178cm", wei: "76kg", pot: "Potential", ability: "Spider-Sense, Leadership, Agility" },
+{ id: "hero_spiderman01_S01", char: "스파이더맨", suit: "시크릿 워즈: 리뉴 유어 바우", tier: "3", name: "피터 벤자민 파커", hei: "178cm", wei: "76kg", pot: "Potential", ability: "Spider-Sense, Leadership, Agility" },
+{ id: "hero_spiderman01_S02", char: "스파이더맨", suit: "올뉴, 올디퍼런트", tier: "3", name: "피터 벤자민 파커", hei: "178cm", wei: "76kg", pot: "Potential", ability: "Spider-Sense, Leadership, Agility" },
+{ id: "hero_spiderman01_S03", char: "스파이더맨", suit: "영화 - 캡틴 아메리카: 시빌 워", tier: "3", name: "피터 벤자민 파커", hei: "178cm", wei: "76kg", pot: "Potential", ability: "Spider-Sense, Leadership, Agility" },
+{ id: "hero_spiderman01_S04", char: "스파이더맨", suit: "영화 - 스파이더맨: 홈커밍 (홈메이드 슈트)", tier: "3", name: "피터 벤자민 파커", hei: "178cm", wei: "76kg", pot: "Potential", ability: "Spider-Sense, Leadership, Agility" },
+{ id: "hero_spiderman01_S05", char: "스파이더맨", suit: "영화 - 어벤져스: 인피니티 워", tier: "3", name: "피터 벤자민 파커", hei: "178cm", wei: "76kg", pot: "Potential", ability: "Spider-Sense, Leadership, Agility" },
+{ id: "hero_spiderman01_S06", char: "스파이더맨", suit: "영화 - 스파이더맨: 파 프롬 홈", tier: "3", name: "피터 벤자민 파커", hei: "178cm", wei: "76kg", pot: "Potential", ability: "Spider-Sense, Leadership, Agility" },
+{ id: "hero_spiderman01_S07", char: "스파이더맨", suit: "영화 - 스파이더맨: 파 프롬 홈 (스텔스 슈트)", tier: "3", name: "피터 벤자민 파커", hei: "178cm", wei: "76kg", pot: "Potential", ability: "Spider-Sense, Leadership, Agility" },
+{ id: "hero_milesmorales01", char: "스파이더맨 (마일즈 모랄레스)", suit: "올뉴, 올디퍼런트", tier: "1", name: "마일즈 곤살로 모랄레스", hei: "157cm", wei: "57kg", pot: "Potential", ability: "Spider-Sense, Agility, Leadership" },
+{ id: "hero_milesmorales01_S01", char: "스파이더맨 (마일즈 모랄레스)", suit: "인투 더 스파이더버스", tier: "1", name: "마일즈 곤살로 모랄레스", hei: "157cm", wei: "57kg", pot: "Potential", ability: "Spider-Sense, Agility, Leadership" },
+{ id: "hero_spiderman209901", char: "스파이더맨 2099", suit: "모던", tier: "1", name: "미구엘 오하라", hei: "178cm", wei: "77kg", pot: "Potential", ability: "Spider-Sense, Leadership, Agility" },
+{ id: "hero_spiderman209901_S01", char: "스파이더맨 2099", suit: "올뉴, 올디퍼런트", tier: "1", name: "미구엘 오하라", hei: "178cm", wei: "77kg", pot: "Potential", ability: "Spider-Sense, Leadership, Agility" },
+{ id: "hero_squirrelgirl01", char: "스쿼럴 걸", suit: "뉴 어벤져스", tier: "1", name: "도린 알렌 그린", hei: "160cm", wei: "45kg", pot: "Potential", ability: "Agility" },
+{ id: "hero_squirrelgirl01_S01", char: "스쿼럴 걸", suit: "마블 나우!", tier: "1", name: "도린 알렌 그린", hei: "160cm", wei: "45kg", pot: "Potential", ability: "Agility" },
+{ id: "hero_sunbird01", char: "썬 버드", suit: "모던", tier: "1", name: "불명", hei: "187cm", wei: "84kg", pot: "Potential", ability: "Flame, Agility" },
+{ id: "hero_wave01", char: "웨이브", suit: "모던", tier: "1", name: "펄 팡안", hei: "167cm", wei: "61kg", pot: "Potential", ability: "Heightened Senses, Agility" },
+{ id: "hero_whitefox01", char: "화이트 폭스", suit: "모던", tier: "1", name: "한아미", hei: "178cm", wei: "54kg", pot: "Potential", ability: "Leadership, Agility" },
+{ id: "hero_whitefox01_S01", char: "화이트 폭스", suit: "라이프스타일 시리즈 1", tier: "1", name: "한아미", hei: "178cm", wei: "54kg", pot: "Potential", ability: "Leadership, Agility" },
+{ id: "hero_wintersoldier01", char: "윈터 솔져", suit: "영화 - 캡틴 아메리카: 윈터 솔져", tier: "3", name: "제임스 뷰캐넌 \"버키\" 반즈", hei: "175cm", wei: "117kg", pot: "Potential", ability: "Weapon Master" },
+{ id: "hero_wintersoldier01_S01", char: "윈터 솔져", suit: "영화 - 캡틴 아메리카: 시빌 워", tier: "3", name: "제임스 뷰캐넌 \"버키\" 반즈", hei: "175cm", wei: "117kg", pot: "Potential", ability: "Weapon Master" },
+{ id: "hero_wintersoldier01_S02", char: "윈터 솔져", suit: "캡틴 아메리카", tier: "3", name: "제임스 뷰캐넌 \"버키\" 반즈", hei: "175cm", wei: "117kg", pot: "Potential", ability: "Weapon Master" },
+{ id: "hero_wintersoldier01_S03", char: "윈터 솔져", suit: "영화 - 어벤져스: 인피니티 워", tier: "3", name: "제임스 뷰캐넌 \"버키\" 반즈", hei: "175cm", wei: "177kg", pot: "Potential", ability: "Weapon Master" },
+{ id: "hero_wong01", char: "웡", suit: "올뉴, 올디퍼런트", tier: "1", name: "웡", hei: "173cm", wei: "63kg", pot: "Potential", ability: "Weapon Master" },
+{ id: "hero_wong01_S01", char: "웡", suit: "영화 - 닥터 스트레인지", tier: "1", name: "웡", hei: "173cm", wei: "63kg", pot: "Potential", ability: "Weapon Master" },
+{ id: "hero_x-2301", char: "X-23", suit: "클래식", tier: "1", name: "로라 키니", hei: "155cm", wei: "50kg", pot: "Potential", ability: "Healing, Agility" },
+{ id: "hero_x-2301_S01", char: "X-23", suit: "엑스포스", tier: "1", name: "로라 키니", hei: "155cm", wei: "50kg", pot: "Potential", ability: "Healing, Agility" },
+
+// 스피드 악당
+{ id: "sv_baronzemo01", char: "제모 남작", suit: "모던", tier: "1", name: "헬무트 J. 제모", hei: "178cm", wei: "83kg", pot: "Potential", ability: "Agility, Pure Evil" },
+{ id: "sv_electro01", char: "일렉트로", suit: "모던", tier: "1", name: "맥스웰 \"맥스\" 딜런", hei: "180cm", wei: "75kg", pot: "Potential", ability: "Pure Evil, Shock, Sinister Six" },
+{ id: "sv_ghost01", char: "고스트", suit: "모던", tier: "1", name: "불명", hei: "180cm", wei: "79kg", pot: "Potential", ability: "Machine, Weapon Master" },
+{ id: "sv_ghost01_S01", char: "고스트", suit: "영화 - 앤트맨과 와스프", tier: "1", name: "에이바 스타", hei: "167cm", wei: "55kg", pot: "Potential", ability: "Machine, Weapon Master" },
+{ id: "sv_greengoblin01", char: "그린 고블린", suit: "클래식", tier: "1", name: "노먼 버질 오스본", hei: "180cm", wei: "84kg", pot: "Potential", ability: "Fast Movement, Poison" },
+{ id: "sv_greengoblin01_S01", char: "그린 고블린", suit: "얼티밋", tier: "1", name: "노먼 버질 오스본", hei: "?cm", wei: "?kg", pot: "Potential", ability: "Fast Movement, Flame" },
+{ id: "sv_korath01", char: "코라스 더 퍼수어", suit: "영화 - 캡틴 마블", tier: "1", name: "", hei: "183cm", wei: "131kg", pot: "Potential", ability: "Pure Evil, Weapon Master" },
+{ id: "sv_kraventhehunter01", char: "크레이븐 더 헌터", suit: "모던", tier: "1", name: "세르게이 니콜라예비치 크라비노프", hei: "183cm", wei: "107kg", pot: "Potential", ability: "Agility, Weapon Master, Sinister Six" },
+{ id: "sv_mystique01", char: "미스틱", suit: "모던", tier: "1", name: "레이븐 다크홈", hei: "178cm", wei: "54kg", pot: "Potential", ability: "Agility, Weapon Master" },
+{ id: "sv_sin01", char: "신", suit: "올뉴, 올디퍼런트", tier: "1", name: "신시아 \"신\" 슈미트", hei: "165cm", wei: "51kg", pot: "Potential", ability: "Pure Evil, Weapon Master" },
+{ id: "sv_viper01", char: "바이퍼", suit: "모던", tier: "1", name: "오펠리아 사르키샨", hei: "175cm", wei: "63kg", pot: "Potential", ability: "Poison, Pure Evil" },
+{ id: "sv_vulture01", char: "벌쳐", suit: "클래식", tier: "1", name: "아드리안 툼즈", hei: "180cm", wei: "79kg", pot: "Potential", ability: "Agility, Fast Movement, Sinister Six" },
+{ id: "sv_vulture01_S01", char: "벌쳐", suit: "영화 - 스파이더맨: 홈커밍", tier: "1", name: "아드리안 툼즈", hei: "180cm", wei: "79kg", pot: "Potential", ability: "Agility, Fast Movement, Sinister Six" },
+{ id: "sv_yelenabelova01", char: "옐레나 벨로바", suit: "모던", tier: "1", name: "옐레나 벨로바", hei: "170cm", wei: "61kg", pot: "Potential", ability: "Agent, Agility" },
+{ id: "sv_yelenabelova01_S01", char: "옐레나 벨로바", suit: "영화 - 블랙 위도우", tier: "1", name: "옐레나 벨로바", hei: "170cm", wei: "61kg", pot: "Potential", ability: "Agent, Agility" },
+{ id: "sv_yelenabelova01_S02", char: "옐레나 벨로바", suit: "영화 - 블랙 위도우 (스노우 슈트)", tier: "1", name: "옐레나 벨로바", hei: "170cm", wei: "61kg", pot: "Potential", ability: "Agent, Agility" },
+{ id: "sv_yondu01_S01", char: "욘두", suit: "올뉴, 올디퍼런트", tier: "1", name: "욘두 우돈타", hei: "188cm, 크레스트 포함 216cm", wei: "95kg", pot: "-", ability: "Command, Weapon Master" },
+{ id: "sv_yondu01_S02", char: "욘두", suit: "영화 - 가디언즈 오브 갤럭시 Vol. 2", tier: "1", name: "욘두 우돈타", hei: "188cm, 크레스트 포함 216cm", wei: "95kg", pot: "-", ability: "Command, Weapon Master" },
 
 
-{ id: "hero_ancientone01", char: "Ancient One", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipMagic-" },
-{ id: "hero_ancientone01_S01", char: "Ancient One", suit: "영화 - 닥터 스트레인지", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipMagic-" },
-{ id: "hero_angel01", char: "Angel", suit: "클래식", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipFast Movement-" },
-{ id: "hero_angel01_S01", char: "Archangel", suit: "엑스포스", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipFast Movement-" },
-{ id: "hero_angela01", char: "Angela", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Weapon Master--" },
-{ id: "hero_angela01_S01", char: "Angela", suit: "시크릿 워즈: 1602 (위치 헌터 안젤라)", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Weapon Master--" },
-{ id: "hero_angela01_S02", char: "Angela", suit: "올뉴, 올디퍼런트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Weapon Master--" },
-{ id: "hero_antman01", char: "Ant-Man", suit: "모던", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Agility--" },
-{ id: "hero_antman01_S01", char: "Ant-Man", suit: "영화 - 앤트맨", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Agility--" },
-{ id: "hero_antman01_S02", char: "Ant-Man", suit: "영화 - 캡틴 아메리카: 시빌 워", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Agility--" },
-{ id: "hero_antman01_S03", char: "Ant-Man", suit: "영화 - 앤트맨과 와스프", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Agility--" },
-{ id: "hero_antman01_S04", char: "Ant-Man", suit: "영화 - 어벤져스: 엔드게임", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AvengersAgility-" },
-{ id: "hero_antman01_S05", char: "Ant-Man", suit: "영화 - 어벤져스: 엔드게임 (팀 슈트)", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AvengersAgility-" },
-{ id: "hero_arachknight01", char: "Arachknight", suit: "인피니피 워프", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipWeapon MasterSpider-Sense" },
+
+// 블라스트 영웅
+{ id: "hero_adamwarlock01", char: "센트리", suit: "모던", tier: "2", name: "아담 워록", hei: "188cm", wei: "110kg", pot: "-", ability: "Magic, Time Freezing Immunity" },
+
+// 블라스트 악당
+{ id: "sv_baronmordo01", char: "모르도 남작", suit: "클래식", tier: "1", name: "칼 아마데우스 모르도", hei: "183cm", wei: "113kg", pot: "-", ability: "Magic, Pure Evil" },
+{ id: "sv_baronmordo01_S01", char: "모르도 남작", suit: "영화 - 닥터 스트레인지", tier: "1", name: "칼 아마데우스 모르도", hei: "183cm", wei: "113kg", pot: "-", ability: "Magic, Pure Evil" },
+
+
+{ id: "hero_ancientone01", char: "Ancient One", suit: "모던", tier: "1", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipMagic-" },
+{ id: "hero_ancientone01_S01", char: "Ancient One", suit: "영화 - 닥터 스트레인지", tier: "1", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipMagic-" },
+{ id: "hero_angela01", char: "안젤라", suit: "모던", tier: "1", name: "", hei: "cm", wei: "kg", pot: "-", ability: "Weapon Master--" },
+{ id: "hero_angela01_S01", char: "안젤라", suit: "시크릿 워즈: 1602 (위치 헌터 안젤라)", tier: "1", name: "", hei: "cm", wei: "kg", pot: "-", ability: "Weapon Master--" },
+{ id: "hero_angela01_S02", char: "안젤라", suit: "올뉴, 올디퍼런트", tier: "1", name: "", hei: "cm", wei: "kg", pot: "-", ability: "Weapon Master--" },
+
+
 
 { id: "hero_betaraybill01", char: "Beta Ray Bill", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipShock-" },
 { id: "hero_bishop01", char: "Bishop", suit: "디스어셈블드", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Energy Projection--" },
@@ -230,20 +364,8 @@ $(document).ready(function(event){
 { id: "hero_blackbolt01_S01", char: "Black Bolt", suit: "올뉴, 올디퍼런트", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Energy ProjectionFast Movement-" },
 { id: "hero_blackbolt01_S02", char: "Black Bolt", suit: "인휴먼즈: 아틸란 라이징", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Energy ProjectionFast Movement-" },
 { id: "hero_blackbolt01_S03", char: "Black Bolt", suit: "마블 엑스", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Energy ProjectionFast Movement-" },
-{ id: "hero_blackcat01", char: "Black Cat", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Agility--" },
-{ id: "hero_blackcat01_S01", char: "Black Cat", suit: "클로스", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Agility--" },
-{ id: "hero_blackcat01_S02", char: "Black Cat", suit: "올뉴, 올디퍼런트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Agility--" },
 
-{ id: "hero_blackwidow01", char: "Black Widow", suit: "영화 - 어벤져스", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgentAgility-" },
-{ id: "hero_blackwidow01_S01", char: "Black Widow", suit: "영화 - 어벤져스: 에이지 오브 울트론", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgentAgility-" },
-{ id: "hero_blackwidow01_S02", char: "Black Widow", suit: "시크릿 워즈: 2099", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgentAgility-" },
-{ id: "hero_blackwidow01_S03", char: "Black Widow", suit: "영화 - 캡틴 아메리카: 시빌 워", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgentAgility-" },
-{ id: "hero_blackwidow01_S04", char: "Black Widow", suit: "영화 - 어벤져스: 인피니티 워", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgentAgility-" },
-{ id: "hero_blackwidow01_S05", char: "Black Widow", suit: "영화 - 어벤져스: 엔드게임", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgentAgility-" },
-{ id: "hero_blackwidow01_S06", char: "Black Widow", suit: "영화 - 어벤져스: 엔드게임 (팀 슈트)", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgentAgility-" },
-{ id: "hero_blackwidow01_S07", char: "Black Widow", suit: "어벤져스 3099", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgentAgility-" },
-{ id: "hero_blackwidow01_S08", char: "Black Widow", suit: "영화 - 블랙 위도우", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgentAgility-" },
-{ id: "hero_blackwidow01_S09", char: "Black Widow", suit: "영화 - 블랙 위도우 (스노우 슈트)", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgentAgility-" },
+
 
 { id: "hero_bluedragon01", char: "Blue Dragon", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipShock-" },
 { id: "hero_bluemarvel01", char: "Blue Marvel", suit: "얼티미츠", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Energy ProjectionLeadership-" },
@@ -269,58 +391,31 @@ $(document).ready(function(event){
 { id: "hero_daisyjohnson01", char: "Daisy Johnson", suit: "영화 - 에이전트 오브 쉴.드.", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "AgentMind Resist-" },
 { id: "hero_daisyjohnson01_S01", char: "Quake", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "AgentMind Resist-" },
 { id: "hero_daisyjohnson01_S02", char: "Daisy Johnson", suit: "영화 - 에이전트 오브 쉴.드. (퀘이크)", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "AgentMind Resist-" },
-{ id: "hero_daredevil01", char: "Daredevil", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipHeightened SensesAgility" },
-{ id: "hero_daredevil01_S01", char: "Daredevil", suit: "데빌 오브 헬스 키친", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipHeightened SensesAgility" },
-{ id: "hero_daredevil01_S02", char: "Daredevil", suit: "올뉴, 올디퍼런트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipHeightened SensesAgility" },
-{ id: "hero_darkhawk01", char: "Darkhawk", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast MovementLeadership-" },
+
+
 { id: "hero_dazzler01", char: "Dazzler", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Energy Projection--" },
-{ id: "hero_deadpool01", char: "Deadpool", suit: "모던", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "HealingWeapon Master-" },
-{ id: "hero_deadpool01_S01", char: "Deadpool", suit: "엑스포스", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "HealingWeapon Master-" },
-{ id: "hero_deadpool01_S02", char: "Deadpool", suit: "레이디 데드풀", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "HealingWeapon Master-" },
-{ id: "hero_deadpool01_S03", char: "Lady Deadpool", suit: "홀리데이 파티", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "HealingWeapon Master-" },
 
 { id: "hero_doctorstrange01", char: "Doctor Strange", suit: "올뉴, 올디퍼런트", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast MovementMagic-" },
 { id: "hero_doctorstrange01_S01", char: "Doctor Strange", suit: "영화 - 닥터 스트레인지", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast MovementMagic-" },
 { id: "hero_doctorstrange01_S02", char: "Doctor Strange", suit: "영화 - 어벤져스: 인피니티 워", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast MovementMagic-" },
 { id: "hero_doctorstrange01_S03", char: "Doctor Strange", suit: "Space 슈트", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast MovementMagic-" },
 { id: "hero_doctorvoodoo01", char: "Doctor Voodoo", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Command--" },
-{ id: "hero_domino01", char: "Domino", suit: "엑스포스", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Weapon MasterAgility-" },
-{ id: "hero_domino01_S01", char: "Domino", suit: "마블 나우!", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Weapon MasterAgility-" },
 
-{ id: "hero_elektra01", char: "Elektra", suit: "클래식", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Weapon Master--" },
-{ id: "hero_elektra01_S01", char: "Elektra", suit: "영화 - 데어데블", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Weapon Master--" },
-{ id: "hero_elsabloodstone01", char: "Elsa Bloodstone", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Weapon Master--" },
-{ id: "hero_elsabloodstone01_S01", char: "Elsa Bloodstone", suit: "시크릿 워즈: 마블 좀비스", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Weapon Master--" },
-{ id: "hero_elsabloodstone01_S02", char: "Elsa Bloodstone", suit: "몬스터 언리쉬드! (MFF 배리언트)", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Weapon Master--" },
+
 { id: "hero_emmafrost01", char: "Emma Frost", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Mind Resist--" },
 { id: "hero_emmafrost01_S01", char: "Emma Frost", suit: "마블 나우!", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Mind Resist--" },
 { id: "hero_emmafrost01_S02", char: "Emma Frost", suit: "피닉스 파이브", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "DurabilityMind Resist피닉스 Force" },
-{ id: "hero_falcon01", char: "Falcon", suit: "영화 - 캡틴 아메리카: 윈터 솔져", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AvengersLeadershipFast Movement" },
-{ id: "hero_falcon01_S01", char: "Falcon", suit: "올뉴 캡틴 아메리카", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipFast Movement-" },
-{ id: "hero_falcon01_S02", char: "Falcon", suit: "영화 - 캡틴 아메리카: 시빌 워", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AvengersLeadershipFast Movement" },
-{ id: "hero_falcon01_S03", char: "Falcon", suit: "마블 레거시", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipFast Movement-" },
-{ id: "hero_fandral01", char: "Fandral", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Agility--" },
-{ id: "hero_fantomex01", char: "Fantomex", suit: "엑스포스", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Weapon MasterAgility-" },
+
 { id: "hero_gambit01", char: "Gambit", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "MindAgility-" },
-{ id: "hero_gamora01", char: "Gamora", suit: "영화 - 가디언즈 오브 갤럭시", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityWeapon Master-" },
-{ id: "hero_gamora01_S01", char: "Gamora", suit: "올뉴, 올디퍼런트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityWeapon Master-" },
-{ id: "hero_gamora01_S02", char: "Gamora", suit: "영화 - 가디언즈 오브 갤럭시 Vol. 2", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityWeapon Master-" },
+
 { id: "hero_ghostpanther01", char: "Ghost Panther", suit: "인피니피 워프", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Agility--" },
 { id: "hero_ghostrider01", char: "Ghost Rider", suit: "클래식", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Leadership--" },
 { id: "hero_ghostrider01_S01", char: "Ghost Rider", suit: "70년대 클래식", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Leadership--" },
 { id: "hero_ghostrider01_S02", char: "Ghost Rider", suit: "인휴먼즈: 아틸란 라이징", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Leadership--" },
 { id: "hero_ghostrider01_S03", char: "Ghost Rider", suit: "킹 오브 헬", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Leadership--" },
 
-{ id: "hero_gwenpool01", char: "Gwenpool", suit: "올뉴, 올디퍼런트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Agility--" },
-{ id: "hero_gwenpool01_S01", char: "Gwenpool", suit: "그웬 풀", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Agility--" },
-{ id: "hero_gwenpool01_S02", char: "Gwenpool", suit: "홀리데이 파티", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Agility--" },
-{ id: "hero_hawkeye01", char: "Hawkeye", suit: "영화 - 어벤져스", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgentWeapon Master-" },
-{ id: "hero_hawkeye01_S01", char: "Hawkeye", suit: "영화 - 어벤져스: 에이지 오브 울트론", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgentWeapon Master-" },
-{ id: "hero_hawkeye01_S02", char: "Hawkeye", suit: "영화 - 캡틴 아메리카: 시빌 워", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgentWeapon Master-" },
-{ id: "hero_hawkeye01_S03", char: "Hawkeye", suit: "클래식", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgentWeapon Master-" },
-{ id: "hero_hawkeye01_S04", char: "Ronin", suit: "영화 - 어벤져스: 엔드게임", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgentWeapon Master-" },
 { id: "hero_heimdall01", char: "Heimdall", suit: "영화 - 토르: 라그나로크", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Strong--" },
-{ id: "hero_hellcat01", char: "Hellcat", suit: "올뉴, 올디퍼런트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Agility--" },
+
 { id: "hero_hellstorm01", char: "Hellstorm", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Magic--" },
 
 { id: "hero_humantorch01", char: "Human Torch", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast MovementFlame-" },
@@ -351,42 +446,29 @@ $(document).ready(function(event){
 
 { id: "hero_jubilee01", char: "Jubilee", suit: "클래식", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Energy ProjectionPotential-" },
 
-{ id: "hero_karnak01", char: "Karnak", suit: "워 오브 킹즈", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Heightened Senses--" },
-{ id: "hero_karnak01_S01", char: "Karnak", suit: "올뉴, 올디퍼런트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Heightened Senses--" },
-{ id: "hero_katebishop01", char: "Hawkeye (Kate Bishop)", suit: "마블 나우!", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "AgentAgility-" },
-{ id: "hero_kidkaiju01", char: "Kid Kaiju", suit: "몬스터 언리쉬드!", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Command--" },
-{ id: "hero_kidkaiju01_S01", char: "Kid Kaiju", suit: "몬스터 언리쉬드! (MFF 배리언트)", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Command--" },
+
 { id: "hero_kidomega01", char: "Kid Omega", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "피닉스 ForceEnergy Projection-" },
-{ id: "hero_kittypryde01", char: "Kitty Pryde", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "CommandWeapon Master-" },
+
+
 { id: "hero_lincoln01", char: "Lincoln Campbell", suit: "영화 - 에이전트 오브 쉴.드.", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Shock--" },
 
-{ id: "hero_lunasnow01", char: "Luna Snow", suit: "모던", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Cold BloodedLeadership-" },
-{ id: "hero_lunasnow01_S01", char: "Luna Snow", suit: "안드로메다 슈트", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Cold BloodedLeadership-" },
-{ id: "hero_lunasnow01_S02", char: "Luna Snow", suit: "라이프스타일 시리즈 1", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Cold BloodedLeadership-" },
 { id: "hero_magik01", char: "Magik", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "MagicMind Resist-" },
 { id: "hero_magik01_S01", char: "Magik", suit: "피닉스 파이브", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "MagicMind Resist피닉스 Force" },
 { id: "hero_mantis01", char: "Mantis", suit: "영화 - 가디언즈 오브 갤럭시 Vol. 2", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "HealingMind-" },
 { id: "hero_medusa01", char: "Medusa", suit: "올뉴, 올디퍼런트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Command--" },
 { id: "hero_medusa01_S01", char: "Medusa", suit: "몬스터 언리쉬드! (MFF 배리언트)", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Command--" },
 { id: "hero_medusa01_S02", char: "Medusa", suit: "인휴먼즈 대 엑스맨", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Command--" },
-{ id: "hero_milesmorales01", char: "Spider-Man (Miles Morales)", suit: "올뉴, 올디퍼런트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipAgilitySpider-Sense" },
-{ id: "hero_milesmorales01_S01", char: "Spider-Man (Miles Morales)", suit: "인투 더 스파이더버스", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Leadership, AgilitySpider-Sense" },
 
-{ id: "hero_mockingbird01", char: "Mockingbird", suit: "영웅 시대", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgentAgility-" },
-{ id: "hero_mockingbird01_S01", char: "Bobbi Morse", suit: "영화 - 에이전트 오브 쉴.드. (바비 모스)", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "ShieldAgentAgility" },
-{ id: "hero_mockingbird01_S02", char: "Mockingbird", suit: "모던", tier: "1", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgentAgility-" },
 { id: "hero_moongirl01", char: "Moon Girl", suit: "마블 나우!", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Weapon Master--" },
 { id: "hero_moongirl01_S01", char: "Moon Girl", suit: "몬스터 언리쉬드!", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Weapon Master--" },
 
 { id: "hero_nadiapym01", char: "Wasp (Nadia Van Dyne)", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Fast Movement--" },
 
 { id: "hero_negasonic01", char: "Negasonic Teenage Warhead", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityFast MovementEnergy Projection" },
-{ id: "hero_nickfury01", char: "Nick Fury", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Weapon MasterLeadershipAgent" },
-{ id: "hero_nickfury01_S01", char: "Nick Fury", suit: "영화 - 캡틴 마블", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Weapon MasterLeadershipAgent" },
+
 { id: "hero_nicominoru01", char: "Sister Grimm", suit: "시크릿 워즈: 에이포스", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Magic--" },
 { id: "hero_nicominoru01_S01", char: "Sister Grimm", suit: "올뉴, 올디퍼런트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Magic--" },
-{ id: "hero_nightcrawler01", char: "Nightcrawler", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipAgility-" },
-{ id: "hero_nightcrawler01_S01", char: "Nightcrawler", suit: "엑스포스", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipAgility-" },
+
 { id: "hero_nova01", char: "Nova (Sam Alexander)", suit: "올뉴, 올디퍼런트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Fast Movement-" },
 { id: "hero_odin01", char: "Odin", suit: "모던", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Energy ProjectionCommand-" },
 { id: "hero_odin01_S01", char: "Odin", suit: "All-Father", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Energy ProjectionCommand-" },
@@ -398,9 +480,7 @@ $(document).ready(function(event){
 { id: "hero_psylocke01_S01", char: "Psylocke", suit: "디스어셈블드", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "MindAgility-" },
 
 { id: "hero_quasar01", char: "Quasar (Avril Kincaid)", suit: "올뉴, 올디퍼런트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Heightened Senses--" },
-{ id: "hero_quicksilver01", char: "Quicksilver", suit: "클래식", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityFast Movement-" },
-{ id: "hero_quicksilver01_S01", char: "Quicksilver", suit: "마블 레거시", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityFast Movement-" },
-{ id: "hero_quicksilver01_S02", char: "Quicksilver", suit: "언캐니 어벤져스", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityFast Movement-" },
+
 { id: "hero_rachelsummers01", char: "Rachel Summers", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast Movement--" },
 
 { id: "hero_rescue01", char: "Rescue", suit: "영화 - 어벤져스: 엔드게임", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AvengersLeadershipMachine" },
@@ -412,49 +492,27 @@ $(document).ready(function(event){
 { id: "hero_rocketraccoon01_S03", char: "Rocket Raccoon", suit: "영화 - 어벤져스: 인피니티 워", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Weapon Master--" },
 { id: "hero_rocketraccoon01_S04", char: "Rocket Raccoon", suit: "영화 - 어벤져스: 엔드게임", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Weapon Master--" },
 { id: "hero_rocketraccoon01_S05", char: "Rocket Raccoon", suit: "영화 - 어벤져스: 엔드게임 (팀 슈트)", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Weapon Master--" },
-{ id: "hero_rogue01", char: "Rogue", suit: "클래식", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast MovementHealing-" },
-{ id: "hero_rogue01_S01", char: "Rogue", suit: "에이지 오브 아포칼립스", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast MovementHealing-" },
-{ id: "hero_rogue01_S02", char: "Rogue", suit: "언캐니 어벤져스", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast MovementHealing-" },
+
 { id: "hero_satana01", char: "Satana", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Magic--" },
 { id: "hero_satana01_S01", char: "Satana", suit: "마블 레거시", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Magic--" },
-{ id: "hero_scarletspider01", char: "스칼렛 스파이더", suit: "모던", tier: "1", name: "벤자민 \"벤\" 라일리", hei: "178cm", wei: "75kg", pot: "1", ability: "New" },
+
 { id: "hero_scarletwitch01", char: "Scarlet Witch", suit: "클래식", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast Movement--" },
 { id: "hero_scarletwitch01_S01", char: "Scarlet Witch", suit: "영화 - 어벤져스: 인피니티 워", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Chaos Magic--" },
 { id: "hero_scarletwitch01_S02", char: "Scarlet Witch", suit: "언캐니 어벤져스", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AvengersFast MovementChaos Magic" },
 { id: "hero_scarletwitch01_S03", char: "Scarlet Witch", suit: "올뉴, 올디퍼런트", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast MovementChaos Magic-" },
 { id: "hero_shadowshell01", char: "Shadow Shell", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast MovementChaos Magic-" },
 
-{ id: "hero_sharoncarter01", char: "Agent 13", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "AgentLeadershipAgility" },
-{ id: "hero_sharoncarter01_S01", char: "Agent 13", suit: "영화 - 캡틴 아메리카: 시빌 워", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipAgility-" },
 { id: "hero_sharonrogers01", char: "Captain America (Sharon Rogers)", suit: "캡틴 아메리카 75주년 기념", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Energy ProjectionAgent-" },
 { id: "hero_sharonrogers01_S01", char: "Captain America (Sharon Rogers)", suit: "스타라이트 아머", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Energy ProjectionLeadership-" },
 { id: "hero_sharonrogers01_S02", char: "Captain America (Sharon Rogers)", suit: "다크 스타 아머", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Energy ProjectionLeadership-" },
 { id: "hero_sharonrogers01_S03", char: "Captain America (Sharon Rogers)", suit: "스타 나이트 아머 ", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Energy ProjectionLeadership-" },
 
-{ id: "hero_shuri01", char: "Shuri", suit: "마블 레거시", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Heightened Senses--" },
-{ id: "hero_shuri01_S01", char: "Shuri", suit: "영화 - 블랙 팬서", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipHeightened Senses-" },
-
-{ id: "hero_silk01", char: "Silk", suit: "올뉴, 올디퍼런트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilitySpider-Sense-" },
-{ id: "hero_silk01_S01", char: "Silk", suit: "웹 슈트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilitySpider-Sense-" },
 { id: "hero_silversurfer01", char: "Silver Surfer", suit: "모던", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Power Cosmic--" },
 { id: "hero_silversurfer01_S01", char: "Silver Surfer", suit: "블랙", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Power Cosmic--" },
 { id: "hero_singularity01", char: "Singularity", suit: "시크릿 워즈: 에이포스", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Energy ProjectionFast Movement-" },
 { id: "hero_slapstick01", char: "Slapstick", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Agility--" },
 { id: "hero_songbird01", char: "Songbird", suit: "뉴 어벤져스", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast Movement--" },
-{ id: "hero_spidergwen01", char: "Spider-Gwen", suit: "올뉴, 올디퍼런트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "LeadershipAgilitySpider-Sense" },
-{ id: "hero_spidergwen01_S01", char: "Spider-Gwen", suit: "그웬돌린 스테이시", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "LeadershipAgilitySpider-Sense" },
-{ id: "hero_spiderman01", char: "Spider-Man", suit: "클래식", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityLeadershipSpider-Sense" },
-{ id: "hero_spiderman01_S01", char: "Spider-Man", suit: "시크릿 워즈: 리뉴 유어 바우", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityLeadershipSpider-Sense" },
-{ id: "hero_spiderman01_S02", char: "Spider-Man", suit: "올뉴, 올디퍼런트", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityLeadershipSpider-Sense" },
-{ id: "hero_spiderman01_S03", char: "Spider-Man", suit: "영화 - 캡틴 아메리카: 시빌 워", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityLeadershipSpider-Sense" },
-{ id: "hero_spiderman01_S04", char: "Spider-Man", suit: "영화 - 스파이더맨: 홈커밍 (홈메이드 슈트)", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityLeadershipSpider-Sense" },
-{ id: "hero_spiderman01_S05", char: "Spider-Man", suit: "영화 - 어벤져스: 인피니티 워", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityLeadershipSpider-Sense" },
-{ id: "hero_spiderman01_S06", char: "Spider-Man", suit: "영화 - 스파이더맨: 파 프롬 홈", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityLeadershipSpider-Sense" },
-{ id: "hero_spiderman01_S07", char: "Spider-Man", suit: "영화 - 스파이더맨: 파 프롬 홈 (스텔스 슈트)", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityLeadershipSpider-Sense" },
-{ id: "hero_spiderman209901", char: "Spider-Man 2099", suit: "모던", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityLeadershipSpider-Sense" },
-{ id: "hero_spiderman209901_S01", char: "Spider-Man 2099", suit: "올뉴, 올디퍼런트", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityLeadershipSpider-Sense" },
-{ id: "hero_squirrelgirl01", char: "Squirrel Girl", suit: "뉴 어벤져스", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Agility--" },
-{ id: "hero_squirrelgirl01_S01", char: "Squirrel Girl", suit: "마블 나우!", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Agility--" },
+
 { id: "hero_starlord01", char: "Star-Lord", suit: "영화 - 가디언즈 오브 갤럭시", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "CommandWeapon Master-" },
 { id: "hero_starlord01_S01", char: "Star-Lord", suit: "스페이스 아머", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "CommandWeapon Master-" },
 { id: "hero_starlord01_S02", char: "Star-Lord", suit: "영화 - 가디언즈 오브 갤럭시 Vol. 2", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "CommandWeapon Master-" },
@@ -463,7 +521,7 @@ $(document).ready(function(event){
 { id: "hero_storm01", char: "Storm", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "CommandShock-" },
 { id: "hero_storm01_S01", char: "Storm", suit: "엑스맨 레드", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "CommandShock-" },
 { id: "hero_storm01_S02", char: "Storm", suit: "인휴먼즈 대 엑스맨", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "CommandShock-" },
-{ id: "hero_sunbird01", char: "Sun Bird", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityFlame-" },
+
 
 { id: "hero_thor01", char: "Thor", suit: "영화 - 어벤져스", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipShock-" },
 { id: "hero_thor01_S01", char: "Thor", suit: "영화 - 어벤져스: 에이지 오브 울트론", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipShock-" },
@@ -488,27 +546,18 @@ $(document).ready(function(event){
 { id: "hero_wasp01", char: "Wasp", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast Movement--" },
 { id: "hero_wasp01_S01", char: "Wasp", suit: "올뉴, 올디퍼런트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast Movement--" },
 { id: "hero_wasp01_S02", char: "Wasp", suit: "영화 - 앤트맨과 와스프", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast Movement--" },
-{ id: "hero_wave01", char: "Wave", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityHeightened Senses-" },
 { id: "hero_weaponhex01", char: "Weapon Hex", suit: "인피니피 워프", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Chaos MagicHealingAgility" },
-{ id: "hero_whitefox01", char: "White Fox", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "LeadershipAgility-" },
-{ id: "hero_whitefox01_S01", char: "White Fox", suit: "라이프스타일 시리즈 1", tier: "<>", name: "", hei: "162cm", wei: "59kg", pot: "Potential", ability: "Agility" },
 
 { id: "hero_wiccan01", char: "Wiccan", suit: "뉴 어벤져스", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Energy ProjectionFast Movement-" },
-{ id: "hero_wintersoldier01", char: "Winter Soldier", suit: "영화 - 캡틴 아메리카: 윈터 솔져", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Weapon Master--" },
-{ id: "hero_wintersoldier01_S01", char: "Winter Soldier", suit: "영화 - 캡틴 아메리카: 시빌 워", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Weapon Master--" },
-{ id: "hero_wintersoldier01_S02", char: "Winter Soldier", suit: "캡틴 아메리카", tier: "3", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Weapon Master--" },
-{ id: "hero_wintersoldier01_S03", char: "Winter Soldier", suit: "영화 - 어벤져스: 인피니티 워", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AvengersWeapon Master-" },
 
-{ id: "hero_wong01", char: "Wong", suit: "올뉴, 올디퍼런트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Weapon Master-" },
-{ id: "hero_wong01_S01", char: "Wong", suit: "영화 - 닥터 스트레인지", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Weapon Master-" },
-{ id: "hero_x-2301", char: "X-23", suit: "클래식", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "HealingAgility-" },
-{ id: "hero_x-2301_S01", char: "X-23", suit: "엑스포스", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "HealingAgility-" },
+
+
+
+
 
 { id: "sv_antiman01", char: "Anti-Man", suit: "올뉴, 올디퍼런트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Energy ProjectionFast Movement-" },
 
-{ id: "sv_baronmordo01", char: "Baron Mordo", suit: "클래식", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Pure EvilMagic-" },
-{ id: "sv_baronmordo01_S01", char: "Mordo", suit: "영화 - 닥터 스트레인지", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Heightened SensesAgility-" },
-{ id: "sv_baronzemo01", char: "Baron Zemo", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityPure Evil" },
+
 { id: "sv_blackdwarf01", char: "Black Dwarf", suit: "인피니티", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "DurabilityStrong-" },
 { id: "sv_blackdwarf01_S01", char: "Cull Obsidian", suit: "영화 - 어벤져스: 인피니티 워", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Black OrderDurabilityStrong" },
 
@@ -524,21 +573,16 @@ $(document).ready(function(event){
 { id: "sv_dormmamu01", char: "Dormammu", suit: "댐네이션", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Magic--" },
 { id: "sv_ebonymaw01", char: "Ebony Maw", suit: "인피니티", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast MovementMind ResistPure Evil" },
 { id: "sv_ebonymaw01_S01", char: "Ebony Maw", suit: "영화 - 어벤져스: 인피니티 워", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast MovementMind ResistPure Evil" },
-{ id: "sv_electro01", char: "Electro", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Pure EvilShockSinister Six" },
+
 { id: "sv_enchantress01", char: "Enchantress", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "MindMagic-" },
 { id: "sv_enchantress01_S01", char: "Enchantress", suit: "섬머 데이즈", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "MindMagic-" },
-{ id: "sv_ghost01", char: "Ghost", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "MachineWeapon Master-" },
-{ id: "sv_ghost01_S01", char: "Ghost", suit: "영화 - 앤트맨과 와스프", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "MachineWeapon Master-" },
-{ id: "sv_greengoblin01", char: "Green Goblin", suit: "클래식", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast MovementPoison-" },
-{ id: "sv_greengoblin01_S01", char: "Green Goblin", suit: "얼티밋", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast MovementFlame-" },
+
 { id: "sv_hela01", char: "Hela", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Pure EvilCommand-" },
 { id: "sv_hela01_S01", char: "Hela", suit: "영화 - 토르: 라그나로크", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "AsgardPure EvilCommand" },
 { id: "sv_hydroman01", char: "Hydro-Man", suit: "영화 - 스파이더맨: 파 프롬 홈", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Pure EvilPotential-" },
 
 { id: "sv_kaecilius01", char: "Kaecilius", suit: "영화 - 닥터 스트레인지", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "AgilityMagic-" },
 
-{ id: "sv_korath01", char: "Korath", suit: "영화 - 캡틴 마블", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Pure EvilWeapon Master-" },
-{ id: "sv_kraventhehunter01", char: "Kraven The Hunter", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityWeapon MasterSinister Six" },
 { id: "sv_lash01", char: "Lash", suit: "영화 - 에이전트 오브 쉴.드.", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "ShieldEnergy Projection-" },
 { id: "sv_lash01_S01", char: "Lash", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Energy Projection--" },
 
@@ -560,7 +604,7 @@ $(document).ready(function(event){
 { id: "sv_morganlefay01", char: "Morgan Le Fay", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Magic--" },
 { id: "sv_mysterio01", char: "Mysterio", suit: "클래식", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Sinister Six--" },
 { id: "sv_mysterio01_S01", char: "Mysterio", suit: "영화 - 스파이더맨: 파 프롬 홈", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "MindSinister Six-" },
-{ id: "sv_mystique01", char: "Mystique", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Agility--" },
+
 
 { id: "sv_proximamidnight01", char: "Proxima Midnight", suit: "인피니티", tier: "1", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Fast Movement--" },
 { id: "sv_proximamidnight01_S01", char: "Proxima Midnight", suit: "영화 - 어벤져스: 인피니티 워", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Black OrderFast MovementAgility" },
@@ -575,7 +619,7 @@ $(document).ready(function(event){
 
 { id: "sv_sentinel01", char: "Sentinel", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Pure EvilMachine-" },
 { id: "sv_sentinel01_S01", char: "Sentinel", suit: "님로드 더 레서", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Pure EvilMachine-" },
-{ id: "sv_sin01", char: "Sin", suit: "올뉴, 올디퍼런트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Pure EvilWeapon Master-" },
+
 
 { id: "sv_stryfe01", char: "Stryfe", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Energy ProjectionPure Evil-" },
 { id: "sv_supergiant01", char: "Supergiant", suit: "인피니티", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Mind ResistMind-" },
@@ -593,18 +637,13 @@ $(document).ready(function(event){
 { id: "sv_ulyssesklaue01", char: "Ulysses Klaue", suit: "영화 - 블랙 팬서", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Weapon Master--" },
 
 { id: "sv_victorious01", char: "Victorious", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Energy ProjectionFast Movement-" },
-{ id: "sv_viper01", char: "Viper", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "Pure EvilPoison-" },
-{ id: "sv_vulture01", char: "Vulture", suit: "클래식", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityFast MovementSinister Six" },
-{ id: "sv_vulture01_S01", char: "Vulture", suit: "영화 - 스파이더맨: 홈커밍", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgilityFast MovementSinister Six" },
+
 { id: "sv_whiplash01", char: "Whiplash", suit: "영화 - 아이언맨 2", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "MachineShock-" },
-{ id: "sv_yelenabelova01", char: "Yelena Belova", suit: "모던", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgentAgility-" },
-{ id: "sv_yelenabelova01_S01", char: "Yelena Belova", suit: "영화 - 블랙 위도우", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgentAgility-" },
-{ id: "sv_yelenabelova01_S02", char: "Yelena Belova", suit: "영화 - 블랙 위도우 (스노우 슈트)", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "Potential", ability: "AgentAgility-" },
+
 { id: "sv_yellowjacket01", char: "Yellowjacket", suit: "영화 - 앤트맨", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "MachinePure Evil-" },
 { id: "sv_yellowjacket01_S01", char: "Yellowjacket", suit: "마블 나우!", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "MachinePure Evil-" },
 { id: "sv_yondu01", char: "Yondu", suit: "영화 - 가디언즈 오브 갤럭시", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Weapon MasterCommand-" },
-{ id: "sv_yondu01_S01", char: "Yondu", suit: "올뉴, 올디퍼런트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Weapon MasterCommand-" },
-{ id: "sv_yondu01_S02", char: "Yondu", suit: "영화 - 가디언즈 오브 갤럭시 Vol. 2", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "Weapon MasterCommand-" },
+
 
 // NPC
 { id: "boss_fenriswolf01", char: "Fenris Wolf", suit: "펜리르 울프", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "---" },
@@ -622,7 +661,8 @@ $(document).ready(function(event){
 { id: "hero_melindamay01", char: "Melinda May", suit: "영화 - 에이전트 오브 쉴.드.", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "---" },
 { id: "sv_devildinosaur01", char: "Devil Dinosaur", suit: "데빌 다이너소어", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "---" },
 { id: "hero_io01", char: "Io", suit: "이오", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", ability: "---" },
-     
+
+
    ];
 
   event.preventDefault();
