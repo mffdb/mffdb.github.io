@@ -585,7 +585,7 @@ $(document).ready(function(event){
 { id: "boss_surtur01", char: "Surtur", suit: "수르트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", abil: "---" },
 { id: "boss_talos01", char: "탈로스", suit: "영화 - 캡틴 마블", tier: "1", name: "탈로스", hei: "193cm", wei: "298kg", pot: "-", abil: "---" },
 { id: "boss_ymir01", char: "Ymir", suit: "이미르", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", abil: "---" },
-{ id: "GM_Jocasta01", char: "조캐스타", suit: "조캐스타", tier: "1", name: "조캐스타 핌", hei: "175cm", wei: "340kg", pot: "-", abil: "---" },
+{ id: "GM_jocasta01", char: "조캐스타", suit: "조캐스타", tier: "1", name: "조캐스타 핌", hei: "175cm", wei: "340kg", pot: "-", abil: "---" },
 { id: "hero_melindamay01", char: "멜린다 메이", suit: "드라마 - 에이전트 오브 쉴.드.", tier: "1", name: "멜린다 차오롄 메이", hei: "163cm", wei: "50kg", pot: "-", abil: "---" },
 { id: "sv_devildinosaur01", char: "Devil Dinosaur", suit: "데빌 다이너소어", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", abil: "---" },
 { id: "hero_io01", char: "Io", suit: "이오", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", abil: "---" },
