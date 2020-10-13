@@ -594,35 +594,34 @@ K-39, 용의자 확인
 154
 00:13:38,522 --> 00:13:41,089
 본부, 2-Z-39다
-Unable to pursue,
+추격이 어렵다
 
 155
 00:13:41,091 --> 00:13:44,426
-<i>suspect heading east down
-an alley between 11th and Lex.</i>
+<i>용의자는 11번가와 렉스 사이
+골목의 동쪽으로 향한다</i>
 
 156
 00:14:00,878 --> 00:14:04,212
-<i>Zebra 39, in pursuit,
-suspect is southbound from 11.</i>
+<i>Z-39, 추격 중
+용의자는 11번가 남쪽으로 간다</i>
 
 157
 00:14:09,253 --> 00:14:10,413
-God dammit!
+제기랄!
 
 158
 00:14:12,256 --> 00:14:13,355
-You stupid!
+멍청한 놈!
 
 159
 00:14:32,175 --> 00:14:34,042
-Dispatch,
-I think this thing is busted,
+본부, 무전가 고장났겠지만
 
 160
 00:14:34,044 --> 00:14:36,044
-but 2FB44 in foot pursuit,
-north on Lex!
+2FB44가 렉스 북쪽에서
+도보로 이동 중이다
 
 161
 00:14:40,083 --> 00:14:41,249
