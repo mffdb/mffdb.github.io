@@ -1,28 +1,31 @@
 $(document).ready(function(event){
  
-  $( "[id^=btn]" ).css({"cursor": "pointer"}).click(function() {
+  $( "[id^=charbtn]" ).css({"cursor": "pointer"}).click(function() {
   
     const name = $(this).attr("name");
     const type = $(this).attr("type");
     const sex = $(this).attr("sex");
     const side = $(this).attr("side");
+    const allies = $(this).attr("allies");
 
     const print = [ ];
     const styleProps = $( this ).css([
       "width", "height", "color", "background-color", "background-image"
     ]);
 
-    $( '[id^="btn"]' ).removeClass('selected');
-    $( ".gra-port" ).css({"background-image": "url(./portraits/"+name+".png)"}).removeClass('selected');
-    $( ".ico-type" ).css({"background-image": "url(./icons/"+type+".png)"}).removeClass('selected');
-    $( ".ico-sex" ).css({"background-image": "url(./icons/"+sex+".png)"}).removeClass('selected');
-    $( ".ico-side" ).css({"background-image": "url(./icons/"+side+".png)"}).removeClass('selected');
+    $( '[id^="charbtn"]' ).removeClass('selected');
+    $( ".gra-port" ).css({"background-image": "url(./images/portraits/"+name+".png), url(./images/portraits/"+name+"_alpha.png)"}).removeClass('selected');
+    $( ".ico-type" ).css({"background-image": "url(./images/icons/condition_"+type+"_alpha.png), url(./images/icons/condition_"+type+".png)"}).removeClass('selected');
+    $( ".ico-sex" ).css({"background-image": "url(./images/icons/condition_"+sex+"_alpha.png), url(./images/icons/condition_"+sex+".png)"}).removeClass('selected');
+    $( ".ico-side" ).css({"background-image": "url(./images/icons/condition_"+side+"_alpha.png), url(./images/icons/condition_"+side+".png)"}).removeClass('selected');
+    $( ".ico-alli" ).css({"background-image": "url(./images/icons/condition_"+allies+"_alpha.png), url(./images/icons/condition_"+allies+".png)"}).removeClass('selected');
 
     $(this).addClass('selected');
-    $( ".gra-port" ).css({"background-image": "url(./portraits/"+name+".png)"}).addClass('selected');
-    $( ".ico-type" ).css({"background-image": "url(./icons/"+type+".png)"}).addClass('selected');
-    $( ".ico-sex" ).css({"background-image": "url(./icons/"+sex+".png)"}).addClass('selected');
-    $( ".ico-side" ).css({"background-image": "url(./icons/"+side+".png)"}).addClass('selected');
+    $( ".gra-port" ).css({"background-image": "url(./images/portraits/"+name+".png), url(./images/portraits/"+name+"_alpha.png)"}).addClass('selected');
+    $( ".ico-type" ).css({"background-image": "url(./images/icons/condition_"+type+"_alpha.png), url(./images/icons/condition_"+type+".png)"}).addClass('selected');
+    $( ".ico-sex" ).css({"background-image": "url(./images/icons/condition_"+sex+"_alpha.png), url(./images/icons/condition_"+sex+".png)"}).addClass('selected');
+    $( ".ico-side" ).css({"background-image": "url(./images/icons/condition_"+side+"_alpha.png), url(./images/icons/condition_"+side+".png)"}).addClass('selected');
+    $( ".ico-alli" ).css({"background-image": "url(./images/icons/condition_"+allies+"_alpha.png), url(./images/icons/condition_"+allies+".png)"}).addClass('selected');
 
     const fchar = [], fsuit = [], ftier= [], fname= [], fhei = [], fwei = [], fpot = [], fabil = [];
 
@@ -585,7 +588,7 @@ $(document).ready(function(event){
 { id: "boss_surtur01", char: "Surtur", suit: "수르트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", abil: "---" },
 { id: "boss_talos01", char: "탈로스", suit: "영화 - 캡틴 마블", tier: "1", name: "탈로스", hei: "193cm", wei: "298kg", pot: "-", abil: "---" },
 { id: "boss_ymir01", char: "Ymir", suit: "이미르", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", abil: "---" },
-{ id: "GM_jocasta01", char: "조캐스타", suit: "조캐스타", tier: "1", name: "조캐스타 핌", hei: "175cm", wei: "340kg", pot: "-", abil: "---" },
+{ id: "npc_jocasta01", char: "조캐스타", suit: "조캐스타", tier: "1", name: "조캐스타 핌", hei: "175cm", wei: "340kg", pot: "-", abil: "---" },
 { id: "hero_melindamay01", char: "멜린다 메이", suit: "드라마 - 에이전트 오브 쉴.드.", tier: "1", name: "멜린다 차오롄 메이", hei: "163cm", wei: "50kg", pot: "-", abil: "---" },
 { id: "sv_devildinosaur01", char: "Devil Dinosaur", suit: "데빌 다이너소어", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", abil: "---" },
 { id: "hero_io01", char: "Io", suit: "이오", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", abil: "---" },
