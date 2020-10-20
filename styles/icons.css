@@ -1,0 +1,16 @@
+.combat { background-image: url(../images/icons/condition_combat_alpha.png), url(../images/icons/condition_combat.png);}
+.speed { background-image: url(../images/icons/condition_speed_alpha.png), url(../images/icons/condition_speed.png); }
+.blast { background-image: url(../images/icons/condition_blast_alpha.png), url(../images/icons/condition_blast.png); }
+.universal { background-image: url(../images/icons/condition_universal_alpha.png), url(../images/icons/condition_universal.png); }
+
+.male { background-image: url(../images/icons/condition_male_alpha.png), url(../images/icons/condition_male.png); }
+.female { background-image: url(../images/icons/condition_female_alpha.png), url(../images/icons/condition_female.png); }
+
+.hero { background-image: url(../images/icons/condition_hero_alpha.png), url(../images/icons/condition_hero.png); }
+.villain { background-image: url(../images/icons/condition_sv_alpha.png), url(../images/icons/condition_sv.png); }
+
+.alien { background-image: url(../images/icons/condition_hero_alpha.png), url(../images/icons/condition_alien.png); }
+.creature { background-image: url(../images/icons/condition_sv_alpha.png), url(../images/icons/creature_sv.png); }
+.human { background-image: url(../images/icons/condition_human_alpha.png), url(../images/icons/condition_human.png); }
+.inhuman { background-image: url(../images/icons/condition_inhuman_alpha.png), url(../images/icons/condition_inhuman.png); }
+.mutant { background-image: url(../images/icons/condition_mutant_alpha.png), url(../images/icons/condition_mutant.png); }
