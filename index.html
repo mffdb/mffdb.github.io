@@ -15,16 +15,49 @@
 <link rel="stylesheet" href="styles/char.css" type="text/css" media="all">
 <link rel="stylesheet" href="styles/skill.css" type="text/css" media="all">
 <script>
+$(document).ready(function(event){
+  $( "[id^=linkbtn]" ).click(function() {
+    
+  const name = $(this).attr("name");
 
+    switch( name ) {
+      case "char" :
+        $( ".contents" ).load( "char.html" );
+        break;
 
+      case "info" :
+        $( ".contents" ).load( "info.html" );
+        break;
+
+      case "tier" :
+        $( ".contents" ).load( "tier.html" );
+        break;
+
+      default :
+        $( ".contents" ).load( "https://future-fight.fandom.com/" );
+        break;
+                 }
+
+    });
+  event.preventDefault();
+});
 </script>
-
 <style>
-
 
 </style>
 </head>
 <body>
+
+<div class="header">
+  <div class="logo1"></div>
+</div>
+
+<div class="nav">
+  <div id="linkbtn" class="link" name="char">인물</div>
+  <div id="linkbtn" class="link" name="info">정보</div>
+  <div id="linkbtn" class="link" name="tier">등급</div>
+  <div id="linkbtn" class="link" name="help" style="float:right">도움</div>
+</div>
 
 <div class="main">
   <div class="box-image">
@@ -35,27 +68,24 @@
       <div class="ico-side hero"></div>
       <div class="ico-alli other"></div>
     </div>
-
     <div class="gra-char">스탠 리</div>
-
   </div>
 
   <div class="box-text">
-    <div class="info-bite-suit">유니폼: </div>
+    <div class="info-bite-suit">&nbsp유니폼: </div>
     <div class="info-part-suit">모던</div>
-    <div class="info-bite-tier">등급: </div>
+    <div class="info-bite-tier">&nbsp등급: </div>
     <div class="info-part-tier">3 티어</div>
-    <div class="info-bite-name">이름 : </div>
+    <div class="info-bite-name">&nbsp이름 : </div>
     <div class="info-part-name">스탠리 마틴 리버</div>
-    <div class="info-bite-hei">키: </div>
+    <div class="info-bite-hei">&nbsp키: </div>
     <div class="info-part-hei">174 cm</div>
-    <div class="info-bite-wei">몸무게: </div>
+    <div class="info-bite-wei">&nbsp몸무게: </div>
     <div class="info-part-wei">??? kg</div>
-    <div class="info-bite-pot">잠재력: </div>
+    <div class="info-bite-pot">&nbsp잠재력: </div>
     <div class="info-part-pot">건망증</div>
-    <div class="info-bite-abil">능력: </div>
+    <div class="info-bite-abil">&nbsp능력: </div>
     <div class="info-part-abil">만화 연재, 캐릭터 창조, 영화 특별출현</div>
-
   </div>
 
   <div class="roll-box">
@@ -591,7 +621,7 @@
   </div>
 </div>
 <div class="footer">
-  <h2>Footer</h2>
+  <h2>마블 퓨쳐 파이트</h2>
 </div>
 
 </body>
