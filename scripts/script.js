@@ -356,9 +356,15 @@ $(document).ready(function(event){
 { id: "hero_cable01_S01", char: "케이블", suit: "엑스포스", tier: "1", name: "네이슨 크리스토퍼 찰스 서머스", hei: "203cm", wei: "159kg", pot: "Potential", abil: "Leadership, Weapon Master" },
 { id: "hero_cable01_S02", char: "케이블", suit: "케이블과 데드풀", tier: "1", name: "네이슨 크리스토퍼 찰스 서머스", hei: "203cm", wei: "159kg", pot: "Potential", abil: "Leadership, Weapon Master" },
 { id: "hero_cable01_S03", char: "케이블", suit: "섬머 데이즈", tier: "1", name: "네이슨 크리스토퍼 찰스 서머스", hei: "203cm", wei: "159kg", pot: "Potential", abil: "Leadership, Weapon Master" },
+<<<<<<< HEAD
 { id: "hero_crystal01", char: "크리스탈", suit: "올뉴, 올디퍼런트", tier: "1", name: "크리스탈리아 아마퀠린", hei: "167cm", wei: "50kg", pot: "Potential", abil: "Energy Projection, Command" },
 { id: "hero_crystal01_S01", char: "크리스탈", suit: "로얄 슈트", tier: "1", name: "크리스탈리아 아마퀠린", hei: "167cm", wei: "50kg", pot: "Potential", abil: "Energy Projection, Command" },
 { id: "hero_crystal01_S02", char: "크리스탈", suit: "판타스틱 포", tier: "1", name: "크리스탈리아 아마퀠린", hei: "167cm", wei: "50kg", pot: "Potential", abil: "Energy Projection, Command" },
+=======
+{ id: "hero_crystal01", char: "크리스탈", suit: "올뉴, 올디퍼런트", tier: "1", name: "크리스탈리아 아마린", hei: "167cm", wei: "50kg", pot: "Potential", abil: "Energy Projection, Command" },
+{ id: "hero_crystal01_S01", char: "크리스탈", suit: "로얄 슈트", tier: "1", name: "크리스탈리아 아마린", hei: "167cm", wei: "50kg", pot: "Potential", abil: "Energy Projection, Command" },
+{ id: "hero_crystal01_S02", char: "크리스탈", suit: "판타스틱 포", tier: "1", name: "크리스탈리아 아마린", hei: "167cm", wei: "50kg", pot: "Potential", abil: "Energy Projection, Command" },
+>>>>>>> 133cd710dbae8e6a5d5292d744d7fb2b45447471
 { id: "hero_cyclops01", char: "사이클롭스", suit: "클래식", tier: "3", name: "스캇 서머스", hei: "190cm", wei: "88kg", pot: "Potential", abil: "Command, Energy Projection" },
 { id: "hero_cyclops01_S01", char: "사이클롭스", suit: "에이지 오브 아포칼립스", tier: "3", name: "스캇 서머스", hei: "190cm", wei: "88kg", pot: "Potential", abil: "Command, Energy Projection" },
 { id: "hero_cyclops01_S02", char: "사이클롭스", suit: "마블 나우!", tier: "3", name: "스캇 서머스", hei: "190cm", wei: "88kg", pot: "Potential", abil: "Command, Energy Projection" },
@@ -396,7 +402,11 @@ $(document).ready(function(event){
 { id: "hero_jeangrey01_S01", char: "진 그레이", suit: "엑스맨 레드", tier: "3", name: "진 일레인 그레이", hei: "167cm", wei: "52kg", pot: "Potential", abil: "피닉스 Force, Mind Resist, Mind" },
 { id: "hero_jeangrey01_S02", char: "진 그레이", suit: "마블 걸", tier: "3", name: "진 일레인 그레이", hei: "167cm", wei: "52kg", pot: "Potential", abil: "피닉스 Force, Mind Resist, Mind" },
 { id: "hero_jubilee01", char: "주빌리", suit: "클래식", tier: "1", name: "주빌레이션 리", hei: "165cm", wei: "52kg", pot: "Potential", abil: "Energy Projection" },
+<<<<<<< HEAD
 { id: "hero_kidomega01", char: "키드 오메가", suit: "모던", tier: "1", name: "퀸타비우스 퀴리니우스 \"퀜틴\" 콰이어", hei: "173cm", wei: "58kg", pot: "Potential", abil: "피닉스 Force, Energy Projection" },
+=======
+{ id: "hero_kidomega01", char: "키드 오메가", suit: "모던", tier: "1", name: "퀸타비우스 퀴리니우스 \"틴\" 콰이어", hei: "173cm", wei: "58kg", pot: "Potential", abil: "피닉스 Force, Energy Projection" },
+>>>>>>> 133cd710dbae8e6a5d5292d744d7fb2b45447471
 { id: "hero_lincoln01", char: "링컨 캠벨", suit: "영화 - 에이전트 오브 쉴.드.", tier: "1", name: "링컨 캠벨", hei: "185cm", wei: "80kg", pot: "-", abil: "Shock" },
 { id: "hero_magik01", char: "매직", suit: "모던", tier: "1", name: "일리아나 니콜라예브나 라스푸티나", hei: "165cm", wei: "59kg", pot: "Potential", abil: "Mind Resist, Magic" },
 { id: "hero_magik01_S01", char: "매직", suit: "피닉스 파이브", tier: "1", name: "일리아나 니콜라예브나 라스푸티나", hei: "165cm", wei: "59kg", pot: "Potential", abil: "Mind Resist, Magic, 피닉스 Force" },
@@ -472,8 +482,13 @@ $(document).ready(function(event){
 { id: "sv_modok01_S01", char: "M.O.D.O.K.", suit: "스파이독", tier: "1", name: "조지 탈튼", hei: "366cm", wei: "340kg", pot: "-", abil: "Machine, Pure Evil, Mind" },
 { id: "sv_modok01_S02", char: "M.O.D.O.K.", suit: "캡톡", tier: "1", name: "조지 탈튼", hei: "366cm", wei: "340kg", pot: "-", abil: "Machine, Pure Evil, Mind" },
 { id: "sv_mistersinister01", char: "미스터 시니스터", suit: "모던", tier: "1", name: "나다니엘 에식스", hei: "196cm", wei: "120kg", pot: "Potential", abil: "Pure Evil, Energy Projection, Healing" },
+<<<<<<< HEAD
 { id: "sv_mysterio01", char: "미스테리오", suit: "클래식", tier: "1", name: "퀜틴 벡", hei: "180cm", wei: "79kg", pot: "Potential", abil: "Mind, Sinister Six" },
 { id: "sv_mysterio01_S01", char: "미스테리오", suit: "영화 - 스파이더맨: 파 프롬 홈", tier: "1", name: "퀜틴 벡", hei: "180cm", wei: "79kg", pot: "Potential", abil: "Mind, Sinister Six" },
+=======
+{ id: "sv_mysterio01", char: "미스테리오", suit: "클래식", tier: "1", name: "틴 벡", hei: "180cm", wei: "79kg", pot: "Potential", abil: "Mind, Sinister Six" },
+{ id: "sv_mysterio01_S01", char: "미스테리오", suit: "영화 - 스파이더맨: 파 프롬 홈", tier: "1", name: "틴 벡", hei: "180cm", wei: "79kg", pot: "Potential", abil: "Mind, Sinister Six" },
+>>>>>>> 133cd710dbae8e6a5d5292d744d7fb2b45447471
 { id: "sv_redskull01", char: "레드 스컬", suit: "캡틴 아메리카: 퍼스트 어벤져", tier: "1", name: "조나단 슈미트", hei: "185cm", wei: "88kg", pot: "Potential", abil: "Command, Pure Evil" },
 { id: "sv_redskull01_S01", char: "레드 스컬", suit: "시크릿 워즈: 레드 스컬", tier: "1", name: "조나단 슈미트", hei: "185cm", wei: "88kg", pot: "Potential", abil: "Command, Pure Evil" },
 { id: "sv_redskull01_S02", char: "레드 스컬", suit: "하이드라 아머", tier: "1", name: "조나단 슈미트", hei: "185cm", wei: "88kg", pot: "Potential", abil: "Command, Pure Evil, Cosmic Cube" },
@@ -511,9 +526,15 @@ $(document).ready(function(event){
 { id: "hero_hyperion01_S01", char: "하이페리온", suit: "클래식", tier: "1", name: "마커스 밀튼", hei: "193cm", wei: "209kg", pot: "Potential", abil: "Leadership, Energy Projection" },
 { id: "hero_ironhammer01", char: "아이언 해머", suit: "인피니피 워프", tier: "1", name: "스타크 오딘슨", hei: "198cm", wei: "290kg", pot: "Potential", abil: "Machine, Shock, Magic" },
 { id: "hero_janefoster01", char: "토르 (제인 포스터)", suit: "올뉴, 올디퍼런트", tier: "1", name: "제인 포스터", hei: "170cm", wei: "61kg", pot: "-", abil: "Fast Movement, Shock" },
+<<<<<<< HEAD
 { id: "hero_medusa01", char: "메두사", suit: "올뉴, 올디퍼런트", tier: "1", name: "메두살리스 아마퀠린", hei: "180cm", wei: "59kg", pot: "Potential", abil: "Command" },
 { id: "hero_medusa01_S01", char: "메두사", suit: "몬스터 언리쉬드! (MFF 배리언트)", tier: "1", name: "메두살리스 아마퀠린", hei: "180cm", wei: "59kg", pot: "Potential", abil: "Command" },
 { id: "hero_medusa01_S02", char: "메두사", suit: "인휴먼즈 대 엑스맨", tier: "1", name: "메두살리스 아마퀠린", hei: "180cm", wei: "59kg", pot: "Potential", abil: "Command" },
+=======
+{ id: "hero_medusa01", char: "메두사", suit: "올뉴, 올디퍼런트", tier: "1", name: "메두살리스 아마린", hei: "180cm", wei: "59kg", pot: "Potential", abil: "Command" },
+{ id: "hero_medusa01_S01", char: "메두사", suit: "몬스터 언리쉬드! (MFF 배리언트)", tier: "1", name: "메두살리스 아마린", hei: "180cm", wei: "59kg", pot: "Potential", abil: "Command" },
+{ id: "hero_medusa01_S02", char: "메두사", suit: "인휴먼즈 대 엑스맨", tier: "1", name: "메두살리스 아마린", hei: "180cm", wei: "59kg", pot: "Potential", abil: "Command" },
+>>>>>>> 133cd710dbae8e6a5d5292d744d7fb2b45447471
 { id: "hero_nova01", char: "노바 (샘 알렉산더)", suit: "올뉴, 올디퍼런트", tier: "1", name: "사무엘 \"샘\" 알렉산더", hei: "167cm", wei: "63kg", pot: "-", abil: "Energy Projection, Fast Movement" },
 { id: "hero_odin01", char: "오딘", suit: "모던", tier: "3", name: "오딘", hei: "206cm", wei: "295kg", pot: "Potential", abil: "Energy Projection, Command" },
 { id: "hero_odin01_S01", char: "오딘", suit: "올 파더", tier: "3", name: "오딘", hei: "206cm", wei: "295kg", pot: "Potential", abil: "Energy Projection, Command" },
@@ -588,7 +609,14 @@ $(document).ready(function(event){
 { id: "boss_surtur01", char: "Surtur", suit: "수르트", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", abil: "---" },
 { id: "boss_talos01", char: "탈로스", suit: "영화 - 캡틴 마블", tier: "1", name: "탈로스", hei: "193cm", wei: "298kg", pot: "-", abil: "---" },
 { id: "boss_ymir01", char: "Ymir", suit: "이미르", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", abil: "---" },
+<<<<<<< HEAD
 { id: "npc_jocasta01", char: "조캐스타", suit: "조캐스타", tier: "1", name: "조캐스타 핌", hei: "175cm", wei: "340kg", pot: "-", abil: "---" },
+=======
+
+{ id: "npc_drstellacho01", char: "스텔라 조", suit: "스텔라 조", tier: "1", name: "스텔라 조", hei: "175cm", wei: "57kg", pot: "-", abil: "---" },
+{ id: "npc_jocasta01", char: "조캐스타", suit: "조캐스타", tier: "1", name: "조캐스타 핌", hei: "175cm", wei: "340kg", pot: "-", abil: "---" },
+{ id: "npc_nickfury01", char: "닉 퓨리", suit: "닉 퓨리", tier: "1", name: "닉 퓨리", hei: "190cm", wei: "95kg", pot: "-", abil: "---" },
+>>>>>>> 133cd710dbae8e6a5d5292d744d7fb2b45447471
 { id: "hero_melindamay01", char: "멜린다 메이", suit: "드라마 - 에이전트 오브 쉴.드.", tier: "1", name: "멜린다 차오롄 메이", hei: "163cm", wei: "50kg", pot: "-", abil: "---" },
 { id: "sv_devildinosaur01", char: "Devil Dinosaur", suit: "데빌 다이너소어", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", abil: "---" },
 { id: "hero_io01", char: "Io", suit: "이오", tier: "<>", name: "", hei: "cm", wei: "kg", pot: "<>", abil: "---" },
