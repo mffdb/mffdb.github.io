@@ -1,80 +1,237 @@
-.main {
-  max-width: 690px;
-  min-width: 340px;
-  height: auto;
-  border: 1px solid #ccc;
-  font-family: "Arial Black", "Nanum Myeongjo";
-  margin: 0 auto;
+* {
+  box-sizing: border-box;
 }
 
-[class^=box-] {
-  width: 340px;
-  height: 220px;
+.main {
+  height: auto;
+  font-family: "Arial Black", "Nanum Myeongjo";
+  margin: 0 auto;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Style the top navigation bar */
+.nav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.link {
+  float: left;
   display: inline-block;
-  border: 1px solid #ccc;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 75px;
+}
+
+/* Change color on hover */
+.link:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+
+/* Header/Blog Title */
+.header {
+  text-align: center;
+  background: #fff;
+}
+
+.logo1 {
+  width: 100%;
+  height: 128px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: center;
+}
+
+
+/* Footer */
+.footer {
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media only screen and (max-width: 340px) {
+
+  .header, .footer, .nav, .main {
+    width: 340px;
+  }
+  
+  .roll-box {
+    width: 340px;
+    height: 300px;
+  }
+
+  [class^=box-] {
+    width: 340px;
+
+  }
+
+  .gra-port {
+    width: 290px;
+    height: 160px;
+  }
+
+  .gra-photo {
+    width: 32px;
+    height: 128px;
+
+  }
+
+  .gra-char {
+    width: 322px;
+    height: 32px;
+    line-height: 32px;
+  }
+  
+  [class^=ico-] {
+    width: 32px;
+    height: 32px;
+  }
+
+  [class^=info-] {
+    line-height: 20px;
+    font-size: 12px;
+  }
+  
+  [class^=info-bite-] {
+    width: 40px;
+    height: 20px;
+  }
+
+  [class^=info-part-] {
+    width: 290px;
+    height: 20px;
+    text-align: right;
+  }
+  .info-bite-abil, .info-part-abil {
+    height: 52px;
+    line-height: 52px;
+  }
+
+}
+
+@media only screen and (min-width: 340px) {
+  .main {
+    width: 820px;
+  }
+
+  .header, .footer, .contents, .nav,  {
+    width: 100%;
+  }
+  
+  .roll-box {
+    width: 800px;
+    height: 600px;
+  }
+  
+  [class^=box-] {
+    width: 400px;
+  }
+  
+  .gra-port {
+    width: 336px;
+    height: 256px;
+  }
+
+  .gra-photo {
+    width: 64px;
+    height: 256px;
+
+  }
+
+  .gra-char {
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  [class^=ico-] {
+    width: 64px;
+    height: 64px;
+  }
+  
+  [class^=info-] {
+    line-height: 32px;
+    font-size: 16px;
+  }
+
+  [class^=info-bite-] {
+    width: 64px;
+    height: 32px;
+  }
+
+  [class^=info-part-] {
+    width: 336px;
+    height: 32px;
+    text-align: right;
+  }
+  .info-bite-abil, .info-part-abil {
+    height: 104px;
+    line-height: 104px;
+  }
+
+}
+
+/* 기본 틀 */
+[class^=box-] {
+  display: inline-block;
   float: left;
 }
 
 [class^=gra-] {
   float: left;
   display: inline-block;
-  border: 1px solid #ccc;
+
 }
 
 .gra-port {
-  width: 280px;
-  height: 190px;
   display: inline-block;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-blend-mode: multiply, multiply;
+  border-top: 1px solid #ccc;
+
 }
 
 .gra-photo {
-  width: 50px;
-  height: 190px;
   display: inline-block;
-  border: 1px solid #ccc;
 }
 
 .gra-char {
-  width: 340px;
-  height: 30px;
   display: inline-block;
   text-align: center;
   font-weight: bold;
-  line-height: 30px;
   font-size: 16px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 [class^=ico-] {
-  width: 45px;
-  height: 45px;
   display: inline-block;
-  border: 1px solid #ccc;
+  border-top: 1px solid #ccc;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-blend-mode: multiply, multiply;
-
 }
 
 [class^=info-] {
   display: inline-block;
-  border: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   float: left;
-  height: 20xp;
-  font-size: 14px;
+
 }
 
-[class^=info-bite-] {
-  width: 56px;
-}
-
-[class^=info-part-] {
-  width: 280px;
-  text-align: right;
+.info-bite-suit, .info-part-suit {
+  border-top: 1px solid #ccc;
 }
 
 [class^=gra-]::after, [class^=info-]::after, [class^=ico-]::after {
@@ -108,10 +265,7 @@
 }
 
 .roll-box {
-  border: 1px solid #ccc;
   display: inline-block;
-  min-width: 340px;
-  height: 550px;
   overflow-x: hidden; /* Hide horizontal scrollbar */
   overflow-y: auto; /* Add vertical scrollbar */
 }
