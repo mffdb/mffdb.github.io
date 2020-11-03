@@ -69,7 +69,7 @@
   
   .roll-box {
     width: 340px;
-    height: 300px;
+    height: 200px;
   }
 
   [class^=box-] {
@@ -133,7 +133,7 @@
   
   .roll-box {
     width: 800px;
-    height: 600px;
+    height: 400px;
   }
   
   [class^=box-] {
