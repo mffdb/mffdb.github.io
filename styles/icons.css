@@ -1,8 +1,8 @@
-.combat { background-image: url(../images/icons/condition_combat_alpha.png), url(../images/icons/condition_combat.png);}
-.speed { background-image: url(../images/icons/condition_speed_alpha.png), url(../images/icons/condition_speed.png); }
-.blast { background-image: url(../images/icons/condition_blast_alpha.png), url(../images/icons/condition_blast.png); }
-.universal { background-image: url(../images/icons/condition_universal_alpha.png), url(../images/icons/condition_universal.png); }
+/* 로고 */
+.logo1 { background-image: url(../images/marvelfuturefight_lob_log_01.png); }
 
+
+/* 아이콘 */
 .male { background-image: url(../images/icons/condition_male_alpha.png), url(../images/icons/condition_male.png); }
 .female { background-image: url(../images/icons/condition_female_alpha.png), url(../images/icons/condition_female.png); }
 
@@ -14,3 +14,50 @@
 .human { background-image: url(../images/icons/condition_human_alpha.png), url(../images/icons/condition_human.png); }
 .inhuman { background-image: url(../images/icons/condition_inhuman_alpha.png), url(../images/icons/condition_inhuman.png); }
 .mutant { background-image: url(../images/icons/condition_mutant_alpha.png), url(../images/icons/condition_mutant.png); }
+
+.organic { background-image: url(../images/icons/condition_organic_alpha.png), url(../images/icons/condition_organic.png); }
+.other { background-image: url(../images/icons/condition_other_alpha.png), url(../images/icons/condition_other.png); }
+
+
+/* 타입 */
+.combat { background-image: url(../images/icons/condition_combat_alpha.png), url(../images/icons/condition_combat.png);}	/* 컴뱃 */
+.speed { background-image: url(../images/icons/condition_speed_alpha.png), url(../images/icons/condition_speed.png); }	/* 스피드 */
+.blast { background-image: url(../images/icons/condition_blast_alpha.png), url(../images/icons/condition_blast.png); }	/* 블라스트 */
+.universal { background-image: url(../images/icons/condition_universal_alpha.png), url(../images/icons/condition_universal.png); }	/* 유니버셜 */
+
+/* 서브타입 */
+.gas { background-image: url(../images/icons/SUBTYPE_400.png); }	/*  */
+.strong { background-image: url(../images/icons/SUBTYPE_401.png); }	/* Strong */
+.heightened_senses { background-image: url(../images/icons/SUBTYPE_403.png); }	/* Heightened Senses */
+.mind { background-image: url(../images/icons/SUBTYPE_407.png); }	/* Mind */
+.healing { background-image: url(../images/icons/SUBTYPE_409.png); }	/* Healing */
+.fast_movement { background-image: url(../images/icons/SUBTYPE_410.png); }	/* Fast Movement */
+.leadership { background-image: url(../images/icons/SUBTYPE_411.png); }	/* Leadership */
+.agility { background-image: url(../images/icons/SUBTYPE_412.png); }	/* Agility */
+.poison { background-image: url(../images/icons/SUBTYPE_413.png); }	/* Poison */
+.flame { background-image: url(../images/icons/SUBTYPE_414.png); }	/* Flame */
+.chill { background-image: url(../images/icons/SUBTYPE_415.png); }	/* Chill */
+.shock { background-image: url(../images/icons/SUBTYPE_416.png); }	/* Shock */
+.magic { background-image: url(../images/icons/SUBTYPE_417.png); }	/* Magic */
+.machine { background-image: url(../images/icons/SUBTYPE_418.png); }	/* Machine */
+.weapon_master { background-image: url(../images/icons/SUBTYPE_419.png); }	/* Weapon Master */
+.command { background-image: url(../images/icons/SUBTYPE_420.png); }	/* Command */
+.durability { background-image: url(../images/icons/SUBTYPE_421.png); }	/* Durability */
+.agent { background-image: url(../images/icons/SUBTYPE_422.png); }	/* Agent */
+.pure_evil { background-image: url(../images/icons/SUBTYPE_423.png); }	/* Pure Evil */
+.mind_resist { background-image: url(../images/icons/SUBTYPE_424.png); }	/* Mind Resist */
+.symbiote { background-image: url(../images/icons/SUBTYPE_425.png); }	/* Symbiote */
+.energy_projection { background-image: url(../images/icons/SUBTYPE_426.png); }	/* Energy Projection */
+.phoenix_force { background-image: url(../images/icons/SUBTYPE_427.png); }	/* Phoenix Force */
+.chaos_magic { background-image: url(../images/icons/SUBTYPE_428.png); }	/* Chaos Magic */
+.spider-sense { background-image: url(../images/icons/SUBTYPE_429.png); }	/* Spider-Sense */
+.mist { background-image: url(../images/icons/SUBTYPE_430.png); }	/* */
+.antisimbiote { background-image: url(../images/icons/SUBTYPE_431.png); }	/* */
+.cold_blooded { background-image: url(../images/icons/SUBTYPE_432.png); }	/* Cold Blooded */
+.time_freezing_immunity { background-image: url(../images/icons/SUBTYPE_433.png); }	/* Time Freezing Immunity */
+.fantastic_four { background-image: url(../images/icons/SUBTYPE_434.png); }	/* Fantastic Four */
+.sinister_six { background-image: url(../images/icons/SUBTYPE_435.png); }	/* Sinister Six */
+.power_cosmic { background-image: url(../images/icons/SUBTYPE_436.png); }	/* Power Cosmic */
+.warriors_of_the_sky { background-image: url(../images/icons/SUBTYPE_437.png); }	/* Warriors of the Sky */
+.cosmic_cube { background-image: url(../images/icons/SUBTYPE_438.png); }	/* Cosmic Cube */
+.gamma_radiation { background-image: url(../images/icons/SUBTYPE_439.png); } 	/* Gamma Radiation */
