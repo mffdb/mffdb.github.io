@@ -1,28 +1,4 @@
 $(document).ready(function(event){
- 
-    $( "[id^=linkbtn]" ).click(function() {
-    
-    const name = $(this).attr("name");
-
-    switch( name ) {
-      case "char" :
-        $( ".contents" ).load( "char.html" );
-        break;
-
-      case "info" :
-        $( ".contents" ).load( "info.html" );
-        break;
-
-      case "tier" :
-        $( ".contents" ).load( "tier.html" );
-        break;
-
-      default :
-        $( ".contents" ).load( "https://future-fight.fandom.com/" );
-        break;
-	}
-
-    });
 
   $( "[id^=charbtn]" ).css({"cursor": "pointer"}).click(function() {
   
