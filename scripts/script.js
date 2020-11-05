@@ -1,5 +1,5 @@
 $(document).ready(function(event){
-
+ 
   $( "[id^=charbtn]" ).css({"cursor": "pointer"}).click(function() {
   
     const name = $(this).attr("name");
