@@ -16,7 +16,31 @@
 <link rel="stylesheet" href="styles/skill.css" type="text/css" media="all">
 <script>
 $(document).ready(function(event){
+/*
+    $( "[id^=linkbtn]" ).click(function() {
+    
+    const value = $(this).val();
 
+    switch( value ) {
+      case "char" :
+        $( ".contents" ).load( "char.html" );
+        break;
+
+      case "info" :
+        $( ".contents" ).load( "info.html" );
+        break;
+
+      case "tier" :
+        $( ".contents" ).load( "tier.html" );
+        break;
+
+      default :
+        $( ".contents" ).load( "https://future-fight.fandom.com/" );
+        break;
+	}
+
+    });
+*/
   event.preventDefault();
 });
 </script>
@@ -33,10 +57,10 @@ $(document).ready(function(event){
 </div>
 
 <div class="nav">
-  <div id="linkbtn" class="link" name="char">인물</div>
-  <div id="linkbtn" class="link" name="info">정보</div>
-  <div id="linkbtn" class="link" name="tier">등급</div>
-  <div id="linkbtn" class="link" name="help" style="float:right">도움</div>
+  <div id="linkbtn" class="link" value="char">인물</div>
+  <div id="linkbtn" class="link" value="info">정보</div>
+  <div id="linkbtn" class="link" value="tier">등급</div>
+  <div id="linkbtn" class="link" value="help" style="float:right">도움</div>
 </div>
 
 <div class="main">
