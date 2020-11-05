@@ -16,11 +16,12 @@
 <link rel="stylesheet" href="styles/skill.css" type="text/css" media="all">
 <script>
 $(document).ready(function(event){
-  $( "[id^=linkbtn]" ).click(function() {
+/*
+    $( "[id^=linkbtn]" ).click(function() {
     
-  const name = $(this).attr("name");
+    const value = $(this).val();
 
-    switch( name ) {
+    switch( value ) {
       case "char" :
         $( ".contents" ).load( "char.html" );
         break;
@@ -36,13 +37,16 @@ $(document).ready(function(event){
       default :
         $( ".contents" ).load( "https://future-fight.fandom.com/" );
         break;
-                 }
+	}
 
     });
+*/
   event.preventDefault();
 });
 </script>
+
 <style>
+
 
 </style>
 </head>
@@ -53,10 +57,10 @@ $(document).ready(function(event){
 </div>
 
 <div class="nav">
-  <div id="linkbtn" class="link" name="char">인물</div>
-  <div id="linkbtn" class="link" name="info">정보</div>
-  <div id="linkbtn" class="link" name="tier">등급</div>
-  <div id="linkbtn" class="link" name="help" style="float:right">도움</div>
+  <div id="linkbtn" class="link" value="char">인물</div>
+  <div id="linkbtn" class="link" value="info">정보</div>
+  <div id="linkbtn" class="link" value="tier">등급</div>
+  <div id="linkbtn" class="link" value="help" style="float:right">도움</div>
 </div>
 
 <div class="main">
@@ -68,7 +72,9 @@ $(document).ready(function(event){
       <div class="ico-side hero"></div>
       <div class="ico-alli other"></div>
     </div>
+
     <div class="gra-char">스탠 리</div>
+
   </div>
 
   <div class="box-text">
@@ -86,6 +92,7 @@ $(document).ready(function(event){
     <div class="info-part-pot">건망증</div>
     <div class="info-bite-abil">&nbsp능력: </div>
     <div class="info-part-abil">만화 연재, 캐릭터 창조, 영화 특별출현</div>
+
   </div>
 
   <div class="roll-box">
@@ -234,7 +241,7 @@ $(document).ready(function(event){
     <div class="roll groot01_S03" id="charbtn" name="hero_groot01_S03" type="Combat" sex="Male" side="Hero" allies="Alien"></div>
     <div class="roll gwenpool01" id="charbtn" name="hero_gwenpool01" type="Speed" sex="Female" side="Hero" allies="Human"></div>
     <div class="roll gwenpool01_S01" id="charbtn" name="hero_gwenpool01_S01" type="Speed" sex="Female" side="Hero" allies="Human"></div>
-    <div class="roll gwenpool01_S02" id="charbtn" name="hero_gwenpool01_S02" type="Speed" sex="Female" side="Hero" allies="Human"></div>
+    <div class="roll gwenpool01_S02" id="charbtn" name="hero_gwenpool01_S02" type="Speed" sex="Female" side="sv" allies="Human"></div>
     <div class="roll hawkeye01" id="charbtn" name="hero_hawkeye01" type="Speed" sex="Male" side="Hero" allies="Human"></div>
     <div class="roll hawkeye01_S01" id="charbtn" name="hero_hawkeye01_S01" type="Speed" sex="Male" side="Hero" allies="Human"></div>
     <div class="roll hawkeye01_S02" id="charbtn" name="hero_hawkeye01_S02" type="Speed" sex="Male" side="Hero" allies="Human"></div>
@@ -310,7 +317,7 @@ $(document).ready(function(event){
     <div class="roll medusa01_S02" id="charbtn" name="hero_medusa01_S02" type="Universal" sex="Female" side="Hero" allies="Inhuman"></div>
     <div class="roll milesmorales01" id="charbtn" name="hero_milesmorales01" type="Speed" sex="Male" side="Hero" allies="Human"></div>
     <div class="roll milesmorales01_S01" id="charbtn" name="hero_milesmorales01_S01" type="Speed" sex="Male" side="Hero" allies="Human"></div>
-    <div class="roll milesmorales01_S02" id="charbtn" name="hero_milesmorales01_S02" type="Combat" sex="Male" side="Hero" allies="Human"></div>
+    <div class="roll milesmorales01_S02" id="charbtn" name="hero_milesmorales01_S02" type="Combat" sex="Male" side="sv" allies="Human"></div>
     <div class="roll misterfantastic01" id="charbtn" name="hero_misterfantastic01" type="Speed" sex="Female" side="Hero" allies="Human"></div>
     <div class="roll misterfantastic01_S01" id="charbtn" name="hero_misterfantastic01_S01" type="Combat" sex="Male" side="Hero" allies="Human"></div>
     <div class="roll mistyknight01" id="charbtn" name="hero_mistyknight01" type="Blast" sex="Male" side="sv" allies="Mutant"></div>
@@ -398,7 +405,7 @@ $(document).ready(function(event){
     <div class="roll songbird01" id="charbtn" name="hero_songbird01" type="Blast" sex="Female" side="Hero" allies="Human"></div>
     <div class="roll spidergwen01" id="charbtn" name="hero_spidergwen01" type="Speed" sex="Female" side="Hero" allies="Human"></div>
     <div class="roll spidergwen01_S01" id="charbtn" name="hero_spidergwen01_S01" type="Speed" sex="Female" side="Hero" allies="Human"></div>
-    <div class="roll spidergwen01_S02" id="charbtn" name="hero_spidergwen01_S02" type="Speed" sex="Female" side="Hero" allies="Human"></div>
+    <div class="roll spidergwen01_S02" id="charbtn" name="hero_spidergwen01_S02" type="Speed" sex="Female" side="sv" allies="Human"></div>
     <div class="roll spiderman01" id="charbtn" name="hero_spiderman01" type="Speed" sex="Male" side="Hero" allies="Human"></div>
     <div class="roll spiderman01_S01" id="charbtn" name="hero_spiderman01_S01" type="Speed" sex="Male" side="Hero" allies="Human"></div>
     <div class="roll spiderman01_S02" id="charbtn" name="hero_spiderman01_S02" type="Speed" sex="Male" side="Hero" allies="Human"></div>

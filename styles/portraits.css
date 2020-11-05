@@ -535,6 +535,6 @@
 /* 서포트 */
 .melindamay01 { background-image: url(../images/portraits/hero_melindamay01.png), url(../images/portraits/hero_melindamay01_alpha.png); }
 .devildinosaur01 { background-image: url(../images/portraits/sv_devildinosaur01.png), url(../images/portraits/sv_devildinosaur01_alpha.png); }
-.io01 { background-image: url(../images/portraits/hero_io01.png), url(../images/portraits/hero_io01_alpha.png);; }
+.io01 { background-image: url(../images/portraits/hero_io01.png), url(../images/portraits/hero_io01_alpha.png); }
 
-.stanlee01 { background-image: url(../images/portraits/rip_stanlee01.png) }
+.stanlee01 { background-image: url(../images/portraits/rip_stanlee01.png); }
