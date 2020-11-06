@@ -38,6 +38,7 @@
 .header {
   text-align: center;
   background: #fff;
+  padding: 1px;
 }
 
 .logo1 {
@@ -49,11 +50,21 @@
   vertical-align: center;
 }
 
+.logo2 {
+  width: 100%;
+  height: 506px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: center;
+}
+
 
 /* Footer */
 .footer {
   text-align: center;
   background: #ddd;
+  padding: 1px;
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
@@ -63,61 +74,8 @@
     width: 340px;
   }
   
-  .header, .footer, .contents, .nav {
+  .header, .footer, .nav {
     width: 340px;
-  }
-  
-  .roll-box {
-    width: 340px;
-    height: 200px;
-  }
-
-  [class^=box-] {
-    width: 340px;
-
-  }
-
-  .gra-port {
-    width: 282px;
-    height: 160px;
-  }
-
-  .gra-photo {
-    width: 32px;
-    height: 128px;
-
-  }
-
-  .gra-char {
-    width: 322px;
-    height: 24px;
-    line-height: 24px;
-    font-size: 12px;
-  }
-  
-  [class^=ico-] {
-    width: 40px;
-    height: 40px;
-  }
-
-  [class^=info-] {
-    line-height: 20px;
-    font-size: 12px;
-  }
-  
-  [class^=info-bite-] {
-    width: 50px;
-    height: 20px;
-  }
-
-  [class^=info-part-] {
-    width: 280px;
-    height: 20px;
-    text-align: right;
-  }
-  .info-bite-abil, .info-part-abil {
-    height: 40px;
-    line-height: 40px;
   }
 
 }
@@ -127,149 +85,8 @@
     width: 820px;
   }
 
-  .header, .footer, .contents, .nav,  {
+  .header, .footer, .nav,  {
     width: 100%;
   }
-  
-  .roll-box {
-    width: 800px;
-    height: 400px;
-  }
-  
-  [class^=box-] {
-    width: 400px;
-  }
-  
-  .gra-port {
-    width: 336px;
-    height: 256px;
-  }
 
-  .gra-photo {
-    width: 64px;
-    height: 256px;
-
-  }
-
-  .gra-char {
-    width: 400px;
-    height: 40px;
-    line-height: 40px;
-  }
-
-  [class^=ico-] {
-    width: 64px;
-    height: 64px;
-  }
-  
-  [class^=info-] {
-    line-height: 32px;
-    font-size: 16px;
-  }
-
-  [class^=info-bite-] {
-    width: 64px;
-    height: 32px;
-  }
-
-  [class^=info-part-] {
-    width: 336px;
-    height: 32px;
-    text-align: right;
-  }
-  .info-bite-abil, .info-part-abil {
-    height: 104px;
-    line-height: 104px;
-  }
-
-}
-
-/* 기본 틀 */
-[class^=box-] {
-  display: inline-block;
-  float: left;
-}
-
-[class^=gra-] {
-  float: left;
-  display: inline-block;
-
-}
-
-.gra-port {
-  display: inline-block;
-  background-size: contain, contain;
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, center;
-  background-blend-mode: multiply, multiply;
-  border-top: 1px solid #ccc;
-
-}
-
-.gra-photo {
-  display: inline-block;
-}
-
-.gra-char {
-  display: inline-block;
-  text-align: center;
-  font-weight: bold;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-}
-
-[class^=ico-] {
-  display: inline-block;
-  border-top: 1px solid #ccc;
-  background-size: contain, contain;
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, center;
-  background-blend-mode: multiply, multiply;
-}
-
-[class^=info-] {
-  display: inline-block;
-  border-bottom: 1px solid #ccc;
-  float: left;
-
-}
-
-.info-bite-suit, .info-part-suit {
-  border-top: 1px solid #ccc;
-}
-
-[class^=gra-]::after, [class^=info-]::after, [class^=ico-]::after {
-  content: " ";
-  clear: both;
-  display: inline-block;
-}
-
-.roll {
-  width: 32px;
-  height: 32px;
-  border: 1px solid #ccc;
-  display: inline-block;
-  background-size: contain, contain;
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, center;
-  background-blend-mode: multiply, multiply;
-}
-
-.roll.selected {
-  border: 1px solid #000;
-}
-
-.gra-port.selected {
-  display: inline-block;
-}
-
-
-.roll:hover {
-  border: 1px solid #777;
-}
-
-.roll-box {
-  display: inline-block;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-  overflow-y: auto; /* Add vertical scrollbar */
 }
