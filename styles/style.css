@@ -10,6 +10,12 @@
   background: #f1f1f1;
 }
 
+/* Clear floats after the columns */
+.main::after {
+  content: "";
+  clear: both;
+}
+
 /* Style the top navigation bar */
 .nav {
   overflow: hidden;
