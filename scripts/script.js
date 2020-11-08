@@ -7,23 +7,23 @@ $(document).ready(function(event){
     switch( name ) {
 
       case "index" :
-        $( ".main" ).load( "index.html .main" );
+        $( ".contents" ).load( "index.html .main" );
         break;
 
       case "char" :
-        $( ".main" ).load( "char.html" );
+        $( ".contents" ).load( "char.html" );
         break;
 
       case "info" :
-        $( ".main" ).load( "info.html" );
+        $( ".contents" ).load( "info.html" );
         break;
 
       case "tier" :
-        $( ".main" ).load( "tier.html" );
+        $( ".contents" ).load( "tier.html" );
         break;
 
       default :
-        $( ".main" ).load( "https://future-fight.fandom.com/" );
+        $( ".contents" ).load( "https://future-fight.fandom.com/" );
         break;
                  }
 
