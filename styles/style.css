@@ -6,12 +6,18 @@
   height: auto;
   font-family: "Arial Black", "Nanum Myeongjo";
   margin: 0 auto;
-  padding: 10px;
   background: #f1f1f1;
 }
 
+.contents {
+  padding: 10px;
+  background: #eee;
+  margin: 0 auto;
+}
+
+
 /* Clear floats after the columns */
-.main::after {
+.contents::after {
   content: "";
   clear: both;
 }
@@ -76,22 +82,22 @@
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media only screen and (max-width: 600px) {
 
-  .main {
+  .contents {
     width: 340px;
   }
   
-  .header, .footer, .nav {
+  .main, .header, .footer, .nav {
     width: 340px;
   }
 
 }
 
 @media only screen and (min-width: 601px) {
-  .main {
+  .contents {
     width: 820px;
   }
 
-  .header, .footer, .nav,  {
+  .main, .header, .footer, .nav,  {
     width: 100%;
   }
 
