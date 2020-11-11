@@ -6,7 +6,6 @@
 [class^=gra-] {
   float: left;
   display: inline-block;
-
 }
 
 .gra-port {
@@ -16,7 +15,6 @@
   background-position: center, center;
   background-blend-mode: multiply, multiply;
   border-top: 1px solid #ccc;
-
 }
 
 .gra-photo {
@@ -44,7 +42,6 @@
   display: inline-block;
   border-bottom: 1px solid #ccc;
   float: left;
-
 }
 
 .info-bite-suit, .info-part-suit {
@@ -76,7 +73,6 @@
   display: inline-block;
 }
 
-
 .roll:hover {
   border: 1px solid #777;
 }
@@ -96,7 +92,6 @@
 
   [class^=box-] {
     width: 340px;
-
   }
 
   .gra-port {
@@ -107,7 +102,6 @@
   .gra-photo {
     width: 32px;
     height: 128px;
-
   }
 
   .gra-char {
@@ -137,11 +131,6 @@
     height: 20px;
     text-align: right;
   }
-  .info-bite-abil, .info-part-abil {
-    height: 40px;
-    line-height: 40px;
-  }
-
 }
 
 @media only screen and (min-width: 601px) {
@@ -162,7 +151,6 @@
   .gra-photo {
     width: 64px;
     height: 256px;
-
   }
 
   .gra-char {
@@ -191,9 +179,4 @@
     height: 32px;
     text-align: right;
   }
-  .info-bite-abil, .info-part-abil {
-    height: 104px;
-    line-height: 104px;
-  }
-
 }
