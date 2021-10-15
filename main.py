@@ -1,9 +1,11 @@
 import os
 from datetime import datetime
 from pytz import timezone
-from crawling_yes24 import parsing_beautifulsoup, extract_book_data	# crawling_yes24.py에서 parsing_beautifulsoup, extract_book_data 함수 불러오기
-from github_utils import get_github_repo, upload_github_issue	# github_utils.py에서 get_github_repo, upload_github_issue 함수 불러오기
-
+#from crawling_yes24 import parsing_beautifulsoup, extract_book_data	# crawling_yes24.py에서 parsing_beautifulsoup, extract_book_data 함수 불러오기
+import requests
+from bs4 import BeautifulSoup
+#from github_utils import get_github_repo, upload_github_issue	# github_utils.py에서 get_github_repo, upload_github_issue 함수 불러오기
+from github import Github
 
 if __name__ == "__main__":
     access_token = os.environ['MY_GITHUB_TOKEN']
