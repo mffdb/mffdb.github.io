@@ -30,6 +30,7 @@ if __name__ == "__main__":
     data1 = requests.get(kleague_club_ranking_url)
     html1 = data1.text
     soup1 = BeautifulSoup(html, 'html.parser')
+    site_json=json.loads(soup1.text)
     #---- 추가 ----#
 
 #    upload_contents = extract_book_data(soup)
@@ -48,9 +49,14 @@ if __name__ == "__main__":
         upload_contents += content
 
     #---- 추가 ----#
+    for ranking in  site_json["data"]
+    for club in ranking["league1"]:
+        print(club["league1"])
+
+'''
     api_club_ranking = []
     new_club_ranking = soup1.select("[data][league2]")
-
+    
     for club_ranking in new_club_ranking:
         club_leagueId = club_ranking.select("leagueId")[0].text
         club_teamId = club_ranking.select("teamId")[0].text
@@ -67,6 +73,7 @@ if __name__ == "__main__":
 
         content1 = f"data: [" + club_leagueId + ", " + club_teamId + ", " + club_teamName + ", " + club_rank + ", " + club_gainPoint + ", " + club_winCnt + ", " + club_tieCnt + ", " + club_lossCnt + ", " + club_gapCnt + ", " + club_gainGoal + ", " + club_lossGoal + ", " + club_gameCount + "]"
         api_club_ranking += content1
+'''  
     #---- 추가 ----#
         
 
@@ -84,6 +91,6 @@ if __name__ == "__main__":
 
     #---- 추가 ----#
 #    repo.create_file("clubRank.jsonp", "commit message", api_club_ranking)
-    print(api_club_ranking)
+'''    print(api_club_ranking)
     
     print("Upload Github Issue Success!")
