@@ -20,4 +20,4 @@ def upload_github_issue(repo, title, body):
     :return: None
     """
     repo.create_issue(title=title, body=body)
-    repo.create_file("rank.jsonp", "commit message", body)
+#    repo.create_file("rank.jsonp", "commit message", body)
