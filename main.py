@@ -20,7 +20,7 @@ if __name__ == "__main__":
     yes24_it_new_product_url = "http://www.yes24.com/24/Category/NewProductList/001001003?sumGb=01"
     
     #---- 추가 ----#
-    kleague_club_ranking_url = "https://kleague.com/api/clubRank.do"
+#    kleague_club_ranking_url = "https://kleague.com/api/clubRank.do"
 
 #    soup = parsing_beautifulsoup(yes24_it_new_product_url)
 
@@ -29,10 +29,12 @@ if __name__ == "__main__":
     soup = BeautifulSoup(html, 'html.parser')
     
     #---- 추가 ----#
+    '''
     data1 = requests.get(kleague_club_ranking_url)
     html1 = data1.text
     soup1 = BeautifulSoup(html, 'html.parser')
     site_json=json.loads(soup1.text)
+    '''
     #---- 추가 ----#
 
 #    upload_contents = extract_book_data(soup)
@@ -51,9 +53,9 @@ if __name__ == "__main__":
         upload_contents += content
 
     #---- 추가 ----#
-    for ranking in  site_json["data"]
-    for club in ranking["league1"]:
-        print(club["league1"])
+#    for ranking in  site_json["data"]
+#    for club in ranking["league1"]:
+#        print(club["league1"])
 
 '''
     api_club_ranking = []
@@ -93,6 +95,6 @@ if __name__ == "__main__":
 
     #---- 추가 ----#
 #    repo.create_file("clubRank.jsonp", "commit message", api_club_ranking)
-'''    print(api_club_ranking)
+#    print(api_club_ranking)
     
     print("Upload Github Issue Success!")
