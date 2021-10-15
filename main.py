@@ -7,6 +7,8 @@ from bs4 import BeautifulSoup
 #from github_utils import get_github_repo, upload_github_issue	# github_utils.py에서 get_github_repo, upload_github_issue 함수 불러오기
 from github import Github
 
+import json # 제이슨 
+
 if __name__ == "__main__":
     access_token = os.environ['MY_GITHUB_TOKEN']
     repository_name = "mffdb.github.io" # 내 저장소 이름 필수로 바꿔야함 
