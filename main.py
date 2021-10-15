@@ -1,6 +1,3 @@
-import json
-from urllib.request import urlopen
-import re
 import os
 from datetime import datetime
 from pytz import timezone
@@ -56,14 +53,5 @@ if __name__ == "__main__":
 
     repo.create_issue(title=issue_title, body=upload_contents)
     repo.create_file("teamRank.jsonp", "commit message", upload_contents)
-
-
-    url = 'https://irus.jisc.ac.uk/api/sushilite/v1_7/GetReport/?Report=IR1&Release=4&RequestorID=Cambridge&BeginDate=2020-01&EndDate=2020-05&ItemIdentifier=irusuk%3A1861749&Granularity=Monthly&Pretty=Pretty'
-    html6 = request.urlopen(url).read()
-    soup6 = BeautifulSoup(html6,'html.parser')
-    site_json=json.loads(soup6.text)
-    for itemIdentifier in  site_json["ReportResponse"]["Report"]["Report"]['Customer']["ReportItems"]:
-        for itemPerformance in itemIdentifier["ItemPerformance"]:
-            print(itemPerformance["Instance"]["Count"])
         
     print("Upload Github Issue Success!")
