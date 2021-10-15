@@ -17,12 +17,12 @@ if __name__ == "__main__":
 
     yes24_it_new_product_url = "http://www.yes24.com/24/Category/NewProductList/001001003?sumGb=01"
 
+
 #    soup = parsing_beautifulsoup(yes24_it_new_product_url)
 
     data = requests.get(yes24_it_new_product_url)
     html = data.text
     soup = BeautifulSoup(html, 'html.parser')
-    
 
 
 #    upload_contents = extract_book_data(soup)
@@ -48,10 +48,19 @@ if __name__ == "__main__":
 
     issue_title = f"YES24 IT 신간 도서 알림({today_date})"
 
+    
 #    upload_github_issue(repo, issue_title, upload_contents)
 
     repo.create_issue(title=issue_title, body=upload_contents)
     repo.create_file("teamRank.jsonp", "commit message", upload_contents)
 
 
+    url = 'https://irus.jisc.ac.uk/api/sushilite/v1_7/GetReport/?Report=IR1&Release=4&RequestorID=Cambridge&BeginDate=2020-01&EndDate=2020-05&ItemIdentifier=irusuk%3A1861749&Granularity=Monthly&Pretty=Pretty'
+    html6 = request.urlopen(url).read()
+    soup6 = BeautifulSoup(html6,'html.parser')
+    site_json=json.loads(soup6.text)
+    for itemIdentifier in  site_json["ReportResponse"]["Report"]["Report"]['Customer']["ReportItems"]:
+        for itemPerformance in itemIdentifier["ItemPerformance"]:
+            print(itemPerformance["Instance"]["Count"])
+        
     print("Upload Github Issue Success!")
