@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
     #---- 추가 ----#
     api_club_ranking = []
-    new_club_ranking = soup1.select("data[league2]")
+    new_club_ranking = soup1.select("[data][league2]")
 
     for club_ranking in new_club_ranking:
         club_leagueId = club_ranking.select("leagueId")[0].text
@@ -83,6 +83,7 @@ if __name__ == "__main__":
     repo.create_file("teamRank.jsonp", "commit message", upload_contents)
 
     #---- 추가 ----#
-    repo.create_file("clubRank.jsonp", "commit message", api_club_ranking)
+#    repo.create_file("clubRank.jsonp", "commit message", api_club_ranking)
+    print(api_club_ranking)
     
     print("Upload Github Issue Success!")
