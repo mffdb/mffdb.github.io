@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
     #---- 추가 ----#
     api_club_ranking = []
-    new_club_ranking = soup1.select("data")
+    new_club_ranking = soup1.select("data[league2]")
 
     for club_ranking in new_club_ranking:
         club_leagueId = club_ranking.select("leagueId")[0].text
