@@ -64,7 +64,7 @@ if __name__ == "__main__":
         club_gainGoal = club_ranking.select("gainGoal")[0].text
         club_lossGoal = club_ranking.select("ossGoal")[0].text
         club_gameCount = club_ranking.select("gameCount")[0].text
-        content1 = f"club_leagueId + ", " + club_teamId + ", " + club_teamName + ", " + club_rank + ", " + club_gainPoint + ", " + club_winCnt + ", " + club_tieCnt + ", " + club_lossCnt + ", " + club_gapCnt + ", " + club_gainGoal + ", " + club_lossGoal + ", " + club_gameCount"
+        content1 = f"data: " + club_leagueId + ", " + club_teamId + ", " + club_teamName + ", " + club_rank + ", " + club_gainPoint + ", " + club_winCnt + ", " + club_tieCnt + ", " + club_lossCnt + ", " + club_gapCnt + ", " + club_gainGoal + ", " + club_lossGoal + ", " + club_gameCount
     api_club_ranking += content1
     #---- 추가 ----#
         
