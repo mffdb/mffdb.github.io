@@ -52,6 +52,6 @@ if __name__ == "__main__":
 #    upload_github_issue(repo, issue_title, upload_contents)
 
     repo.create_issue(title=issue_title, body=upload_contents)
-    repo.write_file("rank.json", "commit message", upload_contents)
+    repo.create_file("rank.json", "commit message", upload_contents)
         
     print("Upload Github Issue Success!")
