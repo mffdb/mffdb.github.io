@@ -1,6 +1,5 @@
 import os
 import json
-import os
 import sys
 from datetime import datetime
 from pytz import timezone
