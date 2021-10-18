@@ -46,11 +46,13 @@ if __name__ == "__main__":
 
     rank1 = []
     rank2 = []
+    
+    rank_json=json.loads(soup.text)
+   
     rank1 = rank_json["data"]["league1"]
     rank2 = rank_json["data"]["league2"]
     rank_zip = rank1 + rank2
 
-    rank_json=json.loads(soup.text)
     league_ranking = json.dumps(rank_zip, ensure_ascii=False, indent="\t")
     
 #    repo = get_github_repo(access_token, repository_name)
