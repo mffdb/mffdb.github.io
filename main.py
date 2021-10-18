@@ -1,4 +1,5 @@
 import os
+import json
 from datetime import datetime
 from pytz import timezone
 #from crawling_yes24 import parsing_beautifulsoup, extract_book_data	# crawling_yes24.py에서 parsing_beautifulsoup, extract_book_data 함수 불러오기
