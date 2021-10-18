@@ -45,11 +45,9 @@ if __name__ == "__main__":
         content = f"<a href={url}>" + book_name + "</a>" + ", " + price + "<br/>\n"
         upload_contents += content
 
-    rank1 = []
-    rank2 = []
-    
     rank_json=json.loads(soup1.text)
-   
+    rank1 = []
+    rank2 = []   
     rank1 = rank_json["data"]["league1"]
     rank2 = rank_json["data"]["league2"]
     rank_zip = rank1 + rank2
