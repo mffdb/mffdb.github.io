@@ -48,7 +48,7 @@ if __name__ == "__main__":
     rank1 = []
     rank2 = []
     
-    rank_json=json.loads(soup.text)
+    rank_json=json.loads(soup1.text)
    
     rank1 = rank_json["data"]["league1"]
     rank2 = rank_json["data"]["league2"]
@@ -73,6 +73,6 @@ if __name__ == "__main__":
     repo.create_issue(title=issue_title, body=upload_contents)
        
     repo1.create_issue(title=issue_title, body=league_ranking)
-    repo1.create_file("rank1.json", "commit message", league_ranking)
+    repo1.create_file("rank.json", "commit message", league_ranking)
        
     print("Upload Github Issue Success!")
