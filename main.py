@@ -26,7 +26,7 @@ if __name__ == "__main__":
     soup = BeautifulSoup(html, 'html.parser')
 
     req1 = requests.get(url)
-    html1 = req.content
+    html1 = req1.content
     soup1 = BeautifulSoup(html, 'html.parser')
 
 #    upload_contents = extract_book_data(soup)
