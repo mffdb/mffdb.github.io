@@ -8,8 +8,8 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-  schedule: # 정해진 시간에 일정 실행
-    - cron: '0 0 * * *' # 매일 00시 실행
+#  schedule: # 정해진 시간에 일정 실행
+#    - cron: '0 0 * * *' # 매일 00시 실행
     
 jobs:
   build:
