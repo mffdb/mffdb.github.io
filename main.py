@@ -53,3 +53,12 @@ if __name__ == "__main__":
     #repo.create_file("rank.json", "commit message", upload_contents)
        
     print("Upload Github Issue Success!")
+
+#    delete_github_issue(repo):
+    issues = repo.get_issues(state='open')
+    for issue in issues:
+        if "YES24 IT 신간 도서 알림" in issue.title:
+            issue.edit(state='closed')
+            print(issue.title)
+            
+    print("Delete Github Issue Success!")
