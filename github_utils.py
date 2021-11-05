@@ -21,3 +21,10 @@ def upload_github_issue(repo, title, body):
     """
     repo.create_issue(title=title, body=body)
 #    repo.create_file("rank.jsonp", "commit message", body)
+
+def delete_github_issue(repo):
+    issues = repo.get_issues(state='open')
+    for issue in issues:
+        if "YES24 IT 신간 도서 알림" in issue.title:
+            issue.edit(state='closed')
+            print(issue.title)
