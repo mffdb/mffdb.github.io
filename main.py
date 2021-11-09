@@ -57,7 +57,7 @@ if __name__ == "__main__":
 #    delete_github_issue(repo):
     issues = repo.get_issues(state='open')
     for issue in issues:
-        if "sunday" in today_date_week:
+        if "Tuesday" in today_date_week:
             issue.edit(state='closed')
 
     print(today_date_week)
