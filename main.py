@@ -15,6 +15,7 @@ if __name__ == "__main__":
     seoul_timezone = timezone('Asia/Seoul')
     today = datetime.now(seoul_timezone)
     today_date = today.strftime("%Y년 %m월 %d일")
+    today_date_week = today.strftime("%A")
 
     yes24_it_new_product_url = "http://www.yes24.com/24/Category/NewProductList/001001003?sumGb=01"
 
@@ -45,7 +46,6 @@ if __name__ == "__main__":
     repo = g.get_user().get_repo(repository_name)
 
     issue_title = f"YES24 IT 신간 도서 알림({today_date})"
-
     
 #    upload_github_issue(repo, issue_title, upload_contents)
 
@@ -57,8 +57,8 @@ if __name__ == "__main__":
 #    delete_github_issue(repo):
     issues = repo.get_issues(state='open')
     for issue in issues:
-        if "YES24 IT 신간 도서 알림" in issue.title:
+        if "sunday" in today_date_week:
             issue.edit(state='closed')
-            print(issue.title)
+            print(today_date_week)
             
     print("Delete Github Issue Success!")
